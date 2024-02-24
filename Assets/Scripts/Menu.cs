@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    [SerializeField] GameObject menu_nastroek;
+    bool vkl=false;
     public void Igrat()
     {
         SceneManager.LoadScene("MainScene");
@@ -19,7 +21,8 @@ public class Menu : MonoBehaviour
 
     public void nastroyki()
     {
-        //
+        vkl = !vkl;
+        menu_nastroek.SetActive(vkl);
     }
 
 

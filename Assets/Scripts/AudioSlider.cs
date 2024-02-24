@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioSlider : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] AudioSource m_Source;
+    [SerializeField] Slider slider;
+
+    private void Start()
     {
-        
+        slider.value = 0.5f;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnValueChanged()
     {
-        
+        m_Source.volume = slider.value;
     }
 }
