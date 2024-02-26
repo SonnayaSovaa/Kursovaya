@@ -5,7 +5,7 @@ using UnityEngine;
 public class CamRotation : MonoBehaviour
 {
     private float X, Y, Z;
-    public int speeds;
+    public int speeds=10;
     private float eulerX = 0, eulerY = 0;
     void Start()
     {

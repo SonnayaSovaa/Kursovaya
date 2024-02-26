@@ -7,15 +7,21 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] GameObject menu_nastroek;
     bool vkl=false;
+    public AudioClip AudioClip;
+    [SerializeField]  AudioSource audioSource;
+
     public void Igrat()
     {
+        audioSource.PlayOneShot(AudioClip);
         SceneManager.LoadScene("MainScene");
+        
     }
 
 
     public void Vihod()
     {
         Application.Quit();
+        audioSource.PlayOneShot(AudioClip);
     }
 
 
@@ -23,6 +29,7 @@ public class Menu : MonoBehaviour
     {
         vkl = !vkl;
         menu_nastroek.SetActive(vkl);
+        audioSource.PlayOneShot(AudioClip);
     }
 
 

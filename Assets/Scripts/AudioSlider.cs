@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AudioSlider : MonoBehaviour
 {
-    [SerializeField] AudioSource m_Source;
+    [SerializeField] AudioSource[] m_Source;
     [SerializeField] Slider slider;
 
     private void Start()
@@ -15,6 +15,7 @@ public class AudioSlider : MonoBehaviour
 
     public void OnValueChanged()
     {
-        m_Source.volume = slider.value;
+        foreach (var i in m_Source)
+            i.volume = slider.value;
     }
 }
