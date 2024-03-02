@@ -16,6 +16,6 @@ public class AudioSlider : MonoBehaviour
     public void OnValueChanged()
     {
         foreach (var i in m_Source)
-            i.volume = slider.value;
+            i.volume = slider.value*1.5f;
     }
 }
