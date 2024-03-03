@@ -6,7 +6,15 @@ public class AudioButton : MonoBehaviour, IPointerEnterHandler // required inter
 {
     public AudioClip AudioClip;
     private AudioSource audioSource;
+    public AudioSource mainAudio;
 
+    private void Update()
+    {
+        if (audioSource != null)
+        {
+            audioSource.volume= mainAudio.volume;
+        }
+    }
     //Do this when the cursor enters the rect area of this selectable UI object.
     public void OnPointerEnter(PointerEventData eventData)
     {
