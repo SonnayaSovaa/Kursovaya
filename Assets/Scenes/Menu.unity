@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21474433, g: 0.2941674, b: 0.47662735, a: 1}
+  m_IndirectSpecularColor: {r: 0.22344324, g: 0.31106362, b: 0.49711007, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2341,6 +2341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioClip: {fileID: 8300000, guid: 98d18dead08df4e4f8e7d053a44cd644, type: 3}
+  mainAudio: {fileID: 0}
 --- !u!1 &315805800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3709,6 +3710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioClip: {fileID: 8300000, guid: 98d18dead08df4e4f8e7d053a44cd644, type: 3}
+  mainAudio: {fileID: 0}
 --- !u!1 &575864128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,6 +4903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioClip: {fileID: 8300000, guid: 98d18dead08df4e4f8e7d053a44cd644, type: 3}
+  mainAudio: {fileID: 0}
 --- !u!1 &817381014
 GameObject:
   m_ObjectHideFlags: 0
@@ -5266,6 +5269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioClip: {fileID: 8300000, guid: 98d18dead08df4e4f8e7d053a44cd644, type: 3}
+  mainAudio: {fileID: 0}
 --- !u!1 &908534304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5408,7 +5412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &925792488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6035,7 +6039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1112765181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9372,6 +9376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioClip: {fileID: 8300000, guid: 98d18dead08df4e4f8e7d053a44cd644, type: 3}
+  mainAudio: {fileID: 0}
 --- !u!1 &1816857868
 GameObject:
   m_ObjectHideFlags: 0
