@@ -6,8 +6,11 @@ public class ForButton : MonoBehaviour
 {
     public GameObject igrok;
     public GameObject button;
-    //public GameObject stats;
-    //public GameObject inv;
+    public GameObject nastr;
+    public GameObject inv;
+
+    private bool SetNastr = false;
+    private bool SetInv = false;
 
 
     private void Update()
@@ -28,8 +31,11 @@ public class ForButton : MonoBehaviour
 
     public void OnClick()
     {
-        //stats.SetActive(true);
-        //inv.SetActive(true);
+        SetInv = !SetInv;
+        SetNastr = !SetNastr;
+
+        nastr.SetActive(SetNastr);
+        inv.SetActive(SetInv);
         Debug.Log("WORKING!!");
     }
 
