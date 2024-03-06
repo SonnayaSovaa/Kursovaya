@@ -9,11 +9,15 @@ public class ForButton : MonoBehaviour
     //public GameObject stats;
     //public GameObject inv;
 
+
     private void Update()
     {
+        //Debug.Log("NO");
 
-        if (igrok.transform.eulerAngles.x >=12)
+        if (32<igrok.transform.eulerAngles.x && 90> igrok.transform.eulerAngles.x)
+
         {
+            //Debug.Log("YES");
             button.SetActive(true);
         }
         else
