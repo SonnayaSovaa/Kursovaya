@@ -17,7 +17,7 @@ public class ForButton : MonoBehaviour
     {
         //Debug.Log("NO");
 
-        if (32<igrok.transform.eulerAngles.x && 90> igrok.transform.eulerAngles.x)
+        if (55<igrok.transform.eulerAngles.x && 90> igrok.transform.eulerAngles.x)
 
         {
             //Debug.Log("YES");
