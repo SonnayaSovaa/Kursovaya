@@ -20,8 +20,9 @@ public class Menu : MonoBehaviour
 
     public void Vihod()
     {
-        Application.Quit();
         audioSource.PlayOneShot(AudioClip);
+        Application.Quit();
+        
     }
 
 
