@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevDif : MonoBehaviour
+public class SettingsData : MonoBehaviour
 {
     public GameObject Lev1;
     public GameObject Lev2;
     public GameObject Lev3;
-
+    
     private void Awake()
     {
         int lev = GetLev("LevelDif");
-
         switch (lev)
         {
             case 0:
@@ -31,4 +30,8 @@ public class LevDif : MonoBehaviour
         return PlayerPrefs.GetInt(KeyName);
     }
     
+    public float GetSound(string KeyName)
+    {
+        return PlayerPrefs.GetFloat(KeyName);
+    }
 }

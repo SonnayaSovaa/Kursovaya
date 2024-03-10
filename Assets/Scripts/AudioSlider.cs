@@ -17,5 +17,11 @@ public class AudioSlider : MonoBehaviour
     {
         foreach (var i in m_Source)
             i.volume = slider.value;
+        SetFloat("SoundValue",slider.value);
+            
+    }
+    public void SetFloat(string KeyName, float Value)
+    {
+        PlayerPrefs.SetFloat(KeyName, Value);
     }
 }
