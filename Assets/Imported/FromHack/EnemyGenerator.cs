@@ -15,7 +15,7 @@ namespace Shooter
 
 		[SerializeField]
 		private Enemy[] _enemiesPrefabs;
-
+		 
 		[SerializeField]
 		private CharacterController _character;
 

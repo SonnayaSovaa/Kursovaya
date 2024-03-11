@@ -20,7 +20,7 @@ namespace Shooter
 		private int _damage;
 
 		[SerializeField]
-		private float _attackInterval;
+		private float _attackInterval; 
 		
 		public void StartHunting(CharacterController character) => StartCoroutine(StartHuntingEnumerator(character));
 		

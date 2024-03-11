@@ -5226,7 +5226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &983933209
 Transform:
   m_ObjectHideFlags: 0
@@ -5980,7 +5980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1131096254
 Transform:
   m_ObjectHideFlags: 0
@@ -6008,12 +6008,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1450fa03613297f498fb9d2a8299e2e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 1
+  _interval: 0
   _enemiesPrefabs:
-  - {fileID: 7449937704148101264, guid: 095f3aa3732ffea4dab0fd98b070b369, type: 3}
+  - {fileID: 3460641342658108453, guid: 095f3aa3732ffea4dab0fd98b070b369, type: 3}
   _character: {fileID: 544583969}
   _radius: 10
-  _minMaxSide: {x: -50, y: 100}
+  _minMaxSide: {x: -100, y: 100}
 --- !u!1 &1136776366
 GameObject:
   m_ObjectHideFlags: 0
@@ -7953,7 +7953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1382521216
 Transform:
   m_ObjectHideFlags: 0
