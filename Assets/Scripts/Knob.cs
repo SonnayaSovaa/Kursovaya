@@ -8,7 +8,7 @@ public class Knob : MonoBehaviour
     {
         for (int i = 0; i < 100; i++)
         {
-            this.gameObject.transform.position += new Vector3(0, -0.005f, 0);
+            this.gameObject.transform.position += new Vector3(0, -0.001f, 0);
         }
         
     }
