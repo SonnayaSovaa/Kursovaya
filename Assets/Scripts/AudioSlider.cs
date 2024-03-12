@@ -10,7 +10,7 @@ public class AudioSlider : MonoBehaviour
 
     private void Start()
     {
-        slider.value = 0.5f;
+        slider.value = 0.25f;
     }
 
     public void OnValueChanged()
