@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using Unity.XR.CoreUtils;
 using Unity.VisualScripting;
+//using Unity.XR.Oculus;
+//using Unity.XR.Oculus.Input;
 
 public class Weap_Desc : MonoBehaviour
 {
@@ -22,6 +24,7 @@ public class Weap_Desc : MonoBehaviour
             {
                 What(int.Parse(i.tag));
                 break;
+
             }
         }
 
