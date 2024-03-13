@@ -10,6 +10,7 @@ namespace Shooter
 {
     public class CharacterController : Unit
     {
+
         [SerializeField]
         [Range(0f, 10f)]
         private float _speed = 1f;
