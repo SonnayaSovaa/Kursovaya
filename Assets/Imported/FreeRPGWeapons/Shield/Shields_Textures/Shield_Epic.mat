@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Spear1H_Epic2
+  m_Name: Shield_Epic
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 2
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: ac3e333cfe088e44fb016ca8c6244c97, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6f02f54f9b28f8b4bbeaa9653b870969, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -36,15 +36,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: a2714b3a91cb8384ca54a50e82d1326b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1c3643d389d22734cb6537a0a3fe58d1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6ba04988f8e2abd40bec8f463595e006, type: 3}
+        m_Texture: {fileID: 2800000, guid: bfec31178c595e44b9f4eea3ca67051b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: de7059300cc100f4498e7a6b26b8279a, type: 3}
+        m_Texture: {fileID: 2800000, guid: d0dd376ba73c0d1478e00e3b64a8ba8a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -74,4 +74,4 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 1, b: 0.07058824, a: 1}
+    - _EmissionColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
