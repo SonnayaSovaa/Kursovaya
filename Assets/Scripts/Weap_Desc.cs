@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.XR.CoreUtils;
-using Unity.VisualScripting;
-using UnityEditor.Presets;
 //using Unity.XR.Oculus;
 //using Unity.XR.Oculus.Input;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -15,41 +13,36 @@ public class Weap_Desc : MonoBehaviour
     [SerializeField] TMP_Text rank;
     [SerializeField] TMP_Text uron;
 
-    public static int real_uron;
+    int real_uron;
+    public GameObject currWeap;
 
     public GameObject[] weapons;
+   
 
-    RaycastHit hit; 
+    public static bool weap=false;
 
-    int hover_tag;
-
-    bool weap=false;
-
-    public void ON_Hover()
+    private void Start()
     {
-        if (weap)
-        {
-            hover_tag = int.Parse(hit.collider.tag);
-            if (hover_tag >= 0 && hover_tag < 37)
-                (weapons[hover_tag].GetComponent("XR Grab Interactable") as MonoBehaviour).enabled = false;
-        }
-    }
-
-    public void OUT_Hover()
-    {
-        if (weap)
-            (weapons[hover_tag].GetComponent("XR Grab Interactable") as MonoBehaviour).enabled = true;
+       
+        Debug.Log("LEEEN   "+weapons.Length);
     }
 
     
     public void InHand()
     {
-        foreach (var i in weapons)
+        for (int i=0; i<weapons.Length; i++) 
         {
-            if (i.GetNamedChild("[Right Controller] Dynamic Attach") || i.GetNamedChild("[Left Controller] Dynamic Attach"))
+            if (weapons[i].GetNamedChild("[Right Controller] Dynamic Attach") || weapons[i].GetNamedChild("[Left Controller] Dynamic Attach"))
             {
                 weap=true;
-                What(int.Parse(i.tag));
+                What(int.Parse(weapons[i].tag));
+
+                for (int j=0; j<weapons.Length; j++)
+                {
+                    if (i!=j)
+                        (weapons[j].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
+                }
+                
                 break;
 
             }
@@ -63,7 +56,7 @@ public class Weap_Desc : MonoBehaviour
             switch (cur_tag)
             {
                 case 0:
-                    description.text = "��������: ���� ������";
+                    description.text = "ввв";
                     rank.text = "����: 1";
                     uron.text = "����: 20";
                     real_uron = 20;
@@ -95,7 +88,12 @@ public class Weap_Desc : MonoBehaviour
         real_uron = 0;
 
         weap = false;
-    }
+
+        foreach (var j in weapons)
+        {
+            (j.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
+        }
+    } 
 
 
     public void SetInt(string KeyName, int Value)

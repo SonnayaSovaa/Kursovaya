@@ -927,34 +927,10 @@ MonoBehaviour:
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 474535571}
-        m_TargetAssemblyTypeName: Weap_Desc, Assembly-CSharp
-        m_MethodName: ON_Hover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 474535571}
-        m_TargetAssemblyTypeName: Weap_Desc, Assembly-CSharp
-        m_MethodName: OUT_Hover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
@@ -4275,34 +4251,10 @@ MonoBehaviour:
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 474535571}
-        m_TargetAssemblyTypeName: Weap_Desc, Assembly-CSharp
-        m_MethodName: ON_Hover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 474535571}
-        m_TargetAssemblyTypeName: Weap_Desc, Assembly-CSharp
-        m_MethodName: OUT_Hover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
@@ -6986,10 +6938,11 @@ MonoBehaviour:
   description: {fileID: 67583878}
   rank: {fileID: 1300952746}
   uron: {fileID: 1248576899}
+  currWeap: {fileID: 874085733}
   weapons:
+  - {fileID: 842354557}
   - {fileID: 455645236}
   - {fileID: 1627196686}
-  - {fileID: 728300985}
 --- !u!4 &474535572
 Transform:
   m_ObjectHideFlags: 0
@@ -9230,7 +9183,7 @@ Transform:
   m_GameObject: {fileID: 782824462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.57, y: 7.74, z: -8.3}
+  m_LocalPosition: {x: -9.75, y: 7.74, z: -7.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10431,7 +10384,7 @@ Transform:
   m_GameObject: {fileID: 879937931}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.018, y: 0.056, z: -0.35871392}
+  m_LocalPosition: {x: -0.005, y: -0.039, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
