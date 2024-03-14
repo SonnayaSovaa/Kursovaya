@@ -49,22 +49,220 @@ public class Weap_Desc : MonoBehaviour
             switch (cur_tag)
             {
                 case 0:
-                    description.text = "ввв";
-                    rank.text = "����: 1";
-                    uron.text = "����: 20";
-                    real_uron = 20;
+                    description.text = "Описание: Довольно обычная, но корепкая булава.";
+                    rank.text = "Ранг: 1";
+                    uron.text = "Урон: 30";
+                    real_uron = 30;
                     break;
                 case 1:
-                    description.text = "��������: ����";
-                    rank.text = "����: 2";
-                    uron.text = "����: 666";
-                    real_uron = 666;
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
                     break;
                 case 2:
-                    description.text = "��������: �������";
-                    rank.text = "����: 6";
-                    uron.text = "����: 12398";
-                    real_uron = 12398;
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 3:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 4:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 5:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 6:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 7:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 8:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 9:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 10:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 11:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 12:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 13:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 14:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 15:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 16:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 17:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 18:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 19:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 21:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 22:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 23:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 24:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 25:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 26:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 27:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 28:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 29:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 30:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 31:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 32:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 33:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 34:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 35:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
+                    break;
+                case 36:
+                    description.text = "Описание: ";
+                    rank.text = "Ранг: ";
+                    uron.text = "Урон: ";
+                    real_uron = 6;
                     break;
             }
 
@@ -75,9 +273,9 @@ public class Weap_Desc : MonoBehaviour
 
     public void OutHand()
     {
-        description.text = "��������: ���� ���� ���";
-        rank.text = "����: 0";
-        uron.text = "����: ����� ����? � ���� �����";
+        description.text = "Описание: Что ж, это ваши руки.";
+        rank.text = "Ранг: 0";
+        uron.text = "Урон: 0";
         real_uron = 0;
 
         weap = false;
