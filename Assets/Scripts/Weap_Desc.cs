@@ -4,8 +4,10 @@ using UnityEngine;
 using TMPro;
 using Unity.XR.CoreUtils;
 using Unity.VisualScripting;
+using UnityEditor.Presets;
 //using Unity.XR.Oculus;
 //using Unity.XR.Oculus.Input;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Weap_Desc : MonoBehaviour
 {
@@ -16,6 +18,29 @@ public class Weap_Desc : MonoBehaviour
     public static int real_uron;
 
     public GameObject[] weapons;
+
+    RaycastHit hit; 
+
+    int hover_tag;
+
+    bool weap=false;
+
+    public void ON_Hover()
+    {
+        if (weap)
+        {
+            hover_tag = int.Parse(hit.collider.tag);
+            if (hover_tag >= 0 && hover_tag < 37)
+                (weapons[hover_tag].GetComponent("XR Grab Interactable") as MonoBehaviour).enabled = false;
+        }
+    }
+
+    public void OUT_Hover()
+    {
+        if (weap)
+            (weapons[hover_tag].GetComponent("XR Grab Interactable") as MonoBehaviour).enabled = true;
+    }
+
     
     public void InHand()
     {
@@ -23,6 +48,7 @@ public class Weap_Desc : MonoBehaviour
         {
             if (i.GetNamedChild("[Right Controller] Dynamic Attach") || i.GetNamedChild("[Left Controller] Dynamic Attach"))
             {
+                weap=true;
                 What(int.Parse(i.tag));
                 break;
 
@@ -67,6 +93,8 @@ public class Weap_Desc : MonoBehaviour
         rank.text = "����: 0";
         uron.text = "����: ����� ����? � ���� �����";
         real_uron = 0;
+
+        weap = false;
     }
 
 
