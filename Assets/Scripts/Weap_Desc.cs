@@ -14,18 +14,11 @@ public class Weap_Desc : MonoBehaviour
     [SerializeField] TMP_Text uron;
 
     int real_uron;
-    public GameObject currWeap;
 
     public GameObject[] weapons;
    
 
     public static bool weap=false;
-
-    private void Start()
-    {
-       
-        Debug.Log("LEEEN   "+weapons.Length);
-    }
 
     
     public void InHand()

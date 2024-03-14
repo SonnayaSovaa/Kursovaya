@@ -6938,11 +6938,44 @@ MonoBehaviour:
   description: {fileID: 67583878}
   rank: {fileID: 1300952746}
   uron: {fileID: 1248576899}
-  currWeap: {fileID: 874085733}
   weapons:
   - {fileID: 842354557}
   - {fileID: 455645236}
   - {fileID: 1627196686}
+  - {fileID: 728300985}
+  - {fileID: 1858602018}
+  - {fileID: 494166937}
+  - {fileID: 1572773178}
+  - {fileID: 955450522}
+  - {fileID: 1115089071}
+  - {fileID: 1948605859}
+  - {fileID: 48320928}
+  - {fileID: 1212787516}
+  - {fileID: 1349031996}
+  - {fileID: 1013154984}
+  - {fileID: 37040232}
+  - {fileID: 2023955597}
+  - {fileID: 1702000669}
+  - {fileID: 983668876}
+  - {fileID: 809795026}
+  - {fileID: 1917573945}
+  - {fileID: 267149682}
+  - {fileID: 371311388}
+  - {fileID: 438395521}
+  - {fileID: 1475053181}
+  - {fileID: 1916747778}
+  - {fileID: 517374762}
+  - {fileID: 374045058}
+  - {fileID: 1241354631}
+  - {fileID: 1849792195}
+  - {fileID: 994968088}
+  - {fileID: 908697829}
+  - {fileID: 931467803}
+  - {fileID: 144977777}
+  - {fileID: 514397565}
+  - {fileID: 395768800}
+  - {fileID: 326744549}
+  - {fileID: 404811424}
 --- !u!4 &474535572
 Transform:
   m_ObjectHideFlags: 0
