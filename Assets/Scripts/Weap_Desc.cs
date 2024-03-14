@@ -16,6 +16,7 @@ public class Weap_Desc : MonoBehaviour
     public static int real_uron;
 
     public GameObject[] weapons;
+    
     public void InHand()
     {
         foreach (var i in weapons)
@@ -36,21 +37,21 @@ public class Weap_Desc : MonoBehaviour
             switch (cur_tag)
             {
                 case 0:
-                    description.text = "Описание: Ноль вообще";
-                    rank.text = "Ранг: 1";
-                    uron.text = "Урон: 20";
+                    description.text = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
+                    rank.text = "пїЅпїЅпїЅпїЅ: 1";
+                    uron.text = "пїЅпїЅпїЅпїЅ: 20";
                     real_uron = 20;
                     break;
                 case 1:
-                    description.text = "Описание: Адын";
-                    rank.text = "Ранг: 2";
-                    uron.text = "Урон: 666";
+                    description.text = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ";
+                    rank.text = "пїЅпїЅпїЅпїЅ: 2";
+                    uron.text = "пїЅпїЅпїЅпїЅ: 666";
                     real_uron = 666;
                     break;
                 case 2:
-                    description.text = "Описание: ДВААААА";
-                    rank.text = "Ранг: 6";
-                    uron.text = "Урон: 12398";
+                    description.text = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+                    rank.text = "пїЅпїЅпїЅпїЅ: 6";
+                    uron.text = "пїЅпїЅпїЅпїЅ: 12398";
                     real_uron = 12398;
                     break;
             }
@@ -62,9 +63,9 @@ public class Weap_Desc : MonoBehaviour
 
     public void OutHand()
     {
-        description.text = "Описание: твои руки лол";
-        rank.text = "Ранг: 0";
-        uron.text = "Урон: какой урон? у тебя лапки";
+        description.text = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ";
+        rank.text = "пїЅпїЅпїЅпїЅ: 0";
+        uron.text = "пїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ? пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
         real_uron = 0;
     }
 
