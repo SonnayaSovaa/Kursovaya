@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f13e87d5-1d3a-45d4-9e2b-e966c808d71c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Weapons.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Weapons.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/отчёт4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/отчёт4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weap_Desc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weap_Desc.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NavigationSomething.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NavigationSomething.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +112,10 @@
       <workItem from="1710423539393" duration="229000" />
       <workItem from="1710423792462" duration="177000" />
       <workItem from="1710424027742" duration="611000" />
+      <workItem from="1710507981963" duration="461000" />
+      <workItem from="1710522496822" duration="24000" />
+      <workItem from="1710522582914" duration="16000" />
+      <workItem from="1710522653446" duration="1762000" />
     </task>
     <servers />
   </component>
