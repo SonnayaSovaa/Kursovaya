@@ -29,16 +29,9 @@ public class Weap_Desc : MonoBehaviour
             {
                 weap=true;
                 What(int.Parse(weapons[i].tag));
-
-                for (int j=0; j<weapons.Length; j++)
-                {
-                    if (i!=j)
-                        (weapons[j].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
-                }
-                
-                break;
-
             }
+            else
+                (weapons[i].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
         }
 
 
