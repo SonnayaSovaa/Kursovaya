@@ -25,7 +25,6 @@ namespace Kursovaya
 		[SerializeField]
 		private Vector2 _minMaxSide;
 
-		
 		private IEnumerator Start()
 		{
 			while (true)
