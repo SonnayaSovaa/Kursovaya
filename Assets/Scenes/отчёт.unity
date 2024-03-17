@@ -839,7 +839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 41803711}
-  radius: 1
+  radius: 50
 --- !u!195 &41803713
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 108449215}
-  radius: 1
+  radius: 50
 --- !u!195 &108449217
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1829,7 +1829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 113911368}
-  radius: 1
+  radius: 50
 --- !u!195 &113911373
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2585,7 +2585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 216064373}
-  radius: 1
+  radius: 50
 --- !u!195 &216064375
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3287,7 +3287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 314119503}
-  radius: 1
+  radius: 50
 --- !u!195 &314119505
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5673,7 +5673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 567714234}
-  radius: 1
+  radius: 50
 --- !u!195 &567714236
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8230,7 +8230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 924371993}
-  radius: 1
+  radius: 50
 --- !u!195 &924371995
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8875,7 +8875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 991561476}
-  radius: 1
+  radius: 50
 --- !u!195 &991561481
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10007,7 +10007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 1157088358}
-  radius: 1
+  radius: 50
 --- !u!195 &1157088360
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11676,7 +11676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 1303824964}
-  radius: 1
+  radius: 50
 --- !u!195 &1303824966
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13021,7 +13021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 1453960943}
-  radius: 1
+  radius: 50
 --- !u!195 &1453960945
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14850,7 +14850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 1719843476}
-  radius: 1
+  radius: 50
 --- !u!195 &1719843478
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16761,7 +16761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 1898307263}
-  radius: 1
+  radius: 50
 --- !u!195 &1898307265
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17463,7 +17463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 1399010563}
   enemy: {fileID: 2013249800}
-  radius: 1
+  radius: 50
 --- !u!195 &2013249802
 NavMeshAgent:
   m_ObjectHideFlags: 0
