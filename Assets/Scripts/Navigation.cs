@@ -10,13 +10,15 @@ public class MoveTo : MonoBehaviour
     void Start()
     {
        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        if ((enemy.position-goal.position).magnitude<radius)
-        {
-            agent.destination = goal.position;
-        }
+       Destination();
     }
 
     private void Update()
+    {
+        Destination();
+    }
+
+    private void Destination()
     {
         if ((enemy.position-goal.position).magnitude<radius)
         {
