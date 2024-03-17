@@ -3,20 +3,24 @@ using UnityEngine;
 using System.Collections;
 public class MoveTo : MonoBehaviour
 {
-    // Положение точки назначения
     public Transform goal;
+    public Transform enemy;
+    public float radius;
     private UnityEngine.AI.NavMeshAgent agent;
     void Start()
     {
-        // Получение компонента агента
-        agent
-            = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        // Указаие точки назначения
-        agent.destination = goal.position;
+       agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        if (enemy.position.magnitude<=goal.position.magnitude*radius)
+        {
+            agent.destination = goal.position;
+        }
     }
 
     private void Update()
     {
-        agent.destination = goal.position;
+        if (enemy.position.magnitude<=goal.position.magnitude*radius)
+        {
+            agent.destination = goal.position;
+        }
     }
 }
