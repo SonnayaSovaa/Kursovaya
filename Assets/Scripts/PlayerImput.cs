@@ -13,6 +13,6 @@ public class PlayerImput : MonoBehaviour
         var gripvalue = _gripAction.action.ReadValue<float>();
         var activationvalue = _gripAction.action.ReadValue<float>();
         _animator.SetFloat("Grip",gripvalue);
-        _animator.SetFloat("Tigger",gripvalue);
+        _animator.SetFloat("Trigger",gripvalue);
     }
 }
