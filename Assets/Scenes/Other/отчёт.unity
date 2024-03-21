@@ -6218,7 +6218,6 @@ GameObject:
   - component: {fileID: 604930060}
   - component: {fileID: 604930059}
   - component: {fileID: 604930058}
-  - component: {fileID: 604930057}
   - component: {fileID: 604930056}
   - component: {fileID: 604930055}
   - component: {fileID: 604930054}
@@ -6244,7 +6243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 604930054}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 10
   m_EnableStrafe: 0
   m_EnableFly: 0
   m_UseGravity: 1
@@ -6322,36 +6321,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 1.02
+  m_Height: 1
+  m_Radius: 1.65
   m_SlopeLimit: 0
   m_StepOffset: 0
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: -0.86, z: 0}
---- !u!136 &604930057
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604930051}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2.0105104
-  m_Direction: 1
-  m_Center: {x: 0, y: -1.1260233, z: 0}
 --- !u!114 &604930058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6413,7 +6389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 604930054}
-  m_TurnSpeed: 80
+  m_TurnSpeed: 60
   m_LeftHandTurnAction:
     m_UseReference: 0
     m_Action:
