@@ -10078,7 +10078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &782824463
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17627,12 +17627,12 @@ GameObject:
   - component: {fileID: 1394528017}
   - component: {fileID: 1394528016}
   m_Layer: 0
-  m_Name: XR Origin (XR Rig) (1)
+  m_Name: XR Origin (XR Rig) ruki
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1394528016
 MonoBehaviour:
   m_ObjectHideFlags: 0
