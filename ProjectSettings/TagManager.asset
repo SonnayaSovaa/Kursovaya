@@ -41,6 +41,11 @@ TagManager:
   - 34
   - 35
   - 36
+  - 38
+  - Svoboden
+  - Zanyat
+  - Left
+  - Right
   layers:
   - Default
   - TransparentFX
