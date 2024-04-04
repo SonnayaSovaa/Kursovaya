@@ -114,7 +114,7 @@ AnimatorStateMachine:
     m_Position: {x: 274.51172, y: 92.81525, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1311066854235260609}
-    m_Position: {x: 520, y: 100, z: 0}
+    m_Position: {x: 570, y: 100, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -160,7 +160,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blend Tree
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -7577348420355894465}
@@ -173,7 +173,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 533829996761983109}
+  m_Motion: {fileID: 7400000, guid: 7523f2875e1013447b2f10b5e547f493, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -362,7 +362,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blend Tree
-  m_Speed: 1
+  m_Speed: 5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4312861731671301146}
@@ -375,7 +375,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -7143017048803725108}
+  m_Motion: {fileID: 7400000, guid: 7523f2875e1013447b2f10b5e547f493, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

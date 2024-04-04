@@ -11,8 +11,8 @@ public class PlayerImput : MonoBehaviour
     void Update()
     {
         var gripvalue = _gripAction.action.ReadValue<float>();
-        var activationvalue = _gripAction.action.ReadValue<float>();
+        var activationvalue = _triggerAction.action.ReadValue<float>();
         _animator.SetFloat("Grip",gripvalue);
-        _animator.SetFloat("Trigger",gripvalue);
+        _animator.SetFloat("Trigger", activationvalue);
     }
 }

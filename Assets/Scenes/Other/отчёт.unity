@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 359563885}
-  m_IndirectSpecularColor: {r: 0.22344199, g: 0.31106317, b: 0.49711412, a: 1}
+  m_IndirectSpecularColor: {r: 0.22336951, g: 0.31062904, b: 0.49674284, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7321,6 +7321,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5899059844666006219, guid: 3fead2f01f78c1d49b4e836786c2da8a, type: 3}
+      propertyPath: _gripAction.m_Reference
+      value: 
+      objectReference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 5899059844666006219, guid: 3fead2f01f78c1d49b4e836786c2da8a, type: 3}
+      propertyPath: _triggerAction.m_Reference
+      value: 
+      objectReference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 5998309964195831725, guid: 3fead2f01f78c1d49b4e836786c2da8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -89.9
@@ -7364,6 +7372,10 @@ PrefabInstance:
     - target: {fileID: 6603913820540314914, guid: 3fead2f01f78c1d49b4e836786c2da8a, type: 3}
       propertyPath: m_Name
       value: IGROK (XR) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897512805143808891, guid: 3fead2f01f78c1d49b4e836786c2da8a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
