@@ -2676,7 +2676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 9054958532876459044}
-  m_TurnSpeed: 30
+  m_TurnSpeed: 35
   m_LeftHandTurnAction:
     m_UseReference: 0
     m_Action:
