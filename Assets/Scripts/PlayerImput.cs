@@ -14,5 +14,24 @@ public class PlayerImput : MonoBehaviour
         var activationvalue = _triggerAction.action.ReadValue<float>();
         _animator.SetFloat("Grip",gripvalue);
         _animator.SetFloat("Trigger", activationvalue);
+
+         if(Rayyy.hoverTag==38)
+        {
+            _animator.SetFloat("Grip", gripvalue);
+            Debug.Log("heal");
+        }
+         else
+        {
+            if (Rayyy.hoverTag == 39)
+            {
+                _animator.SetFloat("Grip", gripvalue);
+                Debug.Log("key");
+            }
+            else
+            {
+                _animator.SetFloat("Grip", gripvalue);
+                Debug.Log("weapon");
+            }
+        }
     }
 }

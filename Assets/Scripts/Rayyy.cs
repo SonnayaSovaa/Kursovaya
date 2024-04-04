@@ -24,6 +24,7 @@ public class Rayyy : MonoBehaviour
         if (!(other.tag == "Untagged" || other.tag == "Zanyat" || other.tag == "Svoboden" || other.tag == "MainCamera" || other.tag == "Left" || other.tag == "Right"))
         {
             hoverTag = Convert.ToInt32(other.tag);
+            Debug.Log(hoverTag);
 
             if (hoverTag == 38 && other.isTrigger)
             {
