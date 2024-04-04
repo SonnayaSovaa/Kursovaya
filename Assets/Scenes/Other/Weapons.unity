@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -507,7 +507,6 @@ GameObject:
   - component: {fileID: 42056785}
   - component: {fileID: 42056788}
   - component: {fileID: 42056787}
-  - component: {fileID: 42056786}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -530,27 +529,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 42193087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &42056786
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42056784}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &42056787
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6054,7 +6032,7 @@ Transform:
   m_GameObject: {fileID: 401148566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6877, y: 5.08, z: -4.61}
+  m_LocalPosition: {x: 1.6877, y: 0.3460331, z: -4.61}
   m_LocalScale: {x: 26.520885, y: 1, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10266,15 +10244,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782824462}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.44, y: 1.76, z: -7.91}
+  m_LocalRotation: {x: -0, y: 0.13161527, z: -0, w: 0.9913009}
+  m_LocalPosition: {x: 12.8, y: 1.76, z: -7.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 468682739}
   - {fileID: 1236979814}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 15.126, z: 0}
 --- !u!1 &782937551
 GameObject:
   m_ObjectHideFlags: 0
@@ -10299,13 +10277,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782937551}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 1.313, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404811423}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 90, z: 0}
 --- !u!1 &808198769
 GameObject:
   m_ObjectHideFlags: 0
@@ -10799,7 +10777,7 @@ Transform:
   m_GameObject: {fileID: 810777073}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.632355, y: -3.8000002, z: 6.8117867}
+  m_LocalPosition: {x: 7.632355, y: -3.04, z: 6.8117867}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11401,7 +11379,7 @@ Transform:
   m_GameObject: {fileID: 874085733}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9848027, y: 5.733967, z: -4.8523417}
+  m_LocalPosition: {x: 0.9848027, y: 1, z: -4.8523417}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19078,18 +19056,18 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _activateAction:
-    m_UseReference: 1
+  _triggerAction:
+    m_UseReference: 0
     m_Action:
-      m_Name: Activate
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 4756d787-36b4-495d-aa4b-d1a9eac07fed
+      m_Id: 45e493af-732d-40ce-8be7-aaf59447390a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
 --- !u!95 &1578191966 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 109434732388006827, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
@@ -22033,18 +22011,18 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _activateAction:
-    m_UseReference: 1
+  _triggerAction:
+    m_UseReference: 0
     m_Action:
-      m_Name: Activate
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: e6db0cfe-b671-4c1e-b181-52a9dab760bf
+      m_Id: 4b274762-8c13-409c-8d8c-8cbe9f909641
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
 --- !u!95 &1977829565 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5686134208192617028, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
@@ -22741,7 +22719,6 @@ GameObject:
   - component: {fileID: 2111981865}
   - component: {fileID: 2111981868}
   - component: {fileID: 2111981867}
-  - component: {fileID: 2111981866}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -22764,27 +22741,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 335792671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2111981866
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111981864}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2111981867
 MeshRenderer:
   m_ObjectHideFlags: 0
