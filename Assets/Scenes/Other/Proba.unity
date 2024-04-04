@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6005,8 +6005,7 @@ GameObject:
   - component: {fileID: 1225940178}
   - component: {fileID: 1225940177}
   - component: {fileID: 1225940176}
-  - component: {fileID: 1225940183}
-  - component: {fileID: 1225940184}
+  - component: {fileID: 1225940185}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Left
@@ -6531,7 +6530,7 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
-  m_BlockUIOnInteractableSelection: 1
+  m_BlockUIOnInteractableSelection: 0
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
@@ -6774,7 +6773,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -1636515391019944688, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
---- !u!114 &1225940183
+--- !u!114 &1225940185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6786,31 +6785,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7149ed48606fdd44f9430b9204be2b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightHand: {fileID: 1957814440}
-  R_button: 5
-  leftHand: {fileID: 1156702533}
-  L_button: 5
---- !u!65 &1225940184
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225940174}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.2, z: 33.39618}
-  m_Center: {x: 0, y: 0, z: 16.62}
+  rightHand: {fileID: 1156702533}
+  R_button: 0
+  leftHand: {fileID: 1957814440}
+  L_button: 0
 --- !u!1 &1236351665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ba3c46b693e6ef74282289252c292184, type: 3}
@@ -7777,7 +7755,6 @@ GameObject:
   - component: {fileID: 1798677702}
   - component: {fileID: 1798677701}
   - component: {fileID: 1798677700}
-  - component: {fileID: 1798677706}
   - component: {fileID: 1798677705}
   m_Layer: 0
   m_Name: Right Controller
@@ -8462,27 +8439,6 @@ MonoBehaviour:
   R_button: 5
   leftHand: {fileID: 1156702533}
   L_button: 5
---- !u!65 &1798677706
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798677698}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.2, z: 33.39618}
-  m_Center: {x: 0, y: 0, z: 16.62}
 --- !u!1 &1810200682
 GameObject:
   m_ObjectHideFlags: 0
