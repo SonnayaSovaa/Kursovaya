@@ -7,7 +7,7 @@ public class PlayerImput : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private InputActionProperty _gripAction;
-    [SerializeField] private InputActionProperty _activateAction;
+    [SerializeField] private InputActionProperty _triggerAction;
     void Update()
     {
         var gripvalue = _gripAction.action.ReadValue<float>();
