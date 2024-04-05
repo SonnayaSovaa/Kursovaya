@@ -11618,6 +11618,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3735531470787273397, guid: fc7a6f9228b65084eb849aff5acce085, type: 3}
+      propertyPath: rightHand
+      value: 
+      objectReference: {fileID: 1156702533}
     - target: {fileID: 3845472257763111066, guid: fc7a6f9228b65084eb849aff5acce085, type: 3}
       propertyPath: m_LocalPosition.x
       value: -89.9
@@ -11670,11 +11674,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: Igrok (XR)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2376893651599894403, guid: fc7a6f9228b65084eb849aff5acce085, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1440016321363491219, guid: fc7a6f9228b65084eb849aff5acce085, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5604730424176564654}
   m_SourcePrefab: {fileID: 100100000, guid: fc7a6f9228b65084eb849aff5acce085, type: 3}
+--- !u!1 &5604730424176564653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1440016321363491219, guid: fc7a6f9228b65084eb849aff5acce085, type: 3}
+  m_PrefabInstance: {fileID: 5604730424176564652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5604730424176564654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5604730424176564653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae26e19cd956134bbdf3c6f65bf393a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UpdateTrackingType: 0
+  m_EnableInputTracking: 1
+  m_EnableInputActions: 1
+  m_ModelPrefab: {fileID: 0}
+  m_ModelParent: {fileID: 0}
+  m_Model: {fileID: 0}
+  m_AnimateModel: 0
+  m_ModelSelectTransition: 
+  m_ModelDeSelectTransition: 
+  m_ControllerNode: 5
+  m_SelectUsage: 3
+  m_ActivateUsage: 2
+  m_UIPressUsage: 2
+  m_AxisToPressThreshold: 0.1
+  m_RotateAnchorLeft: 16
+  m_RotateAnchorRight: 17
+  m_MoveObjectIn: 14
+  m_MoveObjectOut: 15
+  m_DirectionalAnchorRotation: 1
+  m_PoseProvider: {fileID: 0}
 --- !u!1 &5680486695313000153
 GameObject:
   m_ObjectHideFlags: 0
