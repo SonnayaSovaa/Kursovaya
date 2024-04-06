@@ -781,10 +781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7149ed48606fdd44f9430b9204be2b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightHand: {fileID: 0}
-  R_button: 4
-  leftHand: {fileID: 0}
-  L_button: 0
+  controller_L: {fileID: 0}
+  controller_R: {fileID: 0}
 --- !u!1 &44618914953623770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,10 +1886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7149ed48606fdd44f9430b9204be2b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightHand: {fileID: 0}
-  R_button: 0
-  leftHand: {fileID: 0}
-  L_button: 0
+  controller_L: {fileID: 0}
+  controller_R: {fileID: 0}
 --- !u!1 &1489476929979930460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,7 +2011,7 @@ Transform:
   m_GameObject: {fileID: 1726581123465022334}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.083}
+  m_LocalPosition: {x: 0.0181, y: 0.0314, z: -0.0012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2077,7 +2073,7 @@ MonoBehaviour:
         m_Action: Grip
         m_Flags: 0
       m_Flags: 0
-    m_Reference: {fileID: -2316871021734517203, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   _triggerAction:
     m_UseReference: 1
     m_Action:
@@ -2089,7 +2085,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 7702703124044438269, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1925876112612228281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,7 +3714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &19057620241796088
 Transform:
   m_ObjectHideFlags: 0
@@ -3728,7 +3724,7 @@ Transform:
   m_GameObject: {fileID: 6912097979471287132}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0829988}
+  m_LocalPosition: {x: -0.0181, y: 0.0314, z: 0}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
