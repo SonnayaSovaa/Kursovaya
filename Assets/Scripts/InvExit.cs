@@ -1,14 +1,9 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Unity.XR;
-using UnityEngine.XR.OpenXR.Features.Interactions;
-using Unity.XR.Oculus.Input;
 using UnityEngine.XR.Interaction.Toolkit;
-using Unity.XR.OpenVR;
 
-public class Rayyy : MonoBehaviour
+
+public class InvExit: MonoBehaviour
 {
 
     public ActionBasedController controller_L;
@@ -23,16 +18,19 @@ public class Rayyy : MonoBehaviour
             {
 
                 Debug.Log("trig");
-               
 
                 GameObject currObj = other.gameObject;
-                currObj.transform.parent = null;
-
+                //(currObj.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
                 other.isTrigger = false;
-
+                
                 Rigidbody rigidbody = currObj.GetComponent<Rigidbody>();
                 rigidbody.useGravity = true;
+                currObj.transform.parent = null;
+
                 
+
+
+
             }
         }
 
