@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f13e87d5-1d3a-45d4-9e2b-e966c808d71c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Other/отчёт.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Other/отчёт.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerImput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerImput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/anims_hands/arms.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anims_hands/arms.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/anims_hands/handshandmade/grabKey.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anims_hands/handshandmade/grabKey.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/anims_hands/handshandmade/grabhil.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anims_hands/handshandmade/grabhil.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/All_Prefabs/PlayersPrefab/Igrok (XR) 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/All_Prefabs/PlayersPrefab/Igrok (XR) 1.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
