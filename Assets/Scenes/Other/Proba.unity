@@ -698,7 +698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.17, y: 0.27}
+  m_AnchoredPosition: {x: 0.17, y: 0.38}
   m_SizeDelta: {x: 1.1279, y: 0.2669}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292502509
@@ -2475,8 +2475,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620119577}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.50900006}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.004999876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2486,11 +2486,11 @@ RectTransform:
   - {fileID: 935113430}
   - {fileID: 527063664}
   - {fileID: 1810200683}
-  m_Father: {fileID: 1209537004}
+  m_Father: {fileID: 2026684098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.8655, y: 0.29299974}
+  m_AnchoredPosition: {x: 0.039499998, y: -0.06700027}
   m_SizeDelta: {x: 18.635002, y: 18.292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &691843306
@@ -5379,7 +5379,6 @@ RectTransform:
   - {fileID: 1943080133}
   - {fileID: 2026684098}
   - {fileID: 1917902391}
-  - {fileID: 620119578}
   m_Father: {fileID: 4059545624306592628}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -8393,6 +8392,7 @@ RectTransform:
   - {fileID: 1080970214}
   - {fileID: 1284681057}
   - {fileID: 2030464987}
+  - {fileID: 620119578}
   m_Father: {fileID: 1209537004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -10229,7 +10229,7 @@ GameObject:
   - component: {fileID: 7389072541274706870}
   - component: {fileID: 1192585080396566762}
   m_Layer: 3
-  m_Name: Igrok (XR)
+  m_Name: "Igrok \u0421 \u0418\u041D\u0412\u0415\u041D\u0422\u0410\u0420\u0401\u041C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
