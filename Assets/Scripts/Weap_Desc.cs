@@ -24,7 +24,7 @@ public class Weap_Desc : MonoBehaviour
 
     public void InHand()
     {
-        if (Rayyy.hoverTag<37)
+        if (TagDetecter.hoverTag<37)
         {
             for (int i = 0; i < weapons.Length; i++)
             {

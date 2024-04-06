@@ -15,22 +15,22 @@ public class PlayerImput : MonoBehaviour
         _animator.SetFloat("Grip",gripvalue);
         _animator.SetFloat("Trigger", activationvalue);
 
-         if(Rayyy.hoverTag==38)
+         if(TagDetecter.hoverTag==38)
         {
             _animator.SetFloat("Grip", gripvalue);
-            Debug.Log("heal");
+            //Debug.Log("heal");
         }
          else
         {
-            if (Rayyy.hoverTag == 39)
+            if (TagDetecter.hoverTag == 39)
             {
                 _animator.SetFloat("Grip", gripvalue);
-                Debug.Log("key");
+                //Debug.Log("key");
             }
             else
             {
                 _animator.SetFloat("Grip", gripvalue);
-                Debug.Log("weapon");
+                //Debug.Log("weapon");
             }
         }
     }

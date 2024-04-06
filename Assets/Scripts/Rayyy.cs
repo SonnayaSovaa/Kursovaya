@@ -10,47 +10,34 @@ using Unity.XR.OpenVR;
 
 public class Rayyy : MonoBehaviour
 {
-    public static int hoverTag;
 
-    public XRController rightHand;
-    public InputHelpers.Button R_button;
+    public ActionBasedController controller_L;
+    public ActionBasedController controller_R;
 
-    public XRController leftHand;
-    public InputHelpers.Button L_button;
-
-
-    public void OnTriggerEnter(Collider other)
-   {
-        if (!(other.tag == "Untagged" || other.tag == "Zanyat" || other.tag == "Svoboden" || other.tag == "MainCamera" || other.tag == "Left" || other.tag == "Right"))
+    public void OnTriggerStay(Collider other)
+    {
+        if (TagDetecter.hoverTag == 38 && other.isTrigger)
         {
-            hoverTag = Convert.ToInt32(other.tag);
-            Debug.Log(hoverTag);
 
-            if (hoverTag == 38 && other.isTrigger)
+            if ((this.gameObject.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() > 0) || (this.gameObject.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() > 0))
             {
-                bool R_pressed;
-                rightHand.inputDevice.IsPressed(R_button, out R_pressed);
 
-                bool L_pressed;
-                leftHand.inputDevice.IsPressed(L_button, out L_pressed);
+                Debug.Log("trig");
+               
 
-                Collider collider = this.GetComponent<Collider>();
-                if ((collider.tag == "Left" && L_pressed) || (collider.tag == "Right" && R_pressed))
-                {
+                GameObject currObj = other.gameObject;
+                currObj.transform.parent = null;
 
-                    GameObject currObj = other.gameObject;
-                    currObj.transform.parent = null;
+                other.isTrigger = false;
 
-                    other.isTrigger = false;
-
-                    Rigidbody rigidbody = currObj.GetComponent<Rigidbody>();
-                    rigidbody.useGravity = true;
-
-                }
+                Rigidbody rigidbody = currObj.GetComponent<Rigidbody>();
+                rigidbody.useGravity = true;
+                
             }
-           
         }
+
     }
+}
 
  
-}
+

@@ -28,6 +28,7 @@ public class Inventory : MonoBehaviour
                     Rigidbody rigidbody = currObj.GetComponent<Rigidbody>();
                     rigidbody.useGravity = false;
                     this.tag = "Zanyat";
+
                 }
                 
             }
