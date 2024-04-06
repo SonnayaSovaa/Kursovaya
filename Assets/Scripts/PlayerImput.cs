@@ -15,13 +15,14 @@ public class PlayerImput : MonoBehaviour
         _animator.SetFloat("Grip",gripvalue);
         _animator.SetFloat("Trigger", activationvalue);
 
-         if(TagDetecter.hoverTag==38)
+        /* if(TagDetecter.hoverTag==38)
         {
-            _animator.SetFloat("Grip", gripvalue);
+            _animator.SetBool("Hill", true);
             //Debug.Log("heal");
         }
-         else
+        else
         {
+            _animator.SetBool("Hill", false);
             if (TagDetecter.hoverTag == 39)
             {
                 _animator.SetFloat("Grip", gripvalue);
@@ -32,6 +33,6 @@ public class PlayerImput : MonoBehaviour
                 _animator.SetFloat("Grip", gripvalue);
                 //Debug.Log("weapon");
             }
-        }
+        }*/
     }
 }
