@@ -14,7 +14,7 @@ public class InvExit: MonoBehaviour
         if (TagDetecter.hoverTag == 38 && other.isTrigger)
         {
 
-            if ((this.gameObject.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() > 0) || (this.gameObject.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() > 0))
+            if ((this.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() > 0) || (this.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() > 0))
             {
 
                 Debug.Log("trig");
