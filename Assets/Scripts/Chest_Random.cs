@@ -33,18 +33,18 @@ public class Chest_Random : MonoBehaviour
             w.transform.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
 
 
-
-            int Hrand = randomaizer(used, heal.Length);
+            
+            int Hrand = randomaizer("", heal.Length);
 
             Debug.Log("used " + used);
 
-            GameObject h = Instantiate(weapons[Hrand], che.transform);
+            GameObject h = Instantiate(heal[Hrand], che.transform);
 
             h.transform.parent = che.transform;
             h.transform.position = che.transform.position;
             h.transform.position += new Vector3(0, 0.5f, 0);
             h.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-
+            
         }
 
 
