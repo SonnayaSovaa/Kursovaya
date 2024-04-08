@@ -781,8 +781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7149ed48606fdd44f9430b9204be2b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller_L: {fileID: 0}
-  controller_R: {fileID: 0}
+  controller_L: {fileID: 5085098635324422751}
+  controller_R: {fileID: 2376893651599894403}
 --- !u!1 &44618914953623770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,8 +1886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7149ed48606fdd44f9430b9204be2b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller_L: {fileID: 0}
-  controller_R: {fileID: 0}
+  controller_L: {fileID: 5085098635324422751}
+  controller_R: {fileID: 2376893651599894403}
 --- !u!1 &1489476929979930460
 GameObject:
   m_ObjectHideFlags: 0
