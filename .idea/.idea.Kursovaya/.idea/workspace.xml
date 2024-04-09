@@ -8,8 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/All_Prefabs/PlayersPrefab/Igrok (XR) 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/All_Prefabs/PlayersPrefab/Igrok (XR) 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Other/отчёт.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Other/отчёт.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerImput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerImput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ForHandsAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ForHandsAnimation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/anims_hands/arms.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anims_hands/arms.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/anims_hands/handshandmade/WeponGrip.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anims_hands/handshandmade/WeponGrip.anim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +134,8 @@
       <workItem from="1711797080454" duration="2688000" />
       <workItem from="1712225318756" duration="140000" />
       <workItem from="1712261187308" duration="85000" />
-      <workItem from="1712507835645" duration="8515000" />
+      <workItem from="1712507835645" duration="9108000" />
+      <workItem from="1712581907430" duration="1151000" />
     </task>
     <servers />
   </component>

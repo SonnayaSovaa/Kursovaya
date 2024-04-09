@@ -27,6 +27,8 @@ public class PlayerImput : MonoBehaviour
             other.tag.Contains("9") || other.tag.Contains("0"))
         {
             flag = false;
+            _animator.SetFloat("Grip", 0);
+            _animator.SetFloat("Trigger", 0);
             int tag = Convert.ToInt32(other.tag);
             switch (tag)
             {
