@@ -554,10 +554,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -824,7 +824,7 @@ GameObject:
   - component: {fileID: 274782929}
   - component: {fileID: 274782934}
   - component: {fileID: 274782933}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1474,6 +1474,10 @@ PrefabInstance:
       value: SM_Apple_V1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1be5ba848cd36c54b8df1063362f41ff, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1be5ba848cd36c54b8df1063362f41ff, type: 3}
       propertyPath: m_TagString
       value: 38
       objectReference: {fileID: 0}
@@ -2065,10 +2069,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -2586,10 +2590,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1536
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 511
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -2766,10 +2770,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -2851,7 +2855,7 @@ GameObject:
   - component: {fileID: 565156046}
   - component: {fileID: 565156051}
   - component: {fileID: 565156050}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3138,7 +3142,7 @@ GameObject:
   - component: {fileID: 587216821}
   - component: {fileID: 587216822}
   - component: {fileID: 587216823}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: "\u043F\u0430\u043B\u043A\u0430-\u0445\u0432\u0430\u0442\u0430\u043B\u043A\u0430"
   m_TagString: 0
   m_Icon: {fileID: 0}
@@ -3847,7 +3851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &715976322
 Transform:
   m_ObjectHideFlags: 0
@@ -3916,10 +3920,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -4244,7 +4248,7 @@ GameObject:
   - component: {fileID: 762477982}
   - component: {fileID: 762477987}
   - component: {fileID: 762477986}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4531,7 +4535,7 @@ GameObject:
   - component: {fileID: 791925105}
   - component: {fileID: 791925104}
   - component: {fileID: 791925103}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: "\u043F\u0430\u043B\u043A\u0430-\u0445\u0432\u0430\u0442\u0430\u043B\u043A\u0430
     (1)"
   m_TagString: 27
@@ -4903,6 +4907,10 @@ PrefabInstance:
     - target: {fileID: 5555456486580390073, guid: 72f7444c56ccde148b8782f00ba0f930, type: 3}
       propertyPath: m_Name
       value: SM_Apple_V1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555456486580390073, guid: 72f7444c56ccde148b8782f00ba0f930, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5447,10 +5455,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1536
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 511
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -5717,10 +5725,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1536
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 511
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -5920,8 +5928,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011218302}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.316, y: 0.311, z: -0.49}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.31599993, y: 0.31099993, z: -0.49000058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5937,10 +5945,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -6676,6 +6684,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1be5ba848cd36c54b8df1063362f41ff, type: 3}
       propertyPath: m_Name
       value: SM_Apple_V1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1be5ba848cd36c54b8df1063362f41ff, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1be5ba848cd36c54b8df1063362f41ff, type: 3}
       propertyPath: m_TagString
@@ -8217,10 +8229,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -8586,10 +8598,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -8671,7 +8683,7 @@ GameObject:
   - component: {fileID: 1437799389}
   - component: {fileID: 1437799394}
   - component: {fileID: 1437799393}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9032,7 +9044,7 @@ GameObject:
   - component: {fileID: 1453021539}
   - component: {fileID: 1453021544}
   - component: {fileID: 1453021543}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9347,10 +9359,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -9845,7 +9857,7 @@ GameObject:
   - component: {fileID: 1625494844}
   - component: {fileID: 1625494849}
   - component: {fileID: 1625494848}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11197,10 +11209,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1536
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 511
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -11387,7 +11399,7 @@ GameObject:
   - component: {fileID: 1817144065}
   - component: {fileID: 1817144070}
   - component: {fileID: 1817144069}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11876,7 +11888,7 @@ GameObject:
   - component: {fileID: 1907987141}
   - component: {fileID: 1907987146}
   - component: {fileID: 1907987145}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12436,10 +12448,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 2031
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -12554,10 +12566,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1536
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 511
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -12890,7 +12902,7 @@ GameObject:
   - component: {fileID: 2054124303}
   - component: {fileID: 2054124308}
   - component: {fileID: 2054124307}
-  m_Layer: 9
+  m_Layer: 4
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13209,10 +13221,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1536
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 511
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -15519,6 +15531,10 @@ PrefabInstance:
     - target: {fileID: 5555456486580390073, guid: 72f7444c56ccde148b8782f00ba0f930, type: 3}
       propertyPath: m_Name
       value: SM_Apple_V1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555456486580390073, guid: 72f7444c56ccde148b8782f00ba0f930, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
