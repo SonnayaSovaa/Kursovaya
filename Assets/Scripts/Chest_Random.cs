@@ -43,7 +43,7 @@ public class Chest_Random : MonoBehaviour
             h.transform.parent = che.transform;
             h.transform.position = che.transform.position;
             h.transform.position += new Vector3(0, 0.5f, 0);
-            h.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            h.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
             
         }
 
