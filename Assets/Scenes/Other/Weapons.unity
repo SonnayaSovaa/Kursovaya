@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7793,7 +7793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &874085734
 Transform:
   m_ObjectHideFlags: 0
@@ -9827,7 +9827,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3845472257763111066, guid: fc7a6f9228b65084eb849aff5acce085, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.67
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 3845472257763111066, guid: fc7a6f9228b65084eb849aff5acce085, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13891,7 +13891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1993846797
 Transform:
   m_ObjectHideFlags: 0
@@ -14153,6 +14153,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1993846797}
     m_Modifications:
+    - target: {fileID: 5046464718029632078, guid: 80c5ca8fa631d9843ae48f44cf9797fd, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7895540338045398534, guid: 80c5ca8fa631d9843ae48f44cf9797fd, type: 3}
       propertyPath: m_Name
       value: Sword13_Red (1)
@@ -14264,6 +14268,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1993846797}
     m_Modifications:
+    - target: {fileID: 2100388368491547553, guid: e06b2ae7539f50c4caf4cc2a0670bc89, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2569388750045068493, guid: e06b2ae7539f50c4caf4cc2a0670bc89, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.86951375
@@ -14431,6 +14439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword9_White (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8898235432929499943, guid: 866b30b17bc830945867e5ea84f2ec38, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14444,6 +14456,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1993846797}
     m_Modifications:
+    - target: {fileID: 497668459490763576, guid: 3c48cecc38826ff46a384b26745af436, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2860631832791219025, guid: 3c48cecc38826ff46a384b26745af436, type: 3}
       propertyPath: m_Name
       value: Sword14_Blue (1)
@@ -14553,6 +14569,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1993846797}
     m_Modifications:
+    - target: {fileID: 5949187347471452808, guid: 050a42aff552e8248a5f83ddeca0be40, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7016637697405391537, guid: 050a42aff552e8248a5f83ddeca0be40, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.86951375
@@ -14683,6 +14703,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6226600960880987357, guid: 35b87f91108595e4d8b0f9071ba6bdfd, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14701,6 +14725,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1993846797}
     m_Modifications:
+    - target: {fileID: 419918640764005606, guid: 9d896fe79d716164c9a19873a0ca2da7, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2898700000701860542, guid: 9d896fe79d716164c9a19873a0ca2da7, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.79265743
@@ -14971,6 +14999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword12_Green (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4263444064131555976, guid: b10049e12b3ba2c4ebcf1580ef490875, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8686125642240812099, guid: b10049e12b3ba2c4ebcf1580ef490875, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.80034393
@@ -15092,6 +15124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FantasyHammer (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8376865600104534540, guid: 3635ba9dadebd1e48a02aee4053a049f, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15147,6 +15183,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1993846797}
     m_Modifications:
+    - target: {fileID: 3534806828937533411, guid: 3e5fb62dfdc9eb14bb33a613b5d95bc6, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4769765433277919115, guid: 3e5fb62dfdc9eb14bb33a613b5d95bc6, type: 3}
       propertyPath: m_Name
       value: Spear1H_Medium (1)
@@ -15335,6 +15375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7999927890394621017, guid: a2191249d6dbecc429727898879a67c1, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15470,6 +15514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4459671804154465233, guid: 06ee437942f694d46946d9519a5da7b9, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5235396293710395611, guid: 06ee437942f694d46946d9519a5da7b9, type: 3}
       propertyPath: m_Name
       value: Sword15_Lava (1)
@@ -15532,6 +15580,10 @@ PrefabInstance:
     - target: {fileID: 616622834035095473, guid: ce8a6ea7a52cd2147bdcab022358aba6, type: 3}
       propertyPath: m_Name
       value: Sword11_Blood (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1382891364176340432, guid: ce8a6ea7a52cd2147bdcab022358aba6, type: 3}
+      propertyPath: m_MovementType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5330046729415939421, guid: ce8a6ea7a52cd2147bdcab022358aba6, type: 3}
       propertyPath: m_LocalScale.x
@@ -15660,6 +15712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword7_Red (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2538190891385240646, guid: 3580f692d1e25e6419cd7a345baa4815, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7050348840889844299, guid: 3580f692d1e25e6419cd7a345baa4815, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.86951375
@@ -15728,6 +15784,10 @@ PrefabInstance:
     - target: {fileID: 431980891023294979, guid: b8064681933dda14d92ddaef95ab4608, type: 3}
       propertyPath: m_Name
       value: Sword7_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455066504365451235, guid: b8064681933dda14d92ddaef95ab4608, type: 3}
+      propertyPath: m_MovementType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6142800505785661816, guid: b8064681933dda14d92ddaef95ab4608, type: 3}
       propertyPath: m_LocalScale.x
@@ -15865,6 +15925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword12_Red (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6198241717916080256, guid: 10f7a5063511d0847ad0fc1664147be4, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15944,6 +16008,10 @@ PrefabInstance:
     - target: {fileID: 3669523415426457041, guid: 326e4711795bace4caabf1e2a5073773, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903500636409224982, guid: 326e4711795bace4caabf1e2a5073773, type: 3}
+      propertyPath: m_MovementType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7332331451513414863, guid: 326e4711795bace4caabf1e2a5073773, type: 3}
       propertyPath: m_Name
@@ -16068,6 +16136,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1993846797}
     m_Modifications:
+    - target: {fileID: 5267758246086883937, guid: a14b16daae3296446920d91b4c9adeda, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6017485621755189471, guid: a14b16daae3296446920d91b4c9adeda, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
