@@ -12,7 +12,7 @@ public class InvFix : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("changed + "+changed+"curr + "+currobj);
+        //Debug.Log("changed + "+changed+"curr + "+currobj);
 
         changed = ForButton.SetInv;
         if (changed!=was_changed)
