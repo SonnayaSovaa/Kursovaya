@@ -9,9 +9,11 @@ public class ForButton : MonoBehaviour
     public GameObject nastr;
     public GameObject inv;
 
-    private static bool SetNastr = false;
-    private static bool SetInv = false;
+    private bool SetNastr = false;
+    public static bool SetInv = false;
 
+
+    public GameObject point1;
 
     private void Update()
     {

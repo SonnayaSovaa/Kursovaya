@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2290268988908525324}
   - component: {fileID: 4021394406651166854}
   - component: {fileID: 5539899758246942685}
-  - component: {fileID: 4358478505713721762}
+  - component: {fileID: 5712650871390351245}
   m_Layer: 3
   m_Name: Left Controller
   m_TagString: Untagged
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
   m_BlockUIOnInteractableSelection: 1
-  m_AllowAnchorControl: 1
+  m_AllowAnchorControl: 0
   m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_MenuButtonImage: {fileID: 0}
   m_MenuButtonText: {fileID: 0}
   m_MenuButtonIcon: {fileID: 0}
---- !u!114 &4358478505713721762
+--- !u!114 &5712650871390351245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -778,11 +778,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 16550913271939201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7149ed48606fdd44f9430b9204be2b97, type: 3}
+  m_Script: {fileID: 11500000, guid: 1982acf625ad2f844bbfb888c3fe9e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller_L: {fileID: 5085098635324422751}
-  controller_R: {fileID: 2376893651599894403}
 --- !u!1 &44618914953623770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1118,7 @@ GameObject:
   - component: {fileID: 8445242761436090109}
   - component: {fileID: 8368291099924009992}
   - component: {fileID: 9074268217329376827}
-  - component: {fileID: 3735531470787273397}
+  - component: {fileID: 4319421263904712407}
   m_Layer: 3
   m_Name: Right Controller
   m_TagString: Untagged
@@ -1485,7 +1483,7 @@ MonoBehaviour:
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
   m_BlockUIOnInteractableSelection: 1
-  m_AllowAnchorControl: 1
+  m_AllowAnchorControl: 0
   m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
@@ -1874,7 +1872,7 @@ MonoBehaviour:
   m_MenuButtonImage: {fileID: 0}
   m_MenuButtonText: {fileID: 0}
   m_MenuButtonIcon: {fileID: 0}
---- !u!114 &3735531470787273397
+--- !u!114 &4319421263904712407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1883,11 +1881,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1440016321363491219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7149ed48606fdd44f9430b9204be2b97, type: 3}
+  m_Script: {fileID: 11500000, guid: 1982acf625ad2f844bbfb888c3fe9e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller_L: {fileID: 5085098635324422751}
-  controller_R: {fileID: 2376893651599894403}
 --- !u!1 &1489476929979930460
 GameObject:
   m_ObjectHideFlags: 0
