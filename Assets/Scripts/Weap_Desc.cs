@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.XR.CoreUtils;
-//using Unity.XR.Oculus;
-//using Unity.XR.Oculus.Input;
-using UnityEngine.XR.Interaction.Toolkit;
+using System;
 
 public class Weap_Desc : MonoBehaviour
 {
     [SerializeField] TMP_Text description;
     [SerializeField] TMP_Text rank;
     [SerializeField] TMP_Text uron;
+
+    [SerializeField] TMP_Text timer;
+
+    float tim=0;
 
     int real_uron;
 
@@ -20,7 +22,13 @@ public class Weap_Desc : MonoBehaviour
 
     public static bool weap=false;
 
-    
+    public void Update()
+    {
+        //timer += Time.deltaTime;
+        //timer.text = "ф"+Convert.ToString(Time.time);
+
+        //Debug.Log(timer);
+    }
 
     public void InHand()
     {
@@ -293,5 +301,6 @@ public class Weap_Desc : MonoBehaviour
     {
         PlayerPrefs.SetInt(KeyName, Value);
     }
+
 
 }
