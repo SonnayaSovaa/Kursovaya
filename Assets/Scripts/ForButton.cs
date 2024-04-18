@@ -10,7 +10,9 @@ public class ForButton : MonoBehaviour
     public GameObject inv;
 
     private bool SetNastr = false;
-    public static bool SetInv = false;
+    public bool SetInv = false;
+
+    public static bool chek = false;
 
 
     public GameObject point1;
@@ -18,6 +20,8 @@ public class ForButton : MonoBehaviour
     private void Update()
     {
         //Debug.Log("NO");
+
+        chek = SetInv;
 
         if (40<igrok.transform.eulerAngles.x && 90> igrok.transform.eulerAngles.x)
 

@@ -12,9 +12,10 @@ public class InvFix : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log("changed + "+changed+"curr + "+currobj);
+        
+        changed = ForButton.chek;
+        Debug.Log("changed + " + ForButton.chek);
 
-        changed = ForButton.SetInv;
         if (changed!=was_changed)
         {
             Fix(changed);
@@ -26,41 +27,35 @@ public class InvFix : MonoBehaviour
 
     private void Awake()
     {
-        //(this.GetComponent("XRSocketInteractor") as MonoBehaviour).enabled = false;
-        //this.gameObject.SetActive(false);
+        (this.GetComponent("XRSocketInteractor") as MonoBehaviour).enabled = false;        
     }
 
     public void Fix(bool stat)
     {
+        Debug.Log("BBBBBB");
 
-        if (stat == false)
+        if (stat==false)
         {
             if (this.tag == "Svoboden")
-            {
-                this.gameObject.SetActive(false);
-                //(this.GetComponent("XRSocketInteractor") as MonoBehaviour).enabled = false;
+            {                
+                (this.GetComponent("XRSocketInteractor") as MonoBehaviour).enabled = false;
             }
+            
             else
             {
-                //currobj.gameObject.transform.parent = this.gameObject.transform;
-                //currobj.gameObject.transform.position = this.transform.position;
                 currobj.SetActive(false);
             }
 
         }
         else
         {
-
-            currobj.SetActive(true);
             if (this.tag == "Svoboden")
             {
-                //(this.GetComponent("XRSocketInteractor") as MonoBehaviour).enabled = true;
-                this.gameObject.SetActive(true);
+                (this.GetComponent("XRSocketInteractor") as MonoBehaviour).enabled = true;
             }
             else
             {
                 currobj.SetActive(true);
-                //currobj.gameObject.transform.parent = null;
             }
         }
         
@@ -72,10 +67,6 @@ public class InvFix : MonoBehaviour
         {
 
             currobj = other.gameObject;
-
-            //Rigidbody rigidbody = other.gameObject.GetComponent<Rigidbody>();
-            //rigidbody.useGravity = false;
-
             this.tag = "Zanyat";
 
         }
