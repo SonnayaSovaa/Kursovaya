@@ -11,6 +11,8 @@ public class Chest_Open : MonoBehaviour
     public ActionBasedController controller_R;
     static int rotated = 0;
 
+    
+
 
     public void OnTriggerStay(Collider other)
     {

@@ -46,8 +46,8 @@ TagManager:
   - Zanyat
   - Left
   - Right
-  - chest
   - 37
+  - 40
   layers:
   - Default
   - TransparentFX

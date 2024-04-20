@@ -14,9 +14,6 @@ public class ForButton : MonoBehaviour
 
     public static bool chek = false;
 
-
-    public GameObject point1;
-
     private void Update()
     {
         //Debug.Log("NO");
