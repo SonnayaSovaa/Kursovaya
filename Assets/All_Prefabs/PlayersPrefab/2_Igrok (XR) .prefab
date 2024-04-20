@@ -2067,7 +2067,7 @@ GameObject:
   - component: {fileID: 1655726849043135453}
   - component: {fileID: 8830461993940329960}
   m_Layer: 5
-  m_Name: Nastr
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5045,7 +5045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0023, y: 0.298}
+  m_AnchoredPosition: {x: -0.0023, y: 0.362}
   m_SizeDelta: {x: 0.9189, y: 0.1092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &768374965901672163
@@ -5855,6 +5855,7 @@ MonoBehaviour:
   button: {fileID: 2536510944242311399}
   nastr: {fileID: 1992123401319548734}
   inv: {fileID: 6577807440988535608}
+  SetInv: 0
   point1: {fileID: 0}
 --- !u!114 &7672748145556205392
 MonoBehaviour:
@@ -5941,7 +5942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1234
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ce8bc7855e53d647811b72ce33e735e, type: 2}
   m_sharedMaterial: {fileID: 6509635690734846858, guid: 0ce8bc7855e53d647811b72ce33e735e, type: 2}
@@ -6075,7 +6076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+  m_text: "\u0438\u043D\u0444\u043E"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ce8bc7855e53d647811b72ce33e735e, type: 2}
   m_sharedMaterial: {fileID: 6509635690734846858, guid: 0ce8bc7855e53d647811b72ce33e735e, type: 2}
@@ -6352,7 +6353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &807090430198776800
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6775,7 +6776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1234
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ce8bc7855e53d647811b72ce33e735e, type: 2}
   m_sharedMaterial: {fileID: 6509635690734846858, guid: 0ce8bc7855e53d647811b72ce33e735e, type: 2}
@@ -8060,7 +8061,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "aaaaaaaaaaaaa\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430"
+  m_text: "\u0427\u0442\u043E \u0436, \u0432\u0441\u0435\u0433\u043E \u043B\u0438\u0448\u044C
+    \u0432\u0430\u0448\u0438 \u0440\u0443\u043A\u0438."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ce8bc7855e53d647811b72ce33e735e, type: 2}
   m_sharedMaterial: {fileID: 6509635690734846858, guid: 0ce8bc7855e53d647811b72ce33e735e, type: 2}
