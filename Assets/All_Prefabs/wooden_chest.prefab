@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 306036527143700642}
   m_Layer: 0
-  m_Name: p_reinforced_wooden_chest
+  m_Name: wooden_chest
   m_TagString: 40
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
