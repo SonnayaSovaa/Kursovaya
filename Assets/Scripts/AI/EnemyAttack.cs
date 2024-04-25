@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] private float attackRange;
+    public float attackRange;
 
     public float AttackRange => attackRange;
 

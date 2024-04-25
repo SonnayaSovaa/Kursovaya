@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
 
                 aiDist.target = player.transform;
 
-                if (Vector3.Distance(gameObject.transform.position, player.transform.position) < 1)//enemyAttack.attackRange)
+                if (Vector3.Distance(gameObject.transform.position, player.transform.position) < enemyAttack.attackRange)
                 {
                     enemyAttack.TryAttackPlayer();
                 }
@@ -65,8 +65,7 @@ public class Enemy : MonoBehaviour
                 {
                     currState = EnemyStates.Roaming;
                 }
-
-                    break;
+                break;
         }
     }
 
