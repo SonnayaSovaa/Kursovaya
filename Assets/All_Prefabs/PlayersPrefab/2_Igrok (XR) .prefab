@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 7787901882216219334}
   - component: {fileID: 8893675328059561306}
   - component: {fileID: 6415359419507984562}
+  - component: {fileID: 8909267302494284683}
   m_Layer: 3
   m_Name: '2_Igrok (XR) '
   m_TagString: Untagged
@@ -517,6 +518,18 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &8909267302494284683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332173579241984683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a6a097526c6bd4ab560d9fd82e5c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &401958848446762831
 GameObject:
   m_ObjectHideFlags: 0
