@@ -25,7 +25,7 @@ public class Weap_Desc : MonoBehaviour
         
         timer.text = $"{Convert.ToInt32(tim/3600)}:{Convert.ToInt32(Math.Floor(tim%3600/60))}:{Convert.ToInt32(tim%60)}";
 
-        Debug.Log(timer);
+       // Debug.Log(timer);
     }
 
     public void InHand()
