@@ -10,6 +10,9 @@ public class Chest_Open : MonoBehaviour
     public ActionBasedController controller_L;
     public ActionBasedController controller_R;
     static int rotated = 0;
+    public int Os_x = 0;
+    public int Os_y = 0;
+    public int Os_z = 0;
 
     
 
@@ -21,7 +24,7 @@ public class Chest_Open : MonoBehaviour
         {
             if ((rotated == 0) && this.gameObject.transform.rotation.z == 0)
             {
-                this.gameObject.transform.localEulerAngles = new Vector3(0, 0, 270);
+                this.gameObject.transform.localEulerAngles = new Vector3(Os_x*270, Os_y * 270, Os_z*270);
                 rotated = 1;
                 Debug.Log("Rot" + rotated);
 
@@ -31,7 +34,7 @@ public class Chest_Open : MonoBehaviour
 
                 foreach (Transform comp in comps)
                 {
-                    if (comp.name == "reinforced_wooden_chest_base")
+                    if (comp.name == "reinforced_wooden_chest_base" || comp.name=="Korpus")
                     {
                         Transform[] items = comp.GetComponentsInChildren<Transform>();
                         Debug.Log("IT  "+items.Length);
@@ -59,7 +62,7 @@ public class Chest_Open : MonoBehaviour
             else
             {
 
-                if ((rotated == 0) && this.gameObject.transform.localEulerAngles.z == 270)
+                if ((rotated == 0) && (this.gameObject.transform.localEulerAngles.z == 270|| this.gameObject.transform.localEulerAngles.y == 270|| this.gameObject.transform.localEulerAngles.x == 270))
                 {
                     
                     this.gameObject.transform.localEulerAngles = new Vector3(0, 0, 0);
