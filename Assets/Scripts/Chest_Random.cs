@@ -25,25 +25,25 @@ public class Chest_Random : MonoBehaviour
 
             Debug.Log("used " + used);
 
-            GameObject w =Instantiate(weapons[Wrand], che.transform);
+            //GameObject w =Instantiate(weapons[Wrand], che.transform);
 
-            w.transform.parent = che.transform;
-            w.transform.position = che.transform.position;
-            w.transform.position += new Vector3(0, 0.2f, 0);
-            w.transform.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
-
+            
+            weapons[Wrand].transform.position = che.transform.position;
+            weapons[Wrand].transform.parent = che.transform;
+            weapons[Wrand].transform.position += new Vector3(0, 1.1f, 0);
+            weapons[Wrand].transform.localScale = new Vector3 (weapons[Wrand].transform.localScale.x*0.01f, weapons[Wrand].transform.localScale.y * 0.01f, weapons[Wrand].transform.localScale.z * 0.01f);
 
             
             int Hrand = randomaizer("", heal.Length);
 
             Debug.Log("used " + used);
 
-            GameObject h = Instantiate(heal[Hrand], che.transform);
+            //GameObject h = Instantiate(heal[Hrand], che.transform);
 
-            h.transform.parent = che.transform;
-            h.transform.position = che.transform.position;
-            h.transform.position += new Vector3(0, 0.2f, 0);
-            h.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+            heal[Hrand].transform.parent = che.transform;
+            heal[Hrand].transform.position = che.transform.position;
+            heal[Hrand].transform.position += new Vector3(0, 1.1f, 0);
+            heal[Hrand].transform.localScale = new Vector3(heal[Hrand].transform.localScale.x * 0.01f, heal[Hrand].transform.localScale.y * 0.01f, heal[Hrand].transform.localScale.z * 0.01f);
             
         }
 

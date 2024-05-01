@@ -30,12 +30,14 @@ public class Weap_Desc : MonoBehaviour
 
     public void InHand()
     {
+        
         if (TagDetecter.hoverTag<37)
         {
             for (int i = 0; i < weapons.Length; i++)
             {
                 if (weapons[i].GetNamedChild("[Right Controller] Dynamic Attach") || weapons[i].GetNamedChild("[Left Controller] Dynamic Attach"))
                 {
+                    Debug.Log("INHAND");
                     weap = true;
                     What(int.Parse(weapons[i].tag));
                 }
