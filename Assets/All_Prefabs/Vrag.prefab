@@ -259,10 +259,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minWalkDist: 1
-  maxWalkDist: 30
+  maxWalkDist: 15
   reachPointDist: 2
   roamTarget: {fileID: 777799780237601603}
-  targetFolRange: 15
+  targetFolRange: 6
   enemyAttack: {fileID: 9217002589782258656}
   stopTargetRange: 6
   aiDist: {fileID: 7434567483054800260}
