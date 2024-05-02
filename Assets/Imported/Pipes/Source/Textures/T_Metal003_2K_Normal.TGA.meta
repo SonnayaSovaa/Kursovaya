@@ -94,3 +94,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215079
+  packageName: Free Pipes Collection
+  packageVersion: 1.0
+  assetPath: Assets/Pipes/Source/Textures/T_Metal003_2K_Normal.TGA
+  uploadId: 484512

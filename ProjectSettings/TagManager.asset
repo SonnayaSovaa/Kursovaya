@@ -48,6 +48,7 @@ TagManager:
   - Right
   - 37
   - 40
+  - Pipe
   layers:
   - Default
   - TransparentFX

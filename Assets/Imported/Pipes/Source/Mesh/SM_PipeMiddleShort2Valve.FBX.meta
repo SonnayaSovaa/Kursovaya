@@ -102,3 +102,10 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215079
+  packageName: Free Pipes Collection
+  packageVersion: 1.0
+  assetPath: Assets/Pipes/Source/Mesh/SM_PipeMiddleShort2Valve.FBX
+  uploadId: 484512
