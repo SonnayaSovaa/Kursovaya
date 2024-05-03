@@ -50,7 +50,7 @@ public class Chest_Open : MonoBehaviour
                                 i.parent = null;
 
                                 Rigidbody ri = i.GetComponent<Rigidbody>();
-                                ri.AddForce(Vector3.up*70);
+                                ri.AddForce(Vector3.up*110);
                             }
                         }
                         break;
@@ -77,7 +77,7 @@ public class Chest_Open : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         rotated = 0;
-        Debug.Log("Rot" + rotated);
+        //Debug.Log("Rot" + rotated);
     }
 
 }

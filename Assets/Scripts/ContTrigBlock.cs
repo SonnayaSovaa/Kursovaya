@@ -14,7 +14,7 @@ public class ContTrigBlock : MonoBehaviour
 
     private void Update()
     {
-        if (TagDetecter.hoverTag != 40)
+        if (TagDetecter.hoverTag != 40 && TagDetecter.hoverTag != 41)
         {
             if (controller_L.selectAction.action.ReadValue<float>() > 0)
             {

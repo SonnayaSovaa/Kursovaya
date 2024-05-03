@@ -4,12 +4,14 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PipeRotate : MonoBehaviour
 {
     Transform[] Pipes;
-    public GameObject[] Pipes20 = new GameObject[67];
-    int[] Pipe_vals = new int[67];
+    public GameObject[] Pipes20 = new GameObject[68];
+    int[] Pipe_vals = new int[68];
 
 
     public ActionBasedController controller_L;
     public ActionBasedController controller_R;
+
+    [SerializeField] private GameObject win_flag;
 
     private void Start()
     {
@@ -18,7 +20,7 @@ public class PipeRotate : MonoBehaviour
         int j = 0;
         for (int i=Pipes.Length-1; i>=0; i--)
         {
-            if (!(Pipes[i].gameObject.name.Contains("_")|| Pipes[i].gameObject.name.Contains("Tru")))
+            if (!(Pipes[i].gameObject.name.Contains("_")|| Pipes[i].gameObject.name.Contains("For")))
             {
                 Pipes20[j] = Pipes[i].gameObject;
                 j++;
@@ -28,35 +30,36 @@ public class PipeRotate : MonoBehaviour
         
 
         int a = 0;
-        
+
         foreach (GameObject pipe in Pipes20)
         {
-            Pipe_vals[a] =System.Convert.ToInt32( pipe.transform.rotation.z);
+            Pipe_vals[a] =System.Convert.ToInt32( pipe.transform.eulerAngles.z);
             a++;
         }
 
         Shuffle();
-
     }
 
-
-    void Check()
+    private void Update()
     {
+        Debug.Log(Pipe_vals);
+        
+    }
 
-        int i = 0;
+    private void Check()
+    {
         bool flag = true;
-        foreach (GameObject pipe in Pipes20)
+        for (int i = 0; i < Pipes20.Length - 1; i++)
         {
-            if (pipe.transform.eulerAngles.z != Pipe_vals[i])
+            if ((Pipes20[i].name.Contains("1 (") && ((Mathf.Abs(System.Convert.ToInt32(Pipes20[i].transform.eulerAngles.z)) % 180 != Mathf.Abs(Pipe_vals[i]) % 180))) || System.Convert.ToInt32(Pipes20[i].transform.eulerAngles.z) != Pipe_vals[i])
             { flag = false; break; }
-            else
-                i++;
+
         }
         if (flag == true)
         {
             Debug.Log("WIN");
+            Destroy(win_flag);
         }
-
     }
 
     void Shuffle()
@@ -66,11 +69,9 @@ public class PipeRotate : MonoBehaviour
         for (int r=0; r< Pipes20.Length-1; r++)
         {
             int a = Random.Range(0, 4);
-
-
             Vector3 newRotation = new Vector3(0, 0, ang[a]*1f);
-            Pipes20[r].transform.eulerAngles += newRotation;
-            Debug.Log("S");
+            if (!Pipes20[r].name.Contains("4 (")) Pipes20[r].transform.eulerAngles += newRotation;
+            //Debug.Log("S");
         }
        
     }
