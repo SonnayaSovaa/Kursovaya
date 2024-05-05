@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
 
     private Player player;
 
-    private EnemyStates currState;
+    public EnemyStates currState;
 
     private Vector3 roamPos;
 

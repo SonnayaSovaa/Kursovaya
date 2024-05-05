@@ -150,6 +150,8 @@ GameObject:
   - component: {fileID: 7434567483054800260}
   - component: {fileID: 5224148245708047326}
   - component: {fileID: 9217002589782258656}
+  - component: {fileID: -4273570697529848319}
+  - component: {fileID: 3678043520091735713}
   m_Layer: 0
   m_Name: Vrag
   m_TagString: Untagged
@@ -266,6 +268,7 @@ MonoBehaviour:
   enemyAttack: {fileID: 9217002589782258656}
   stopTargetRange: 6
   aiDist: {fileID: 7434567483054800260}
+  currState: 0
 --- !u!114 &9217002589782258656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +282,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 2
+--- !u!95 &-4273570697529848319
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067103782908812197}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ca20b3907ff1c794cb89c1ad2cce8282, type: 3}
+  m_Controller: {fileID: 9100000, guid: 199c8068cf5bd6946aacca3e7fdd8764, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3678043520091735713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067103782908812197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574efac033269774589ff7f718be76ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: -4273570697529848319}
+  enemy: {fileID: 5224148245708047326}
 --- !u!1 &7307074065194091103
 GameObject:
   m_ObjectHideFlags: 0
