@@ -10,6 +10,8 @@ public class LocalPipeRotate : MonoBehaviour
     public ActionBasedController controller_L;
     public ActionBasedController controller_R;
     static int rotated = 0;
+
+    [SerializeField] AudioSource rot;
     public void OnTriggerStay(Collider other)
     {
         
@@ -21,6 +23,7 @@ public class LocalPipeRotate : MonoBehaviour
 
                 this.gameObject.transform.localEulerAngles += new Vector3(0, 0, 90);
                 rotated = 1;
+                rot.Play();
                 
             }
         }
@@ -29,7 +32,8 @@ public class LocalPipeRotate : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        rotated = 0;        
+        if (controller_L.selectAction.action.ReadValue<float>() == 0 && controller_R.selectAction.action.ReadValue<float>() == 0)
+            rotated = 0;        
     }
 
 

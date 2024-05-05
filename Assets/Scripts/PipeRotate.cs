@@ -1,20 +1,25 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class PipeRotate : MonoBehaviour
 {
     Transform[] Pipes;
-    public GameObject[] Pipes20 = new GameObject[68];
-    public int[] Pipe_vals = new int[68];
+    GameObject[] Pipes20 = new GameObject[68];
+    int[] Pipe_vals = new int[68];
 
 
     public ActionBasedController controller_L;
     public ActionBasedController controller_R;
 
-    [SerializeField] private GameObject win_flag;
+    [SerializeField] private Image tablo1;
+    [SerializeField] private Image tablo2;
 
-    public int[] currRots = new int[68];
+    int[] currRots = new int[68];
+
+    [SerializeField] private AudioClip access;
+    [SerializeField] private AudioSource main;
 
     private void Start()
     {
@@ -52,28 +57,24 @@ public class PipeRotate : MonoBehaviour
 
     private void Check()
     {
-        
-        bool flag = true;
         for (int i = 0; i < Pipes20.Length; i++)
         {
             int currRot = System.Convert.ToInt32(Pipes20[i].transform.localEulerAngles.z);
-            //if (currRot == 270) currRot = -90;
-            if (Pipes20[i].name.Contains("1 (") && currRot == 180) currRot = 0;
-            if (Pipes20[i].name.Contains("1 (") && currRot == -90) currRot = 90;
-            if (Pipes20[i].name.Contains("1 (") && currRot == 270) currRot = 90;
 
-
-            //if ((Pipes20[i].name.Contains("1 (") && ((Mathf.Abs(currRot) % 180 != Mathf.Abs(Pipe_vals[i]) % 180))) || currRot != Pipe_vals[i])
-            //{ flag = false; break; }
+            if (Pipes20[i].name.Contains("1 (")) currRot = Mathf.Abs(currRot) % 180;
             currRots[i] = currRot;
-
         }
 
-        //SequenceEqual(arr2)
-        if (currRots.SequenceEqual(Pipe_vals))//(flag == true)
+        if  (currRots.SequenceEqual(Pipe_vals))
         {
-            Debug.Log("WIN");
-            Destroy(win_flag);
+            //Debug.Log("WIN");
+            tablo1.color = new Color(191/255f,1f,186/255f,1f);
+            tablo2.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
+
+            //tablo1.color= new Color(191, 255, 186, 255);
+            main.PlayOneShot(access);
+
+            Destroy(this);
         }
     }
 
