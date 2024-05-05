@@ -15,11 +15,11 @@ public class LocalPipeRotate : MonoBehaviour
         
         if ((other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() ==1 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() ==1))
         {
-            Debug.Log("PIPE");
+           // Debug.Log("PIPE");
             if (rotated == 0)
             {
 
-                this.gameObject.transform.localEulerAngles += new Vector3(0, 0, 90f);
+                this.gameObject.transform.localEulerAngles += new Vector3(0, 0, 90);
                 rotated = 1;
                 
             }

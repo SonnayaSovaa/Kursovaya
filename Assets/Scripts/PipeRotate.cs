@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -5,13 +6,15 @@ public class PipeRotate : MonoBehaviour
 {
     Transform[] Pipes;
     public GameObject[] Pipes20 = new GameObject[68];
-    int[] Pipe_vals = new int[68];
+    public int[] Pipe_vals = new int[68];
 
 
     public ActionBasedController controller_L;
     public ActionBasedController controller_R;
 
     [SerializeField] private GameObject win_flag;
+
+    public int[] currRots = new int[68];
 
     private void Start()
     {
@@ -33,7 +36,7 @@ public class PipeRotate : MonoBehaviour
 
         foreach (GameObject pipe in Pipes20)
         {
-            Pipe_vals[a] =System.Convert.ToInt32( pipe.transform.eulerAngles.z);
+            Pipe_vals[a] =System.Convert.ToInt32( pipe.transform.localEulerAngles.z);
             a++;
         }
 
@@ -42,20 +45,32 @@ public class PipeRotate : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Pipe_vals);
+       // Debug.Log("pipevals  "+Pipe_vals);
+        Check();
         
     }
 
     private void Check()
     {
+        
         bool flag = true;
-        for (int i = 0; i < Pipes20.Length - 1; i++)
+        for (int i = 0; i < Pipes20.Length; i++)
         {
-            if ((Pipes20[i].name.Contains("1 (") && ((Mathf.Abs(System.Convert.ToInt32(Pipes20[i].transform.eulerAngles.z)) % 180 != Mathf.Abs(Pipe_vals[i]) % 180))) || System.Convert.ToInt32(Pipes20[i].transform.eulerAngles.z) != Pipe_vals[i])
-            { flag = false; break; }
+            int currRot = System.Convert.ToInt32(Pipes20[i].transform.localEulerAngles.z);
+            //if (currRot == 270) currRot = -90;
+            if (Pipes20[i].name.Contains("1 (") && currRot == 180) currRot = 0;
+            if (Pipes20[i].name.Contains("1 (") && currRot == -90) currRot = 90;
+            if (Pipes20[i].name.Contains("1 (") && currRot == 270) currRot = 90;
+
+
+            //if ((Pipes20[i].name.Contains("1 (") && ((Mathf.Abs(currRot) % 180 != Mathf.Abs(Pipe_vals[i]) % 180))) || currRot != Pipe_vals[i])
+            //{ flag = false; break; }
+            currRots[i] = currRot;
 
         }
-        if (flag == true)
+
+        //SequenceEqual(arr2)
+        if (currRots.SequenceEqual(Pipe_vals))//(flag == true)
         {
             Debug.Log("WIN");
             Destroy(win_flag);
@@ -70,7 +85,7 @@ public class PipeRotate : MonoBehaviour
         {
             int a = Random.Range(0, 4);
             Vector3 newRotation = new Vector3(0, 0, ang[a]*1f);
-            if (!Pipes20[r].name.Contains("4 (")) Pipes20[r].transform.eulerAngles += newRotation;
+            if (!Pipes20[r].name.Contains("4 (")) Pipes20[r].transform.localEulerAngles += newRotation;
             //Debug.Log("S");
         }
        
