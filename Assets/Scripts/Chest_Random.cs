@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -31,7 +32,8 @@ public class Chest_Random : MonoBehaviour
             weapons[Wrand].transform.position = che.transform.position;
             weapons[Wrand].transform.parent = che.transform;
             weapons[Wrand].transform.position += new Vector3(0, 1.1f, 0);
-            weapons[Wrand].transform.localScale = new Vector3 (weapons[Wrand].transform.localScale.x*0.01f, weapons[Wrand].transform.localScale.y * 0.01f, weapons[Wrand].transform.localScale.z * 0.01f);
+            weapons[Wrand].transform.localScale = new Vector3 (weapons[Wrand].transform.localScale.x*0.001f, weapons[Wrand].transform.localScale.y * 0.001f, weapons[Wrand].transform.localScale.z * 0.001f);
+            
 
             
             int Hrand = randomaizer("", heal.Length);
@@ -43,7 +45,7 @@ public class Chest_Random : MonoBehaviour
             heal[Hrand].transform.parent = che.transform;
             heal[Hrand].transform.position = che.transform.position;
             heal[Hrand].transform.position += new Vector3(0, 1.1f, 0);
-            heal[Hrand].transform.localScale = new Vector3(heal[Hrand].transform.localScale.x * 0.01f, heal[Hrand].transform.localScale.y * 0.01f, heal[Hrand].transform.localScale.z * 0.01f);
+            heal[Hrand].transform.localScale = new Vector3(heal[Hrand].transform.localScale.x * 0.001f, heal[Hrand].transform.localScale.y * 0.001f, heal[Hrand].transform.localScale.z * 0.001f);
             
         }
 

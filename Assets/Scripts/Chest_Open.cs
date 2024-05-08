@@ -27,26 +27,26 @@ public class Chest_Open : MonoBehaviour
                 audio.Play();
                 this.gameObject.transform.localEulerAngles = new Vector3(Os_x*270, Os_y * 270, Os_z*270);
                 rotated = 1;
-                Debug.Log("Rot" + rotated);
+                //Debug.Log("Rot" + rotated);
 
                 GameObject THEchest = this.transform.parent.gameObject;
                 Transform[] comps = THEchest.GetComponentsInChildren<Transform>();
-                Debug.Log("___"+comps[0]+ "___"+comps[1] + "__" + comps[2] + "__" + comps[3]);
+                //Debug.Log("___"+comps[0]+ "___"+comps[1] + "__" + comps[2] + "__" + comps[3]);
 
                 foreach (Transform comp in comps)
                 {
                     if (comp.name == "reinforced_wooden_chest_base" || comp.name=="Korpus")
                     {
                         Transform[] items = comp.GetComponentsInChildren<Transform>();
-                        Debug.Log("IT  "+items.Length);
+                        //Debug.Log("IT  "+items.Length);
                         foreach (Transform i in items)
                         {
                             string Tag = i.tag;
-                            Debug.Log("TAGGGAGGA  " + i.name);
+                           // Debug.Log("TAGGGAGGA  " + i.name);
 
                             if (Tag.Contains("1") || i.tag.Contains("2") || i.tag.Contains("3") || i.tag.Contains("4") || i.tag.Contains("5") || i.tag.Contains("6") || i.tag.Contains("7") || i.tag.Contains("8") || i.tag.Contains("9") || i.tag.Contains("0"))
                             {
-                                i.gameObject.transform.localScale = new Vector3(i.gameObject.transform.localScale.x * 100f, i.gameObject.transform.localScale.y*100f, i.gameObject.transform.localScale.z * 100f);
+                                i.gameObject.transform.localScale = new Vector3(i.gameObject.transform.localScale.x * 1000f, i.gameObject.transform.localScale.y*1000f, i.gameObject.transform.localScale.z * 1000f);
                                 i.parent = null;
 
                                 Rigidbody ri = i.GetComponent<Rigidbody>();
@@ -63,12 +63,12 @@ public class Chest_Open : MonoBehaviour
             else
             {
 
-                if ((rotated == 0) && (this.gameObject.transform.localEulerAngles.z == 270|| this.gameObject.transform.localEulerAngles.y == 270|| this.gameObject.transform.localEulerAngles.x == 270))
+                if ((rotated == 0) && (this.gameObject.transform.localEulerAngles.z == 270|| this.gameObject.transform.localEulerAngles.x == 270|| this.gameObject.transform.localEulerAngles.y == 270))
                 {
                     audio.Play();
                     this.gameObject.transform.localEulerAngles = new Vector3(0, 0, 0);
                     rotated = 1;
-                    Debug.Log("Rot" + rotated);
+                    //Debug.Log("Rot" + rotated);
                 }
             }
         }

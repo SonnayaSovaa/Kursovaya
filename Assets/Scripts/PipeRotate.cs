@@ -74,6 +74,8 @@ public class PipeRotate : MonoBehaviour
             //tablo1.color= new Color(191, 255, 186, 255);
             main.PlayOneShot(access);
 
+            SetInt("PipeRotat", 1);
+
             Destroy(this);
         }
     }
@@ -91,5 +93,11 @@ public class PipeRotate : MonoBehaviour
         }
        
     }
+
+    public void SetInt(string KeyName, int Value)
+    {
+        PlayerPrefs.SetInt(KeyName, Value);
+    }
+
 
 }

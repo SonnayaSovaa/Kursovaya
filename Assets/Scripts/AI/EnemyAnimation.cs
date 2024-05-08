@@ -21,6 +21,7 @@ public class EnemyAnimation : MonoBehaviour
             animator.SetBool("roam", false);
             break;
          //потом добавлю сюда анимацию атаки
+         //и смерти
       } 
    }
 }

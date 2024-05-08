@@ -5,10 +5,14 @@ using UnityEngine;
 
 public class MusicVolume : MonoBehaviour
 {
-    [SerializeField] AudioSource mus;
+    [SerializeField] AudioSource[] mus;
 
     private void Awake()
     {
-        mus.volume = PlayerPrefs.GetFloat("SoundValue");
+        float k= PlayerPrefs.GetFloat("SoundValue");
+        foreach (AudioSource source in mus)
+        {
+            source.volume = source.volume * k;
+        }
     }
 }

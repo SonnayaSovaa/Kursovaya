@@ -9,9 +9,6 @@ public class Weap_Desc : MonoBehaviour
     [SerializeField] TMP_Text rank;
     [SerializeField] TMP_Text uron;
 
-    [SerializeField] TMP_Text timer;
-
-    float tim=0;
     int real_uron;
 
     public GameObject[] weapons;
@@ -19,14 +16,7 @@ public class Weap_Desc : MonoBehaviour
 
     public static bool weap=false;
 
-    public void Update()
-    {
-        tim += Time.deltaTime;
-        
-        timer.text = $"{Convert.ToInt32(tim/3600)}:{Convert.ToInt32(Math.Floor(tim%3600/60))}:{Convert.ToInt32(tim%60)}";
-
-       // Debug.Log(timer);
-    }
+ 
 
     public void InHand()
     {
