@@ -531,8 +531,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a6a097526c6bd4ab560d9fd82e5c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 0}
-  healthSl: {fileID: 0}
+  timer: {fileID: 506246747608048400}
+  healthSl: {fileID: 7234532088951969880}
   score: 0
 --- !u!65 &6496629135219197899
 BoxCollider:
@@ -2839,7 +2839,7 @@ RectTransform:
   m_Father: {fileID: 3116583812439529638}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0.55020034, y: 0.000059992075}
   m_SizeDelta: {x: 1.079, y: -0.4366}
   m_Pivot: {x: 0.5, y: 0.5}

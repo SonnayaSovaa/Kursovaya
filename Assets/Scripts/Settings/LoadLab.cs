@@ -10,7 +10,7 @@ public class DoorToLab : MonoBehaviour
 
     string m_Scene;
 
-    public GameObject Igrok;
+    [SerializeField] private GameObject Igrok;
 
 
     public void Update()
@@ -20,6 +20,7 @@ public class DoorToLab : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        DontDestroyOnLoad(Igrok);
         if (other.tag == "Player")
         {
             string currScene = SceneManager.GetActiveScene().name;
@@ -79,8 +80,8 @@ public class DoorToLab : MonoBehaviour
 
                     if (true)//(prohodSteam == 1 && inHand)
                     {
-                        //Load(m_Scene);
-                        StartCoroutine(LoadYourAsyncScene());
+                        Load(m_Scene);
+                        //StartCoroutine(LoadYourAsyncScene());
                     }
                 }
                 else if (currScene == "Forest")
@@ -109,7 +110,7 @@ public class DoorToLab : MonoBehaviour
             Scene currentScene = SceneManager.GetActiveScene();
 
             // The Application loads the Scene in the background at the same time as the current Scene.
-            SceneManager.MoveGameObjectToScene(Igrok, SceneManager.GetSceneByName("Start"));
+            //SceneManager.MoveGameObjectToScene(Igrok, SceneManager.GetSceneByBuildIndex(1)); 
 
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(m_Scene, LoadSceneMode.Additive);
 
