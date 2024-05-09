@@ -31,7 +31,7 @@ public class MagicCube : MonoBehaviour
         {
             Transform[] childs = point.GetComponentsInChildren<Transform>();
             foreach (Transform chil in childs)
-                if (childs.Length != 0 && chil.name.Contains("Attach")) //
+                if (childs.Length != 0 && !(chil.name.Contains("Right")|| chil.name.Contains("Left")) &&chil.name.Contains("Attach")) //
                 {
                     int a = Convert.ToInt32(Convert.ToString(chil.name[1]));
 

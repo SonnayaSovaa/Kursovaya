@@ -711,7 +711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &72675548
 Transform:
   m_ObjectHideFlags: 0
@@ -5727,6 +5727,7 @@ MonoBehaviour:
   Os_x: 0
   Os_y: 0
   Os_z: 1
+  audio: {fileID: 0}
 --- !u!1 &538933374
 GameObject:
   m_ObjectHideFlags: 0
@@ -7096,7 +7097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &613304151
 Transform:
   m_ObjectHideFlags: 0
@@ -7200,6 +7201,7 @@ MonoBehaviour:
   Os_x: 0
   Os_y: 0
   Os_z: 1
+  audio: {fileID: 0}
 --- !u!54 &668992123
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8898,6 +8900,10 @@ MonoBehaviour:
   - {fileID: 1437799385}
   - {fileID: 1453021535}
   - {fileID: 1907987137}
+  tablo1: {fileID: 0}
+  tablo2: {fileID: 0}
+  access: {fileID: 0}
+  main: {fileID: 0}
 --- !u!1 &762477978
 GameObject:
   m_ObjectHideFlags: 0
@@ -10802,6 +10808,10 @@ MonoBehaviour:
   - {fileID: 1437799385}
   - {fileID: 1453021535}
   - {fileID: 1907987137}
+  tablo1: {fileID: 0}
+  tablo2: {fileID: 0}
+  access: {fileID: 0}
+  main: {fileID: 0}
 --- !u!65 &945279817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13193,7 +13203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83c135872a08654cacfabce8a3f243d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller_R: {fileID: 0}
 --- !u!4 &1234535204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 813405129369341357, guid: afc8bc409edc2894da7fb515f3e9b9a0, type: 3}
@@ -19169,7 +19178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83c135872a08654cacfabce8a3f243d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller_R: {fileID: 0}
 --- !u!4 &1800487565 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6851890258297281949, guid: 0edb32dd27547d2419f2e25223d354af, type: 3}
@@ -23901,6 +23909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden_Box
       objectReference: {fileID: 0}
+    - target: {fileID: 8612346072802392633, guid: a1fa878bdf50cf2458a2f6fa883e8764, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2413927218296018685, guid: a1fa878bdf50cf2458a2f6fa883e8764, type: 3}
     m_RemovedGameObjects: []
@@ -24172,7 +24184,7 @@ PrefabInstance:
       objectReference: {fileID: 791925102}
     - target: {fileID: 6061893892098786099, guid: 667c696286e16294d92312b63e9cee07, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.143
+      value: 2.107
       objectReference: {fileID: 0}
     - target: {fileID: 6061893892098786099, guid: 667c696286e16294d92312b63e9cee07, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28798,6 +28810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982acf625ad2f844bbfb888c3fe9e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller_L: {fileID: 0}
+  controller_R: {fileID: 0}
 --- !u!4 &7916275758023131698
 Transform:
   m_ObjectHideFlags: 0
@@ -29734,6 +29748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982acf625ad2f844bbfb888c3fe9e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller_L: {fileID: 0}
+  controller_R: {fileID: 0}
 --- !u!4 &9018905374143930958
 Transform:
   m_ObjectHideFlags: 0
