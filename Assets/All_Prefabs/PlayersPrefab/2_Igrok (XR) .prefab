@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 8893675328059561306}
   - component: {fileID: 6415359419507984562}
   - component: {fileID: 8909267302494284683}
+  - component: {fileID: 6496629135219197899}
   m_Layer: 3
   m_Name: '2_Igrok (XR) '
   m_TagString: Untagged
@@ -454,7 +455,7 @@ MonoBehaviour:
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
-  m_GravityApplicationMode: 0
+  m_GravityApplicationMode: 1
   m_ForwardSource: {fileID: 2027298718475816249}
   m_LeftHandMoveAction:
     m_UseReference: 1
@@ -530,6 +531,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a6a097526c6bd4ab560d9fd82e5c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  healthSl: {fileID: 0}
+  score: 0
+--- !u!65 &6496629135219197899
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332173579241984683}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3985524, y: 0.028305054, z: 0.4035449}
+  m_Center: {x: 0, y: -0.48584747, z: 0.037936926}
 --- !u!1 &401958848446762831
 GameObject:
   m_ObjectHideFlags: 0
@@ -7927,7 +7952,6 @@ MonoBehaviour:
   description: {fileID: 1190993180606448590}
   rank: {fileID: 6670135634125575238}
   uron: {fileID: 6792796244355025414}
-  timer: {fileID: 506246747608048400}
   weapons:
   - {fileID: 0}
   - {fileID: 0}
