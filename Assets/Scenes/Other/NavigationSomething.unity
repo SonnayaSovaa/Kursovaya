@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &19795457
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &23713145
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -486,7 +486,39 @@ MonoBehaviour:
     _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
     _AreaColors:
     - {r: 0, g: 0, b: 0, a: 0}
-  tagNames: []
+  tagNames:
+  - Basic Ground
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
@@ -648,15 +680,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b6c9488538cce4caeffba9758e0e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy1: {fileID: 5067103782908812197, guid: b844bb7892781084bb1c6458bcdbbdec, type: 3}
-  enemy2: {fileID: 5067103782908812197, guid: b844bb7892781084bb1c6458bcdbbdec, type: 3}
+  enemy1: {fileID: 4952629640193186485, guid: 2cd8582b7a98b5246ba3982eb3ee7ae8, type: 3}
   minX: -70
   maxX: 70
   minY: -70
   maxY: 70
-  hight: 1
-  number1: 3
-  number2: 4
+  hight: 0.1
 --- !u!4 &911944024
 Transform:
   m_ObjectHideFlags: 0
@@ -690,7 +719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1461146870
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -795,7 +824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1855406182
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -900,7 +929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1883669852
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3846,7 +3875,6 @@ MonoBehaviour:
   description: {fileID: 1190993179705596966}
   rank: {fileID: 6670135633224977326}
   uron: {fileID: 6792796243238426094}
-  timer: {fileID: 506246748724395256}
   weapons:
   - {fileID: 0}
   - {fileID: 0}
@@ -9291,6 +9319,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a6a097526c6bd4ab560d9fd82e5c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  healthSl: {fileID: 0}
+  score: 0
 --- !u!114 &8917629189411935657
 MonoBehaviour:
   m_ObjectHideFlags: 0
