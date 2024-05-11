@@ -42,10 +42,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3094212343376350809}
-  - component: {fileID: 5492424546287016640}
   - component: {fileID: 8720073717721089255}
   - component: {fileID: 7158852232545196124}
   - component: {fileID: 5070232548584700659}
+  - component: {fileID: 5492424546287016640}
   - component: {fileID: 1022909397576125890}
   m_Layer: 0
   m_Name: Rotation
@@ -70,24 +70,6 @@ Transform:
   - {fileID: 1635611023135752072}
   m_Father: {fileID: 306036527143700642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5492424546287016640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489383006935710371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ba2c5fd60964064fabc9934a61da9bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller_L: {fileID: 0}
-  controller_R: {fileID: 0}
-  Os_x: 0
-  Os_y: 0
-  Os_z: 0
-  audio: {fileID: 1022909397576125890}
 --- !u!54 &8720073717721089255
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -157,6 +139,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.11329943, y: 0.04968907, z: 0.20913199}
   m_Center: {x: -0.05798046, y: 0.026329495, z: 0.0007578841}
+--- !u!114 &5492424546287016640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489383006935710371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba2c5fd60964064fabc9934a61da9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller_L: {fileID: 0}
+  controller_R: {fileID: 0}
+  Os_x: 0
+  Os_y: 0
+  Os_z: 0
+  audio: {fileID: 1022909397576125890}
 --- !u!82 &1022909397576125890
 AudioSource:
   m_ObjectHideFlags: 0

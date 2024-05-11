@@ -35,7 +35,7 @@ public class Chest_Open : MonoBehaviour
 
                 foreach (Transform comp in comps)
                 {
-                    if (comp.name == "reinforced_wooden_chest_base" || comp.name=="Korpus")
+                    if (comp.name=="Korpus")
                     {
                         Transform[] items = comp.GetComponentsInChildren<Transform>();
                         //Debug.Log("IT  "+items.Length);
@@ -50,7 +50,7 @@ public class Chest_Open : MonoBehaviour
                                 i.parent = null;
 
                                 Rigidbody ri = i.GetComponent<Rigidbody>();
-                                ri.AddForce(Vector3.up*110);
+                                ri.AddForce(Vector3.up*150);
                             }
                         }
                         break;

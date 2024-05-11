@@ -40,7 +40,7 @@ public class MagicCube : MonoBehaviour
                     break;
                 }
 
-            Debug.Log("WAS   " + point.GetComponentInParent<Transform>().name);
+            //Debug.Log("WAS   " + point.GetComponentInParent<Transform>().name);
         }
 
 
@@ -53,9 +53,9 @@ public class MagicCube : MonoBehaviour
             ver = (vals[0] + vals[3] + vals[6] == vals[1] + vals[4] + vals[7] && vals[0] + vals[3] + vals[6] == vals[2] + vals[5] + vals[8]);
             dia = (vals[0] + vals[8] == vals[2] + vals[6]);
 
-            Debug.Log("HOR   " + hor);
-            Debug.Log("VER   " + ver);
-            Debug.Log("DIA   " + dia);
+            //Debug.Log("HOR   " + hor);
+            //Debug.Log("VER   " + ver);
+            //Debug.Log("DIA   " + dia);
 
             if (hor && ver && dia && vals[0] != 0 && vals[1] != 0 && vals[2] != 0 && vals[3] != 0 && vals[4] != 0 && vals[5] != 0 && vals[6] != 0 && vals[7] != 0 && vals[8] != 0)
             {
