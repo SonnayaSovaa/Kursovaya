@@ -325,7 +325,6 @@ GameObject:
   - component: {fileID: 7787901882216219334}
   - component: {fileID: 8893675328059561306}
   - component: {fileID: 6415359419507984562}
-  - component: {fileID: 8909267302494284683}
   - component: {fileID: 6496629135219197899}
   m_Layer: 3
   m_Name: '2_Igrok (XR) '
@@ -519,21 +518,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &8909267302494284683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332173579241984683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40a6a097526c6bd4ab560d9fd82e5c38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: {fileID: 506246747608048400}
-  healthSl: {fileID: 7234532088951969880}
-  score: 0
 --- !u!65 &6496629135219197899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -863,6 +847,7 @@ GameObject:
   - component: {fileID: 3709788437642390931}
   - component: {fileID: 5647581222345032451}
   - component: {fileID: 8870830774874883410}
+  - component: {fileID: 9220214739604592191}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1055,6 +1040,21 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+--- !u!114 &9220214739604592191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659590984915246181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a6a097526c6bd4ab560d9fd82e5c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 506246747608048400}
+  healthSl: {fileID: 7234532088951969880}
+  score: 0
 --- !u!1 &668785350181517605
 GameObject:
   m_ObjectHideFlags: 0
@@ -7952,6 +7952,7 @@ MonoBehaviour:
   description: {fileID: 1190993180606448590}
   rank: {fileID: 6670135634125575238}
   uron: {fileID: 6792796244355025414}
+  real_uron: 0
   weapons:
   - {fileID: 0}
   - {fileID: 0}
