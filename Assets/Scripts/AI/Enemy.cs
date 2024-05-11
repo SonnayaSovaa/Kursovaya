@@ -103,6 +103,7 @@ public class Enemy : MonoBehaviour
 
 }
 
+
 public enum EnemyStates
 {
     Roaming,

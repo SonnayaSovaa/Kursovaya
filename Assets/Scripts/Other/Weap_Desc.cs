@@ -9,7 +9,7 @@ public class Weap_Desc : MonoBehaviour
     [SerializeField] TMP_Text rank;
     [SerializeField] TMP_Text uron;
 
-    int real_uron;
+    public int real_uron;
 
     public GameObject[] weapons;
    

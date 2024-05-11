@@ -23,13 +23,13 @@ public class Player : MonoBehaviour
         if (currhealth>0)
             time += Time.deltaTime;
 
-        //timer.text = $"{Convert.ToInt32(time / 3600)}:{Convert.ToInt32(Math.Floor(time % 3600 / 60))}:{Convert.ToInt32(time % 60)}";
+        timer.text = $"{Convert.ToInt32(time / 3600)}:{Convert.ToInt32(Math.Floor(time % 3600 / 60))}:{Convert.ToInt32(time % 60)}";
     }
 
     private void Start()
     {
         currhealth = PlayerPrefs.GetInt("Health");
-        //healthSl.value = currhealth/100;
+        healthSl.value = currhealth/100;
     }
 
     public void GetDamage(int uron)

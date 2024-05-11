@@ -10,6 +10,8 @@ public class DropDown : MonoBehaviour
     public TMP_Dropdown drdw;
     [SerializeField] TMP_Text opisanie;
 
+
+
     private void Start()
     {
         opisanie.text = opisanie.text = "—лабые и медленные враги, много лечени€, меньша€ цель.";
