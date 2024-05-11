@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Steam_Lab.unity
     guid: 96689035774de494da8127bae9a9efd0
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 9d7549c994a455d4686417adba56a23e
+  - enabled: 1
+    path: Assets/Scenes/Arena.unity
+    guid: b11b040c0688b53438a6703931a20469
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 3bd1b7069b790144f86ec7b0c8b2cc43
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c8f0d90771599e140b65f2289b169d46, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 1e1bbf2b7a81fc246b4290cb7acb4e3c, type: 2}

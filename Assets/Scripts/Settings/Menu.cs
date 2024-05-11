@@ -23,7 +23,7 @@ public class Menu : MonoBehaviour
 
         SetFloat("Time", 0);
 
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Start");
 
     }
 

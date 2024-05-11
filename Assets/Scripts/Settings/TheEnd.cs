@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TheEnd : MonoBehaviour
 {
@@ -16,10 +17,14 @@ public class TheEnd : MonoBehaviour
     [SerializeField] TMP_Text vragovubito;
     [SerializeField] TMP_Text scorer;
     [SerializeField] TMP_Text fintext;
+    [SerializeField] TMP_Text state;
 
-    string texttt="";
+
+    string texttt ="";
     string endState = "";
 
+    public AudioClip AudioClip;
+    [SerializeField] AudioSource audioSource;
 
     void Start()
     {
@@ -54,15 +59,23 @@ public class TheEnd : MonoBehaviour
         timer.text = $"{Convert.ToInt32(time / 3600)}:{Convert.ToInt32(Math.Floor(time % 3600 / 60))}:{Convert.ToInt32(time % 60)}";
         vragovubito.text = $"{vrag_num}";
         scorer.text = $"{score}";
-        fintext.text = $"{texttt}";
-
-
+        fintext.text = texttt;
+        state.text = endState;
 
     }
 
+    public void ToMenu()
+    {
+        Application.Quit();
+        SceneManager.LoadScene("Menu");
+    }
 
+    public void Vihod()
+    {
+        audioSource.PlayOneShot(AudioClip);
+        Application.Quit();
 
-
+    }
 
 
 }
