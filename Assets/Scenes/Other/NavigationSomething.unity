@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b6c9488538cce4caeffba9758e0e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy1: {fileID: 5067103782908812197, guid: b844bb7892781084bb1c6458bcdbbdec, type: 3}
+  enemy1: {fileID: 3958665363433332807, guid: a52588d95044ce845b8317be7b59d3bc, type: 3}
   minX: -25
   maxX: 21
   minY: -21
@@ -1503,7 +1503,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
