@@ -1350,13 +1350,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0218a433c3b87b4cb236619e2ead087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minWalkDist: 1
-  maxWalkDist: 15
-  reachPointDist: 2
+  minWalkDist: 12
+  maxWalkDist: 14
+  reachPointDist: 1
   roamTarget: {fileID: 1711662255311638253}
-  targetFolRange: 6
+  targetFolRange: 15
   enemyAttack: {fileID: 6052205542658171897}
-  stopTargetRange: 6
+  stopTargetRange: 11
   aiDist: {fileID: 6020041625023707800}
   currState: 0
 --- !u!114 &6052205542658171897

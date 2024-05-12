@@ -55,6 +55,7 @@ public class Enemy : MonoBehaviour
             case EnemyStates.Following:
 
                 aiDist.target = player.transform;
+                
 
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) < enemyAttack.attackRange)
                 {
