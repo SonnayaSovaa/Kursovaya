@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
 
 public class Player : MonoBehaviour
 {
-    int currhealth = 100;
+    public int currhealth = 100;
 
     [SerializeField] TMP_Text timer;
 
@@ -47,6 +46,7 @@ public class Player : MonoBehaviour
     void Death()
     {
         SetInt("Score", score);
+        SetInt("Health", 0);
         SetFloat("Time", time);
     }
 
