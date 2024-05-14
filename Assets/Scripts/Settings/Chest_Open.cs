@@ -16,16 +16,20 @@ public class Chest_Open : MonoBehaviour
 
     [SerializeField] AudioSource audio;
 
+    private void Update()
+    {
+        Debug.Log("Rot " + this.gameObject.transform.localEulerAngles.z);
+    }
 
     public void OnTriggerStay(Collider other)
     {
 
         if ((other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() == 1 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() == 1))
         {
-            if ((rotated == 0) && this.gameObject.transform.rotation.z == 0)
+            if ((rotated == 0) && (this.gameObject.transform.localEulerAngles.z == 0 && this.gameObject.transform.localEulerAngles.x==0))
             {
                 audio.Play();
-                this.gameObject.transform.localEulerAngles = new Vector3(Os_x*270, Os_y * 270, Os_z*270);
+                this.gameObject.transform.localEulerAngles += new Vector3(Os_x*270, Os_y * 270, Os_z*270);
                 rotated = 1;
                 //Debug.Log("Rot" + rotated);
 
@@ -63,10 +67,11 @@ public class Chest_Open : MonoBehaviour
             else
             {
 
-                if ((rotated == 0) && (this.gameObject.transform.localEulerAngles.z == 270|| this.gameObject.transform.localEulerAngles.x == 270|| this.gameObject.transform.localEulerAngles.y == 270))
+                if ((rotated == 0) && (this.gameObject.transform.localEulerAngles.z == 270|| this.gameObject.transform.localEulerAngles.x == 270))
                 {
+                    
                     audio.Play();
-                    this.gameObject.transform.localEulerAngles = new Vector3(0, 0, 0);
+                    this.gameObject.transform.eulerAngles -= new Vector3(Os_x * 270, Os_y * 270, Os_z * 270);
                     rotated = 1;
                     //Debug.Log("Rot" + rotated);
                 }
