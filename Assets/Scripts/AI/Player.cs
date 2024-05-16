@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     public ActionBasedController controller_L;
 
     public bool Shag;
-    [SerializeField] AudioSource playerAudio;
+    [SerializeField] public AudioSource playerAudio;
     [SerializeField] AudioClip Steam;
     [SerializeField] AudioClip Forest;
 

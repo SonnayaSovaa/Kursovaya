@@ -10,18 +10,35 @@ public class EnemyAnimation : MonoBehaviour
 
    private void Update()
    {
+        Debug.Log("STATE" +enemy.currState);
+
       switch (enemy.currState)
       {
          case EnemyStates.Roaming:
-            animator.SetBool("roam", true);
-            animator.SetBool("follow", false);
-            break;
+                animator.SetBool("follow", false);
+                animator.SetBool("attack", false);
+                animator.SetBool("roam", true);
+                break;
+
          case EnemyStates.Following:
-            animator.SetBool("follow", true);
-            animator.SetBool("roam", false);
-            break;
-         //потом добавлю сюда анимацию атаки
-         //и смерти
-      } 
+                animator.SetBool("roam", false);
+                animator.SetBool("attack", false);
+                animator.SetBool("follow", true);
+                break;
+
+         case EnemyStates.Attack:
+                animator.SetBool("roam", false);
+                animator.SetBool("following", false);
+                animator.SetBool("attack", true);
+                break;
+
+         case EnemyStates.Dead:
+                animator.SetBool("roam", false);
+                animator.SetBool("following", false);
+                animator.SetBool("attack", false);
+                animator.SetBool("dead", true);
+                break;
+
+        } 
    }
 }

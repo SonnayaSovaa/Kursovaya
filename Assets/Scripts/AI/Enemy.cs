@@ -13,11 +13,14 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject roamTarget;
 
     [SerializeField] private float targetFolRange;
-    [SerializeField] private EnemyAttack enemyAttack;
+    //[SerializeField] private EnemyAttack enemyAttack;
+    int attackRange = 10;
 
     [SerializeField] private float stopTargetRange;
 
     [SerializeField] private AIDestinationSetter aiDist;
+
+    [SerializeField] AILerp ailerp;
 
     private Player player;
 
@@ -27,6 +30,7 @@ public class Enemy : MonoBehaviour
 
     public int health;
     int slojnost;
+
 
     public bool boss;
 
@@ -79,6 +83,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+
         if (health <= 0)
             currState = EnemyStates.Dead;
         switch (currState)
@@ -101,9 +106,10 @@ public class Enemy : MonoBehaviour
             case EnemyStates.Following:
 
                 aiDist.target = player.transform;
+               
                 
 
-                if (Vector3.Distance(gameObject.transform.position, player.transform.position) < enemyAttack.attackRange)
+                if (Vector3.Distance(gameObject.transform.position, player.transform.position) < attackRange)
                 {
                     currState = EnemyStates.Attack;
                 }
@@ -111,15 +117,17 @@ public class Enemy : MonoBehaviour
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) < stopTargetRange)
                 {
                     currState = EnemyStates.Roaming;
+                    ailerp.speed = 1f;
                 }
                 break;
 
             case EnemyStates.Attack:
-                if (Vector3.Distance(gameObject.transform.position, player.transform.position) > enemyAttack.attackRange)
+                if (Vector3.Distance(gameObject.transform.position, player.transform.position) > attackRange)
                 {
                     currState = EnemyStates.Following;
                 }
                 break;
+
             case EnemyStates.Dead:
                 StartCoroutine(Death());
 ;               break;
@@ -154,6 +162,7 @@ public class Enemy : MonoBehaviour
         if (Vector3.Distance(gameObject.transform.position, player.transform.position) <= targetFolRange)
         {
             currState=EnemyStates.Following;
+            ailerp.speed = 1.5f;
         }
     }
 

@@ -78,6 +78,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6489038121170091610}
   - component: {fileID: 971135176933147757}
+  - component: {fileID: 6357191908172878608}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -123,6 +124,22 @@ CapsuleCollider:
   m_Height: 0.0066847783
   m_Direction: 1
   m_Center: {x: -0.000000005406012, y: 0.0020877472, z: 0.0033065716}
+--- !u!114 &6357191908172878608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724701926242233851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &878653828459084250
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4010626396329695728}
   - component: {fileID: 4250071358502518928}
+  - component: {fileID: 5205993826003627556}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -299,6 +317,22 @@ CapsuleCollider:
   m_Height: 0.0040803305
   m_Direction: 1
   m_Center: {x: -0.0000000120015695, y: 0.0026675721, z: 0.0026157207}
+--- !u!114 &5205993826003627556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048373970413431826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &1310008776341915229
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7230828220693282997}
   - component: {fileID: 2609765824597760261}
+  - component: {fileID: 759888163689371718}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -354,6 +389,22 @@ CapsuleCollider:
   m_Height: 0.0031634762
   m_Direction: 1
   m_Center: {x: 0.003436584, y: -0.008099331, z: -0.0003037444}
+--- !u!114 &759888163689371718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310008776341915229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &1711662255311638253
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,6 +580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3399903175049314211}
   - component: {fileID: 8195364345574624407}
+  - component: {fileID: 6370341170212249200}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -574,6 +626,22 @@ CapsuleCollider:
   m_Height: 0.011927605
   m_Direction: 1
   m_Center: {x: 0.00000675302, y: 0.001211273, z: -0.0003037434}
+--- !u!114 &6370341170212249200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2197357346581448253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &2211854893844590066
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2199274274388614917}
   - component: {fileID: 5906827778454375674}
+  - component: {fileID: 4036994426997538792}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -718,6 +787,22 @@ CapsuleCollider:
   m_Height: 0.009597779
   m_Direction: 1
   m_Center: {x: 0.00007569417, y: 0.0021520727, z: -0.0004930543}
+--- !u!114 &4036994426997538792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797546392285673676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &3191492884822240776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4208585357262592926}
   - component: {fileID: 6115972192811868511}
+  - component: {fileID: 7288886131397409164}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -1173,6 +1259,22 @@ CapsuleCollider:
   m_Height: 0.0031634762
   m_Direction: 1
   m_Center: {x: 0.003436584, y: -0.008099331, z: -0.0003037444}
+--- !u!114 &7288886131397409164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4634730028534010897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &4686163228883906777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1321,6 @@ GameObject:
   - component: {fileID: 6364864882606807893}
   - component: {fileID: 6020041625023707800}
   - component: {fileID: 8772356951579481657}
-  - component: {fileID: 6052205542658171897}
   - component: {fileID: 2840410137609035143}
   m_Layer: 0
   m_Name: Shroom_pref
@@ -1355,23 +1456,11 @@ MonoBehaviour:
   reachPointDist: 1
   roamTarget: {fileID: 1711662255311638253}
   targetFolRange: 15
-  enemyAttack: {fileID: 6052205542658171897}
   stopTargetRange: 11
   aiDist: {fileID: 6020041625023707800}
   currState: 0
---- !u!114 &6052205542658171897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4952629640193186485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e318e304e1634a8479d6f008d39969b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackRange: 2
+  health: 0
+  boss: 0
 --- !u!114 &2840410137609035143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1739,6 +1828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8552855001423316163}
   - component: {fileID: 3611404817308897567}
+  - component: {fileID: 8976734150656063006}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -1784,6 +1874,22 @@ CapsuleCollider:
   m_Height: 0.012304543
   m_Direction: 1
   m_Center: {x: -0.00003621448, y: 0.0011471384, z: -0.00055634696}
+--- !u!114 &8976734150656063006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200750297800377661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &6308438925768112025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,6 +2051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9165742312811614112}
   - component: {fileID: 4858426294936570412}
+  - component: {fileID: 319812499563153363}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -1990,6 +2097,22 @@ CapsuleCollider:
   m_Height: 0.0039005931
   m_Direction: 1
   m_Center: {x: 0.0034366762, y: -0.0078117643, z: -0.00033773208}
+--- !u!114 &319812499563153363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952518455613848676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &7290943789951026217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,6 +2178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8531700632104767428}
   - component: {fileID: 4674979482724276407}
+  - component: {fileID: 376384704296935771}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -2100,6 +2224,22 @@ CapsuleCollider:
   m_Height: 0.0066847783
   m_Direction: 1
   m_Center: {x: -0.000000005406012, y: 0.0020877472, z: 0.0033065716}
+--- !u!114 &376384704296935771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7318614190853175369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &7435614641681292751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,6 +2314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3427295122341991949}
   - component: {fileID: 8198674463397974283}
+  - component: {fileID: 4516956614169319013}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -2219,6 +2360,22 @@ CapsuleCollider:
   m_Height: 0.0039005931
   m_Direction: 1
   m_Center: {x: 0.0034366762, y: -0.0078117643, z: -0.00033773208}
+--- !u!114 &4516956614169319013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7933544217924976624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &7958498489381011309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,6 +2418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5088962659375695734}
   - component: {fileID: 2145785475775353835}
+  - component: {fileID: 2743003654430221771}
   m_Layer: 0
   m_Name: collider (1)
   m_TagString: Untagged
@@ -2306,6 +2464,22 @@ CapsuleCollider:
   m_Height: 0.0040803305
   m_Direction: 1
   m_Center: {x: -0.0000000120015695, y: 0.0026675721, z: 0.0026157207}
+--- !u!114 &2743003654430221771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8096868066734670127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8772356951579481657}
+  att_coll: 1
+  boss: 0
+  udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &8149111548536766196
 GameObject:
   m_ObjectHideFlags: 0

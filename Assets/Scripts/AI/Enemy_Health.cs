@@ -9,18 +9,23 @@ public class Enemy_Health : MonoBehaviour
     int uron;
     int slojnost;
 
-    [SerializeField] private Player player;
-    [SerializeField] private Weap_Desc weapon;
+    private Player player;
+    private Weap_Desc weapon;
     [SerializeField] private Enemy enemy;
 
     public bool att_coll;
 
     public bool boss;
+
+    [SerializeField] AudioClip udar;
+
+
     private void Start()
     {
         slojnost = PlayerPrefs.GetInt("LevelDif");
 
-
+        player = FindObjectOfType<Player>();
+        weapon = FindObjectOfType<Weap_Desc>();
 
         if (!boss)  //prosto vrag 
         {
@@ -74,6 +79,7 @@ public class Enemy_Health : MonoBehaviour
             int tagg = Convert.ToInt32(other.tag);
             if (tagg<37 && tagg>=0)
             {
+                player.playerAudio.PlayOneShot(udar);
                 enemy.health -= weapon.real_uron;
             }
         }

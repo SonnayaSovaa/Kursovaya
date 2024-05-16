@@ -15,15 +15,18 @@ public class EnemySpawn : MonoBehaviour
 
     [SerializeField] private float hight;
 
-    int number1;
+    public int number1;
     //[SerializeField] private int number2;
 
     private void Awake()
     {
         int LevelDif = PlayerPrefs.GetInt("LevelDif");
+        /*
         if (LevelDif == 0) number1 = 15;
         else if (LevelDif == 1) number1 = 23;
         else number1 = 36;
+        */
+        
 
         for (int i=0; i<number1; i++)
         {
