@@ -1,15 +1,16 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Player : MonoBehaviour
 {
     public int currhealth = 100;
 
     [SerializeField] TMP_Text timer;
+    [SerializeField] TMP_Text Score;
 
     [SerializeField] private Slider healthSl;
 
@@ -17,12 +18,32 @@ public class Player : MonoBehaviour
 
     public int score;
 
+    public ActionBasedController controller_L;
+
+    public bool Shag;
+    [SerializeField] AudioSource playerAudio;
+    [SerializeField] AudioClip Steam;
+    [SerializeField] AudioClip Forest;
+
     private void Update()
     {
         if (currhealth>0)
             time += Time.deltaTime;
 
         timer.text = $"{Convert.ToInt32(time / 3600)}:{Convert.ToInt32(Math.Floor(time % 3600 / 60))}:{Convert.ToInt32(time % 60)}";
+
+        if (Shag && controller_L.positionAction.action.ReadValue<float>()>0)
+        {
+            if (SceneManager.GetActiveScene().name == "Steam_Lab")
+            {
+                playerAudio.PlayOneShot(Steam);
+            }
+            else
+            {
+                playerAudio.PlayOneShot(Forest);
+            }
+
+        }
     }
 
     private void Start()
@@ -50,6 +71,12 @@ public class Player : MonoBehaviour
         SetFloat("Time", time);
     }
 
+
+    public void ScoreUp(int up)
+    {
+        score += up;
+        Score.text = "" + score;
+    }
 
     public void SetInt(string KeyName, int Value)
     {

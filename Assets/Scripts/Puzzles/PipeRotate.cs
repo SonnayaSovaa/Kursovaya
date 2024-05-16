@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -9,6 +10,7 @@ public class PipeRotate : MonoBehaviour
     GameObject[] Pipes20 = new GameObject[68];
     int[] Pipe_vals = new int[68];
 
+    [SerializeField] Player player;
 
     public ActionBasedController controller_L;
     public ActionBasedController controller_R;
@@ -21,9 +23,34 @@ public class PipeRotate : MonoBehaviour
     [SerializeField] private AudioClip access;
     [SerializeField] private AudioSource main;
 
+    int score;
+    int slojnost;
+
     private void Start()
     {
-        Pipes=this.gameObject.GetComponentsInChildren<Transform>();
+
+        slojnost = PlayerPrefs.GetInt("LevelDif");
+
+
+        switch (slojnost)
+        {
+            case 0:
+                score = 60;
+                break;
+
+            case 1:
+                score = 40;
+                break;
+
+            case 2:
+                score = 20;
+                break;
+
+        }
+
+
+
+        Pipes =this.gameObject.GetComponentsInChildren<Transform>();
        
         int j = 0;
         for (int i=Pipes.Length-1; i>=0; i--)
@@ -68,15 +95,7 @@ public class PipeRotate : MonoBehaviour
         if  (currRots.SequenceEqual(Pipe_vals))
         {
             //Debug.Log("WIN");
-            tablo1.color = new Color(191/255f,1f,186/255f,1f);
-            tablo2.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
-
-            //tablo1.color= new Color(191, 255, 186, 255);
-            main.PlayOneShot(access);
-
-            SetInt("PipeRotat", 1);
-
-            Destroy(this);
+            Win();
         }
     }
 
@@ -92,6 +111,20 @@ public class PipeRotate : MonoBehaviour
             //Debug.Log("S");
         }
        
+    }
+
+    void Win()
+    {
+        player.ScoreUp(score);
+        tablo1.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
+        tablo2.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
+
+        //tablo1.color= new Color(191, 255, 186, 255);
+        main.PlayOneShot(access);
+
+        SetInt("PipeRotat", 1);
+
+        Destroy(this);
     }
 
     public void SetInt(string KeyName, int Value)

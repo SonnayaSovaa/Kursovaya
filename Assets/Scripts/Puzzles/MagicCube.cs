@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 
@@ -16,11 +17,40 @@ public class MagicCube : MonoBehaviour
     [SerializeField] private AudioClip access;
     [SerializeField] private AudioSource main;
 
+    [SerializeField] Player player;
+
+    int score;
+    int slojnost;
+
     private void Update()
     {
         Check();
 
     }
+
+    private void Start()
+    {
+
+        slojnost = PlayerPrefs.GetInt("LevelDif");
+
+
+        switch (slojnost)
+        {
+            case 0:
+                score = 60;
+                break;
+
+            case 1:
+                score = 40;
+                break;
+
+            case 2:
+                score = 20;
+                break;
+
+        }
+    }
+
 
 
     private void Check()
@@ -59,18 +89,25 @@ public class MagicCube : MonoBehaviour
 
             if (hor && ver && dia && vals[0] != 0 && vals[1] != 0 && vals[2] != 0 && vals[3] != 0 && vals[4] != 0 && vals[5] != 0 && vals[6] != 0 && vals[7] != 0 && vals[8] != 0)
             {
-                tablo1.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
-                tablo2.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
-
-                //tablo1.color= new Color(191, 255, 186, 255);
-                main.PlayOneShot(access);
-                SetInt("MagicCube", 1);
-                Destroy(this);
+                Win();
             }
 
            
         }
 
+    }
+
+    void Win()
+    {
+        player.ScoreUp(score);
+
+        tablo1.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
+        tablo2.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
+
+        //tablo1.color= new Color(191, 255, 186, 255);
+        main.PlayOneShot(access);
+        SetInt("MagicCube", 1);
+        Destroy(this);
     }
 
 

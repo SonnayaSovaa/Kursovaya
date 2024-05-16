@@ -1,6 +1,5 @@
 using Pathfinding;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -26,15 +25,62 @@ public class Enemy : MonoBehaviour
 
     private Vector3 roamPos;
 
+    public int health;
+    int slojnost;
+
+    public bool boss;
+
     private void Start()
     {
         player=FindObjectOfType<Player>();
         currState = EnemyStates.Roaming;
         roamPos = GenerateRoamPos();
+
+        slojnost = PlayerPrefs.GetInt("LevelDif");
+
+
+        if (!boss)  //prosto vrag 
+        {
+            switch (slojnost)
+            {
+                case 0:
+                    health = 50;
+                    break;
+
+                case 1:
+                    health = 80;
+                    break;
+
+                case 2:
+                    health = 120;
+                    break;
+
+            }
+        }
+        else //boss
+        {
+            switch (slojnost)
+            {
+                case 0:
+                    health = 150;
+                    break;
+
+                case 1:
+                    health = 200;
+                    break;
+
+                case 2:
+                    health = 260;
+                    break;
+
+            }
+        }
     }
 
     private void Update()
     {
+        if (health <= 0)
+            currState = EnemyStates.Dead;
         switch (currState)
         {
             case EnemyStates.Roaming:
@@ -59,7 +105,7 @@ public class Enemy : MonoBehaviour
 
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) < enemyAttack.attackRange)
                 {
-                    enemyAttack.TryAttackPlayer();
+                    currState = EnemyStates.Attack;
                 }
 
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) < stopTargetRange)
@@ -67,6 +113,16 @@ public class Enemy : MonoBehaviour
                     currState = EnemyStates.Roaming;
                 }
                 break;
+
+            case EnemyStates.Attack:
+                if (Vector3.Distance(gameObject.transform.position, player.transform.position) > enemyAttack.attackRange)
+                {
+                    currState = EnemyStates.Following;
+                }
+                break;
+            case EnemyStates.Dead:
+                StartCoroutine(Death());
+;               break;
         }
     }
 
@@ -101,6 +157,17 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    IEnumerator Death()
+    {
+        if (boss) PlayerPrefs.SetInt("Boss_Dead", 1);
+        else
+        {
+            int vragovUbito = PlayerPrefs.GetInt("Enemy_Dead");
+            PlayerPrefs.SetInt("Enemy_Dead", vragovUbito+1);
+        }
+        Destroy(this.gameObject);
+        yield return new WaitForSeconds(4f);
+    }
 
 }
 

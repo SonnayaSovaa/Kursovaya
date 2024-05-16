@@ -7,35 +7,35 @@ public class Enemy_Health : MonoBehaviour
 {
     //visit na vrage
     int uron;
-    int zdorovie;
     int slojnost;
+
     [SerializeField] private Player player;
     [SerializeField] private Weap_Desc weapon;
+    [SerializeField] private Enemy enemy;
 
-    [SerializeField] GameObject vrag;
+    public bool att_coll;
+
+    public bool boss;
     private void Start()
     {
         slojnost = PlayerPrefs.GetInt("LevelDif");
 
 
 
-        if (this.tag == "77")  //prosto vrag 
+        if (!boss)  //prosto vrag 
         {
             switch (slojnost)
             {
                 case 0:
                     uron = 5;
-                    zdorovie = 50;
                     break;
 
                 case 1:
                     uron = 10;
-                    zdorovie = 80;
                     break;
 
                 case 2:
                     uron = 5;
-                    zdorovie = 120;
                     break;
 
             }
@@ -45,18 +45,15 @@ public class Enemy_Health : MonoBehaviour
             switch (slojnost)
             {
                 case 0:
-                    uron = 5;
-                    zdorovie = 50;
+                    uron = 15;
                     break;
 
                 case 1:
-                    uron = 10;
-                    zdorovie = 80;
+                    uron = 20;
                     break;
 
                 case 2:
-                    uron = 5;
-                    zdorovie = 120;
+                    uron = 25;
                     break;
 
             }
@@ -67,26 +64,20 @@ public class Enemy_Health : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag=="Player")
+        if (other.tag=="Player" && att_coll)
         {
             player.GetDamage(uron);
         }
         else if(other.tag.Contains("1") || other.tag.Contains("2") || other.tag.Contains("3") || other.tag.Contains("4") || other.tag.Contains("5") || other.tag.Contains("6") || other.tag.Contains("7") || other.tag.Contains("8") || other.tag.Contains("9") || other.tag.Contains("0"))
         {
+
             int tagg = Convert.ToInt32(other.tag);
             if (tagg<37 && tagg>=0)
             {
-                zdorovie -= weapon.real_uron;
-                if (zdorovie <= 0) Death();
+                enemy.health -= weapon.real_uron;
             }
         }
     }
-
-    void Death()
-    {
-        Destroy(vrag);
-    }
-
 
 
 }

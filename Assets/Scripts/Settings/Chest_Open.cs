@@ -14,7 +14,7 @@ public class Chest_Open : MonoBehaviour
     public int Os_y = 0;
     public int Os_z = 0;
 
-    [SerializeField] AudioSource audio;
+    [SerializeField] AudioSource audioo;
 
     private void Update()
     {
@@ -28,7 +28,7 @@ public class Chest_Open : MonoBehaviour
         {
             if ((rotated == 0) && (this.gameObject.transform.localEulerAngles.z == 0 && this.gameObject.transform.localEulerAngles.x==0))
             {
-                audio.Play();
+                audioo.Play();
                 this.gameObject.transform.localEulerAngles += new Vector3(Os_x*270, Os_y * 270, Os_z*270);
                 rotated = 1;
                 //Debug.Log("Rot" + rotated);
@@ -70,7 +70,7 @@ public class Chest_Open : MonoBehaviour
                 if ((rotated == 0) && (this.gameObject.transform.localEulerAngles.z == 270|| this.gameObject.transform.localEulerAngles.x == 270))
                 {
                     
-                    audio.Play();
+                    audioo.Play();
                     this.gameObject.transform.eulerAngles -= new Vector3(Os_x * 270, Os_y * 270, Os_z * 270);
                     rotated = 1;
                     //Debug.Log("Rot" + rotated);
