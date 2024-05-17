@@ -14,14 +14,12 @@ public class InvFix : MonoBehaviour
     {
         
         changed = ForButton.chek;
-        //Debug.Log("changed + " + ForButton.chek);
 
         if (changed!=was_changed)
         {
             Fix(changed);
             was_changed = changed;
 
-           // Debug.Log("STAT "+ (this.GetComponent("XRSocketInteractor") as MonoBehaviour).enabled);
         }
     }
 
@@ -32,8 +30,6 @@ public class InvFix : MonoBehaviour
 
     public void Fix(bool stat)
     {
-        //Debug.Log("BBBBBB");
-
         if (stat==false)
         {
             if (this.tag == "Svoboden")

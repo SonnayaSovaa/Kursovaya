@@ -13,10 +13,17 @@ public class Weap_Desc : MonoBehaviour
 
     public GameObject[] weapons;
 
-    CurrentWeapon curr;
+    public CurrentWeapon curr;
+
+    Player player;
    
 
-    public static bool weap=false;
+    public bool weap=false;
+
+    private void Start()
+    {
+       player=FindAnyObjectByType<Player>(); 
+    }
 
     public void InHand()
     {
@@ -30,9 +37,9 @@ public class Weap_Desc : MonoBehaviour
                     Debug.Log("INHAND");
                     weap = true;
                     int currUr = What(int.Parse(weapons[i].tag));
-                    weapons[i].AddComponent<CurrentWeapon>();
-                    curr=FindObjectOfType<CurrentWeapon>();
+                    curr=weapons[i].AddComponent<CurrentWeapon>();
                     curr.currentUron = currUr;
+                    weapons[i].transform.parent = player.transform;
 
                 }
                 else
@@ -232,8 +239,8 @@ public class Weap_Desc : MonoBehaviour
                         real_uron = 7;
                         break;
                 }
-                rank.text = "" + real_uron;
-                SetInt("Uron", real_uron);
+                uron.text = "" + real_uron;
+                //PlayerPrefs.SetInt("Uron", real_uron);
                 return real_uron;
             }
         }
@@ -253,16 +260,12 @@ public class Weap_Desc : MonoBehaviour
             (j.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
             if (j.GetComponent<CurrentWeapon>() != null)
             {
+                j.transform.parent = null;
                 Destroy(j.GetComponent<CurrentWeapon>());
             }
         }
     } 
 
-
-    public void SetInt(string KeyName, int Value)
-    {
-        PlayerPrefs.SetInt(KeyName, Value);
-    }
 
 
 }

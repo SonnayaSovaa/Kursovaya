@@ -5,13 +5,31 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ContTrigBlock : MonoBehaviour
 {
-    [SerializeField] ActionBasedController controller_L;
-    [SerializeField] ActionBasedController controller_R;
+    ActionBasedController controller_L;
+    ActionBasedController controller_R;
 
-    [SerializeField] Collider L_Collider;
-    [SerializeField] Collider R_Collider;
+    ActionBasedController[] controllers;
 
+    Collider L_Collider;
+    Collider R_Collider;
 
+    private void Start()
+    {
+        controllers = FindObjectsOfType<ActionBasedController>();
+        if (controllers[0].tag == "Right")
+        {
+            controller_R = controllers[0];
+            controller_L = controllers[1];
+        }
+        else
+        {
+            controller_L = controllers[0];
+            controller_R = controllers[1];
+        }
+
+        L_Collider= controller_L.GetComponent<Collider>();
+        R_Collider= controller_R.GetComponent<Collider>();
+    }
     private void Update()
     {
         if (TagDetecter.hoverTag != 40 && TagDetecter.hoverTag != 41 && TagDetecter.hoverTag != 55)

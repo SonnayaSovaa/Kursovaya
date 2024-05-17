@@ -7,8 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class LocalPipeRotate : MonoBehaviour
 {
     
-    public ActionBasedController controller_L;
-    public ActionBasedController controller_R;
+    ActionBasedController controller_L;
+    ActionBasedController controller_R;
     static int rotated = 0;
 
     [SerializeField] AudioSource rot;
@@ -17,9 +17,27 @@ public class LocalPipeRotate : MonoBehaviour
 
     bool InTrig;
 
+    ActionBasedController[] controllers;
+
     private void Update()
     {
         InTrig=rotator.InTrig;
+    }
+
+
+    private void Start()
+    {
+        controllers = FindObjectsOfType<ActionBasedController>();
+        if (controllers[0].tag == "Right")
+        {
+            controller_R = controllers[0];
+            controller_L = controllers[1];
+        }
+        else
+        {
+            controller_L = controllers[0];
+            controller_R = controllers[1];
+        }
     }
 
     public void OnTriggerStay(Collider other)

@@ -154,6 +154,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &227029296586387495
 GameObject:
@@ -344,6 +345,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &546612848714624955
 GameObject:
@@ -532,6 +534,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &935628460646025309
 GameObject:
@@ -850,6 +853,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &1779302202566187741
 GameObject:
@@ -946,6 +950,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &1795714799098979429
 GameObject:
@@ -1038,6 +1043,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &2137382038270975771
 GameObject:
@@ -1228,6 +1234,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &2928493946703735547
 GameObject:
@@ -1512,8 +1519,8 @@ MonoBehaviour:
   maxWalkDist: 10
   reachPointDist: 1
   roamTarget: {fileID: 4782963742786832018}
-  targetFolRange: 15
-  stopTargetRange: 7
+  targetFolRange: 7
+  stopTargetRange: 15
   aiDist: {fileID: 9047076767640546148}
   aipath: {fileID: 3255942455089052358}
   anim: {fileID: 5545048930174422244}
@@ -1582,9 +1589,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.78
-  pickNextWaypointDist: 1.13
-  endReachedDistance: 0.38
+  slowdownDistance: 1
+  pickNextWaypointDist: 1
+  endReachedDistance: 0.5
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -1717,6 +1724,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &4184404720179401711
 GameObject:
@@ -1903,6 +1911,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &4642666599535601813
 GameObject:
@@ -2219,6 +2228,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &5738519028746622341
 GameObject:
@@ -2598,6 +2608,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &7848135651904909457
 GameObject:
@@ -2916,6 +2927,7 @@ MonoBehaviour:
   enemy: {fileID: 7063380491089704273}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &8786042372345262174
 GameObject:

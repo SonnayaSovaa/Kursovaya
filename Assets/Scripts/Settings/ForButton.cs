@@ -16,14 +16,11 @@ public class ForButton : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log("NO");
-
         chek = SetInv;
 
         if (40<igrok.transform.eulerAngles.x && 90> igrok.transform.eulerAngles.x)
 
         {
-            //Debug.Log("YES");
             button.SetActive(true);
         }
         else
@@ -39,7 +36,6 @@ public class ForButton : MonoBehaviour
 
         nastr.SetActive(SetNastr);
         inv.SetActive(SetInv);
-        Debug.Log("WORKING!!");
     }
 
 }

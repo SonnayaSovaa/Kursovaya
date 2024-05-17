@@ -4,29 +4,53 @@ using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
+using System.Data;
 
 public class DoorFromLab : MonoBehaviour
 {
-    public ActionBasedController controller_L;
-    public ActionBasedController controller_R;
+    ActionBasedController controller_L;
+    ActionBasedController controller_R;
+
+    ActionBasedController[] controllers;
 
     int golov;
     public static bool inHand = false;
 
     [SerializeField] GameObject door;
-    //[SerializeField] int X;
-    //[SerializeField] int Y;
-    //[SerializeField] int Z;
+
+    Weap_Desc weapon;
+
+    string currScene;
+
+    private void Start()
+    {
+        weapon = FindObjectOfType<Weap_Desc>();
+
+        currScene = SceneManager.GetActiveScene().name;
+
+        controllers = FindObjectsOfType<ActionBasedController>();
+        if (controllers[0].tag == "Right")
+        {
+            controller_R = controllers[0];
+            controller_L = controllers[1];
+        }
+        else
+        {
+            controller_L = controllers[0];
+            controller_R = controllers[1];
+        }
+    }
+
+
 
     public void OnTriggerStay(Collider other)
     {
         Debug.Log("Door1");
         if ((other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() == 1 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() == 1))
         {
-            inHand = Weap_Desc.weap;
+            inHand = weapon.weap;
 
-            string currScene = SceneManager.GetActiveScene().name;
-
+            
             Debug.Log("Door");
 
 
@@ -38,7 +62,7 @@ public class DoorFromLab : MonoBehaviour
                     
 
                     if (golov==1 && inHand)
-                        DoorOpen();
+                        DoorOpen(this.name);
                     break;
 
 
@@ -46,7 +70,7 @@ public class DoorFromLab : MonoBehaviour
                     golov = PlayerPrefs.GetInt("MagicCube");
                     
                     if (golov == 1 && inHand)
-                        DoorOpen();
+                        DoorOpen(this.name);
                     break;
 
 
@@ -56,24 +80,26 @@ public class DoorFromLab : MonoBehaviour
                     {
                         golov = PlayerPrefs.GetInt("PipeRotat");
                         if (golov == 0 && inHand)
-                            DoorOpen();
+                            DoorOpen(this.name);
                     }
                     else if (this.name == "ToLes")
                     {
                         golov = PlayerPrefs.GetInt("MagicCube");
                         if (golov == 0 && inHand)
-                            DoorOpen();
+                            DoorOpen(this.name);
                     }
 
                     else if (this.name == "Arena")
                     {
                         golov = PlayerPrefs.GetInt("MagicCube") + PlayerPrefs.GetInt("PipeRotat");
                         if (golov == 2 && inHand)
-                            DoorOpen();
+                            DoorOpen(this.name);
                     }
 
                     break;
-
+                case "Arena":
+                    Destroy(door);
+                    break;
             }
         }
 
@@ -82,14 +108,14 @@ public class DoorFromLab : MonoBehaviour
    
 
 
-    void DoorOpen()
+    void DoorOpen(string name)
     {
         Debug.Log("Door");
 
-        door.transform.Translate(Vector3.left * 2 * Time.deltaTime);
+        if (name=="Steam_Lab" || name=="Forest") door.transform.Translate(Vector3.left * 2 * Time.deltaTime);
+        else door.transform.Translate(Vector3.right * 2 * Time.deltaTime);
 
-
-        //Destroy(door);
+        
     }
 
 }

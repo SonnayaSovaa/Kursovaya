@@ -6,8 +6,4 @@ public class CurrentWeapon : MonoBehaviour
 {
     public int currentUron;
 
-
-
-
-
 }

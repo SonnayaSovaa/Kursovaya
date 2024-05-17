@@ -12,9 +12,6 @@ public class PipeRotate : MonoBehaviour
 
     [SerializeField] Player player;
 
-    public ActionBasedController controller_L;
-    public ActionBasedController controller_R;
-
     [SerializeField] private Image tablo1;
     [SerializeField] private Image tablo2;
 

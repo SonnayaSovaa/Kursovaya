@@ -18,12 +18,16 @@ public class Enemy_Health : MonoBehaviour
 
     CurrentWeapon weapon;
 
+    public AudioSource main;
+
     [SerializeField] AudioClip udar;
 
 
     private void Start()
     {
         slojnost = PlayerPrefs.GetInt("LevelDif");
+
+        main= FindObjectOfType<AudioSource>();
 
         player = FindObjectOfType<Player>();
 
@@ -79,7 +83,7 @@ public class Enemy_Health : MonoBehaviour
             int tagg = Convert.ToInt32(other.tag);
             if (tagg<37 && tagg>=0)
             {
-                player.playerAudio.PlayOneShot(udar);
+                main.PlayOneShot(udar);
                 enemy.health -= weapon.currentUron;
             }
         }

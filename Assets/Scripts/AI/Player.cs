@@ -70,6 +70,8 @@ public class Player : MonoBehaviour
         SetInt("Score", score);
         SetInt("Health", 0);
         SetFloat("Time", time);
+
+        SceneManager.LoadScene("End");
     }
 
 

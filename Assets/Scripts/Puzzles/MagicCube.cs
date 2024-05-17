@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class MagicCube : MonoBehaviour
@@ -22,6 +23,9 @@ public class MagicCube : MonoBehaviour
     int score;
     int slojnost;
 
+
+
+
     private void Update()
     {
         Check();
@@ -30,7 +34,7 @@ public class MagicCube : MonoBehaviour
 
     private void Start()
     {
-
+        
         slojnost = PlayerPrefs.GetInt("LevelDif");
 
 
@@ -106,15 +110,11 @@ public class MagicCube : MonoBehaviour
 
         //tablo1.color= new Color(191, 255, 186, 255);
         main.PlayOneShot(access);
-        SetInt("MagicCube", 1);
+        PlayerPrefs.SetInt("MagicCube", 1);
         Destroy(this);
     }
 
 
-    public void SetInt(string KeyName, int Value)
-    {
-        PlayerPrefs.SetInt(KeyName, Value);
-    }
 
 
 

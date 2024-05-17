@@ -16,9 +16,25 @@ public class Chest_Open : MonoBehaviour
 
     [SerializeField] AudioSource audioo;
 
+    ActionBasedController[] controllers;
     private void Update()
     {
         Debug.Log("Rot " + this.gameObject.transform.localEulerAngles.z);
+    }
+
+    private void Start()
+    {
+        controllers = FindObjectsOfType<ActionBasedController>();
+        if (controllers[0].tag=="Right")
+        {
+            controller_R = controllers[0];
+            controller_L = controllers[1];
+        }
+        else
+        {
+            controller_L = controllers[0];
+            controller_R = controllers[1];
+        }
     }
 
     public void OnTriggerStay(Collider other)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Health : MonoBehaviour
 {
@@ -11,8 +12,12 @@ public class Health : MonoBehaviour
     int heal;
 
 
+
+
     private void Start()
     {
+
+
         int slojnost=PlayerPrefs.GetInt("LevelDif");
         switch (slojnost)
         {
