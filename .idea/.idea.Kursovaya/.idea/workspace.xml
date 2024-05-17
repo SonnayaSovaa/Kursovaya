@@ -6,33 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f13e87d5-1d3a-45d4-9e2b-e966c808d71c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/Death.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/Death.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/Running.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/Running.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/ShroomAnimator.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/ShroomAnimator.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/Walking.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/Walking.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/attack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Anim/attack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Low_Shroom_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Low_Shroom_AlbedoTransparency.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Low_Shroom_MetallicSmoothness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Low_Shroom_MetallicSmoothness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Low_Shroom_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Low_Shroom_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Shroom.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Shroom.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Shroom_pref.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Shroom_pref.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Sroom.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/Sroom.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/grib.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sroom/grib.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Other/NavigationSomething.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Other/NavigationSomething.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Robot/Anim/RobotAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Robot/Anim/RobotAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Robot/Anim/robot attack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Robot/Anim/robot attack.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Robot/Anim/robot death.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Robot/Anim/robot death.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Robot/Anim/robot follow.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Robot/Anim/robot follow.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Robot/Anim/robot roam.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Robot/Anim/robot roam.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Robot/robot_small.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Robot/robot_small.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Enemy.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,6 +142,8 @@
       <workItem from="1714925058605" duration="2098000" />
       <workItem from="1715437043419" duration="1798000" />
       <workItem from="1715514677836" duration="1399000" />
+      <workItem from="1715963451203" duration="2832000" />
+      <workItem from="1715968795093" duration="56000" />
     </task>
     <servers />
   </component>

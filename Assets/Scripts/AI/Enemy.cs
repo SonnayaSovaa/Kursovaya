@@ -128,7 +128,7 @@ public class Enemy : MonoBehaviour
                     anim.PlayAttack();
                 }
 
-                if (Vector3.Distance(gameObject.transform.position, player.transform.position) < stopTargetRange)
+                if (Vector3.Distance(gameObject.transform.position, player.transform.position) >= stopTargetRange)
                 {
                     currState = EnemyStates.Roaming;
                     aipath.maxSpeed = 1.5f;
