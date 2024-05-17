@@ -26,6 +26,8 @@ public class PipeRotate : MonoBehaviour
     int score;
     int slojnost;
 
+    public bool InTrig = false;
+
     private void Start()
     {
 
@@ -74,13 +76,12 @@ public class PipeRotate : MonoBehaviour
 
         Shuffle();
     }
-
-    private void Update()
+    private void OnTriggerStay(Collider other)
     {
-       // Debug.Log("pipevals  "+Pipe_vals);
         Check();
-        
+        InTrig = true;
     }
+
 
     private void Check()
     {
@@ -132,5 +133,8 @@ public class PipeRotate : MonoBehaviour
         PlayerPrefs.SetInt(KeyName, Value);
     }
 
-
+    private void OnTriggerExit(Collider other)
+    {
+        InTrig=false;
+    }
 }

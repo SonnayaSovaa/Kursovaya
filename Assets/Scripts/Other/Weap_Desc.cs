@@ -12,11 +12,11 @@ public class Weap_Desc : MonoBehaviour
     public int real_uron;
 
     public GameObject[] weapons;
+
+    CurrentWeapon curr;
    
 
     public static bool weap=false;
-
- 
 
     public void InHand()
     {
@@ -29,7 +29,11 @@ public class Weap_Desc : MonoBehaviour
                 {
                     Debug.Log("INHAND");
                     weap = true;
-                    What(int.Parse(weapons[i].tag));
+                    int currUr = What(int.Parse(weapons[i].tag));
+                    weapons[i].AddComponent<CurrentWeapon>();
+                    curr=FindObjectOfType<CurrentWeapon>();
+                    curr.currentUron = currUr;
+
                 }
                 else
                     (weapons[i].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
@@ -37,144 +41,144 @@ public class Weap_Desc : MonoBehaviour
 
 
 
-            void What(int cur_tag)
+            int What(int cur_tag)
             {
 
                 switch (cur_tag)
                 {
                     case 0:
                         description.text = "Довольно обычная крепкая булава.";
-                        rank.text = "2";                        
+                        rank.text = "2";
                         real_uron = 16;
                         break;
                     case 1:
                         description.text = "Простое аккуратное копьё. Ничего необычного.";
-                        rank.text = "2";                       
+                        rank.text = "2";
                         real_uron = 13;
                         break;
                     case 2:
                         description.text = "Копьё, пропитанное слабой тёмной магией.";
-                        rank.text = "3";                       
+                        rank.text = "3";
                         real_uron = 21;
                         break;
                     case 3:
                         description.text = "Магическо ядовитое копьё. Сттрого воспрещено использовать в пищу.";
-                        rank.text = "4";                        
+                        rank.text = "4";
                         real_uron = 36;
                         break;
                     case 4:
                         description.text = "Зачарованный меч рака. Нет, это не намёк.";
-                        rank.text = "4";                        
+                        rank.text = "4";
                         real_uron = 39;
                         break;
                     case 5:
                         description.text = "Неотёсанный меч космического мага. Он слишком много витал в облаках, что в конце концов покинул атмосферу...";
-                        rank.text = "3";                        
+                        rank.text = "3";
                         real_uron = 26;
                         break;
                     case 6:
                         description.text = "Загадочное копьё глубин. Бывало на дне.";
-                        rank.text = "4";                       
+                        rank.text = "4";
                         real_uron = 33;
                         break;
                     case 7:
                         description.text = "Неотёсанный меч светлого монаха. Со временем потемнеет.";
-                        rank.text = "3";                        
+                        rank.text = "3";
                         real_uron = 27;
                         break;
                     case 8:
                         description.text = "Костяная дубина лича. У него и отобрали.";
-                        rank.text = "6";                        
+                        rank.text = "6";
                         real_uron = 59;
                         break;
                     case 9:
                         description.text = "Меч гоблина-некроманта. Он не смог спасти некроманта от смерти. Какая ирония.";
-                        rank.text = "5";                        
+                        rank.text = "5";
                         real_uron = 43;
                         break;
                     case 10:
                         description.text = "Меч гоблина Огненных Долин. Возможно, что-то подгорит.";
-                        rank.text = "5";                        
+                        rank.text = "5";
                         real_uron = 42;
                         break;
                     case 11:
                         description.text = "Рубило 'Монолит'. Нет, желания не исполняет.";
-                        rank.text = "6";                        
+                        rank.text = "6";
                         real_uron = 56;
                         break;
                     case 12:
                         description.text = "Поднятый с глубин меч Атлантиды.";
-                        rank.text = "3";                       
+                        rank.text = "3";
                         real_uron = 20;
                         break;
                     case 13:
                         description.text = "Разочарованный меч тьмы. мы не знаем, чем он разочарован.";
-                        rank.text = "6";                        
+                        rank.text = "6";
                         real_uron = 53;
                         break;
                     case 14:
                         description.text = "Меч драконьего дыхания. Слегка пахнет гнильню и сажей.";
-                        rank.text = "6";                        
+                        rank.text = "6";
                         real_uron = 58;
                         break;
                     case 15:
                         description.text = "Паровая колотушка. Порхает, как бабочка, бьёт, как шершень.";
-                        rank.text = "6";                        
+                        rank.text = "6";
                         real_uron = 60;
                         break;
                     case 16:
                         description.text = "Меч ледяного краба. Замёрз, бедняга.";
-                        rank.text = "4";                        
+                        rank.text = "4";
                         real_uron = 37;
                         break;
                     case 17:
                         description.text = "Резак спрутов-киборгов. И этим всё сказано.";
-                        rank.text = "3";                       
+                        rank.text = "3";
                         real_uron = 26;
                         break;
                     case 18:
                         description.text = "Лунный факел Олимпа. Освещает путь (нет).";
-                        rank.text = "3";                       
+                        rank.text = "3";
                         real_uron = 22;
                         break;
                     case 19:
                         description.text = "Прямой резак тёмного утра.";
-                        rank.text = "2";                        
+                        rank.text = "2";
                         real_uron = 14;
                         break;
                     case 20:
                         description.text = "Прямой резак сетлого вечера.";
-                        rank.text = "3";                        
+                        rank.text = "3";
                         real_uron = 28;
                         break;
                     case 21:
                         description.text = "Древний меч Замёрзшего океана.";
-                        rank.text = "5";                        
+                        rank.text = "5";
                         real_uron = 42;
                         break;
                     case 22:
                         description.text = "Неожиданно простой боевой топор. Хотя бы острый.";
-                        rank.text = "2";                       
+                        rank.text = "2";
                         real_uron = 16;
                         break;
                     case 23:
                         description.text = "Топор Прожигающего Света (прожигает время).";
-                        rank.text = "4";                       
+                        rank.text = "4";
                         real_uron = 39;
                         break;
                     case 24:
                         description.text = "Качественный топор. Добротно, надёжно, хорошо.";
-                        rank.text = "3";                        
+                        rank.text = "3";
                         real_uron = 21;
                         break;
                     case 25:
                         description.text = "Секира простака. Теперь ваша.";
-                        rank.text = "3";                        
+                        rank.text = "3";
                         real_uron = 25;
                         break;
                     case 26:
                         description.text = "Секира пламенных чар. Смотрите, чтобы не подгорела.";
-                        rank.text = "5";                       
+                        rank.text = "5";
                         real_uron = 46;
                         break;
                     case 27:
@@ -189,22 +193,22 @@ public class Weap_Desc : MonoBehaviour
                         break;
                     case 29:
                         description.text = "Потухшая волшебная палочка. Теперь просто колотушка.";
-                        rank.text = "2";                      
+                        rank.text = "2";
                         real_uron = 17;
                         break;
                     case 30:
                         description.text = "Палочка 'Глаз дракона'. Наличие частей дракона не гарантируется.";
-                        rank.text = "3";                        
+                        rank.text = "3";
                         real_uron = 24;
                         break;
                     case 31:
                         description.text = "Тюремный молот Печи. Мы не знаем, за что его посадили.";
-                        rank.text = "4";                       
+                        rank.text = "4";
                         real_uron = 38;
                         break;
                     case 32:
                         description.text = "Увесистый молот Печи. Иногда худеет к лету.";
-                        rank.text = "5";                   
+                        rank.text = "5";
                         real_uron = 43;
                         break;
                     case 33:
@@ -230,6 +234,7 @@ public class Weap_Desc : MonoBehaviour
                 }
                 rank.text = "" + real_uron;
                 SetInt("Uron", real_uron);
+                return real_uron;
             }
         }
     }
@@ -246,6 +251,10 @@ public class Weap_Desc : MonoBehaviour
         foreach (var j in weapons)
         {
             (j.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
+            if (j.GetComponent<CurrentWeapon>() != null)
+            {
+                Destroy(j.GetComponent<CurrentWeapon>());
+            }
         }
     } 
 

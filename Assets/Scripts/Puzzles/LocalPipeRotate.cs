@@ -12,19 +12,31 @@ public class LocalPipeRotate : MonoBehaviour
     static int rotated = 0;
 
     [SerializeField] AudioSource rot;
+
+    [SerializeField] PipeRotate rotator;
+
+    bool InTrig;
+
+    private void Update()
+    {
+        InTrig=rotator.InTrig;
+    }
+
     public void OnTriggerStay(Collider other)
     {
-        
-        if ((other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() ==1 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() ==1))
+        if (InTrig)
         {
-           // Debug.Log("PIPE");
-            if (rotated == 0)
+            if ((other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() == 1 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() == 1))
             {
+                // Debug.Log("PIPE");
+                if (rotated == 0)
+                {
 
-                this.gameObject.transform.localEulerAngles += new Vector3(0, 0, 90);
-                rotated = 1;
-                rot.Play();
-                
+                    this.gameObject.transform.localEulerAngles += new Vector3(0, 0, 90);
+                    rotated = 1;
+                    rot.Play();
+
+                }
             }
         }
 

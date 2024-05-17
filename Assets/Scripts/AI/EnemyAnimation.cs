@@ -8,7 +8,35 @@ public class EnemyAnimation : MonoBehaviour
    [SerializeField] private Animator animator;
    [SerializeField] private Enemy enemy;
 
-   private void Update()
+    private static readonly int Attack = Animator.StringToHash("attack");
+    private static readonly int Run = Animator.StringToHash("follow");
+    private static readonly int Walk = Animator.StringToHash("roam");
+    private static readonly int Dead = Animator.StringToHash("dead");
+
+
+    public void PlayAttack()
+    {
+        animator.SetTrigger(Attack);
+    }
+
+    public void PlayDead()
+    {
+        animator.SetTrigger(Dead);
+    }
+
+
+    public void IsRunning(bool condition)
+    {
+        animator.SetBool(Run, condition);
+    }
+
+    public void IsWalk(bool condition)
+    {
+        animator.SetBool(Walk, condition);
+    }
+
+    /*
+    private void Update()
    {
         Debug.Log("STATE" +enemy.currState);
 
@@ -26,19 +54,6 @@ public class EnemyAnimation : MonoBehaviour
                 animator.SetBool("follow", true);
                 break;
 
-         case EnemyStates.Attack:
-                animator.SetBool("roam", false);
-                animator.SetBool("following", false);
-                animator.SetBool("attack", true);
-                break;
-
-         case EnemyStates.Dead:
-                animator.SetBool("roam", false);
-                animator.SetBool("following", false);
-                animator.SetBool("attack", false);
-                animator.SetBool("dead", true);
-                break;
-
         } 
-   }
+   }*/
 }

@@ -14,13 +14,16 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private float targetFolRange;
     //[SerializeField] private EnemyAttack enemyAttack;
-    int attackRange = 10;
+    float attackRange = 0.3f;
 
     [SerializeField] private float stopTargetRange;
 
     [SerializeField] private AIDestinationSetter aiDist;
 
-    [SerializeField] AILerp ailerp;
+    [SerializeField] AIPath aipath;
+
+    //[SerializeField] EnemyAttack attack;
+    [SerializeField] EnemyAnimation anim;
 
     private Player player;
 
@@ -66,15 +69,15 @@ public class Enemy : MonoBehaviour
             switch (slojnost)
             {
                 case 0:
-                    health = 150;
+                    health = 180;
                     break;
 
                 case 1:
-                    health = 200;
+                    health = 240;
                     break;
 
                 case 2:
-                    health = 260;
+                    health = 360;
                     break;
 
             }
@@ -85,7 +88,12 @@ public class Enemy : MonoBehaviour
     {
 
         if (health <= 0)
-            currState = EnemyStates.Dead;
+        {
+            StartCoroutine(Death());
+            anim.IsWalk(false);
+            anim.IsRunning(false);
+            anim.PlayDead();
+        }
         switch (currState)
         {
             case EnemyStates.Roaming:
@@ -100,37 +108,32 @@ public class Enemy : MonoBehaviour
                 aiDist.target = roamTarget.transform;
 
                 TryFindTarget();
+
+                anim.IsWalk(true);
+                anim.IsRunning(false);
+
                 break;
 
 
             case EnemyStates.Following:
 
                 aiDist.target = player.transform;
-               
-                
+
+                anim.IsWalk(false);
+                anim.IsRunning(true);
 
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) < attackRange)
                 {
-                    currState = EnemyStates.Attack;
+                    //attack.TryAttackPlayer();
+                    anim.PlayAttack();
                 }
 
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) < stopTargetRange)
                 {
                     currState = EnemyStates.Roaming;
-                    ailerp.speed = 1f;
+                    aipath.maxSpeed = 1.5f;
                 }
                 break;
-
-            case EnemyStates.Attack:
-                if (Vector3.Distance(gameObject.transform.position, player.transform.position) > attackRange)
-                {
-                    currState = EnemyStates.Following;
-                }
-                break;
-
-            case EnemyStates.Dead:
-                StartCoroutine(Death());
-;               break;
         }
     }
 
@@ -138,7 +141,14 @@ public class Enemy : MonoBehaviour
 
     private Vector3 GenerateRoamPos()
     {
-        var roamPos = gameObject.transform.position + GenerateRandomDir() * GenerateRandomWalkDist();
+        Vector3 roamPos;
+        GraphNode node;
+        node = AstarPath.active.GetNearest(gameObject.transform.position + GenerateRandomDir() * GenerateRandomWalkDist()).node;
+        while (!node.Walkable)
+        {
+            node = AstarPath.active.GetNearest(gameObject.transform.position + GenerateRandomDir() * GenerateRandomWalkDist()).node;
+        }
+        roamPos = (Vector3)node.position;
         return roamPos;
     }
 
@@ -159,23 +169,29 @@ public class Enemy : MonoBehaviour
 
     private void TryFindTarget()
     {
-        if (Vector3.Distance(gameObject.transform.position, player.transform.position) <= targetFolRange)
+        if (Vector3.Distance(gameObject.transform.position, player.transform.position) < targetFolRange)
         {
             currState=EnemyStates.Following;
-            ailerp.speed = 1.5f;
+            aipath.maxSpeed= 1f;
         }
     }
 
     IEnumerator Death()
     {
-        if (boss) PlayerPrefs.SetInt("Boss_Dead", 1);
+        if (boss)
+        {
+            PlayerPrefs.SetInt("Boss_Dead", 1);
+            yield return new WaitForSeconds(4f);
+        }
         else
         {
             int vragovUbito = PlayerPrefs.GetInt("Enemy_Dead");
-            PlayerPrefs.SetInt("Enemy_Dead", vragovUbito+1);
+            PlayerPrefs.SetInt("Enemy_Dead", vragovUbito + 1);
+            yield return new WaitForSeconds(4f);
         }
         Destroy(this.gameObject);
-        yield return new WaitForSeconds(4f);
+       
+       
     }
 
 }
@@ -184,7 +200,5 @@ public class Enemy : MonoBehaviour
 public enum EnemyStates
 {
     Roaming,
-    Following,
-    Attack,
-    Dead
+    Following
 }
