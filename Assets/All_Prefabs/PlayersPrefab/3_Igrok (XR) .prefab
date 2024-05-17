@@ -4047,6 +4047,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  curr: {fileID: 0}
+  weap: 0
 --- !u!114 &8418875946329404802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4059,10 +4061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22571bf28df811e459c20d38a1731729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller_L: {fileID: 3551474087194280705}
-  controller_R: {fileID: 5379734363813379882}
-  L_Collider: {fileID: 6013009443929957497}
-  R_Collider: {fileID: 3849915272252145111}
 --- !u!1 &4743385373965210756
 GameObject:
   m_ObjectHideFlags: 0
@@ -8272,7 +8270,7 @@ Transform:
   m_GameObject: {fileID: 9163037056127812054}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -157.2, y: 62.913, z: -22.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -322,6 +322,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 1
   boss: 1
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &943826662311022494
 GameObject:
@@ -480,6 +481,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &1062122312234215045
 GameObject:
@@ -875,6 +877,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &2825274220391953088
 GameObject:
@@ -1203,6 +1206,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &4104233821196684596
 GameObject:
@@ -1275,6 +1279,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &4352936867167043298
 GameObject:
@@ -1345,6 +1350,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &4390063264695179570
 GameObject:
@@ -1415,6 +1421,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &4429308955968640366
 GameObject:
@@ -1626,6 +1633,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &4858189403740624975
 GameObject:
@@ -1696,6 +1704,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &4908008879373293347
 GameObject:
@@ -1885,6 +1894,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 1
   boss: 1
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &5083795388625424468
 GameObject:
@@ -2304,6 +2314,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 1
   boss: 1
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &7004111217738126065
 GameObject:
@@ -2374,6 +2385,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &7005713615040409889
 GameObject:
@@ -2446,6 +2458,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &7102468017296594006
 GameObject:
@@ -2524,9 +2537,10 @@ GameObject:
   - component: {fileID: 713099424514316218}
   - component: {fileID: 7777592714925401116}
   - component: {fileID: 5993899784207562675}
-  - component: {fileID: 5852143338114009609}
   - component: {fileID: 8071627810679980112}
   - component: {fileID: 970307730561862168}
+  - component: {fileID: 164553612419102820}
+  - component: {fileID: 7834721658539336315}
   m_Layer: 0
   m_Name: Boss_robot_pref
   m_TagString: Untagged
@@ -2601,35 +2615,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &5852143338114009609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7520890824578614641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 847a14d4dc9cc43679ab34fc78e0182f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 4
-  autoRepath:
-    mode: 2
-    interval: 0.5
-    sensitivity: 10
-    maximumInterval: 2
-    visualizeSensitivity: 0
-  canMove: 1
-  speed: 3
-  orientation: 0
-  enableRotation: 1
-  rotationSpeed: 10
-  interpolatePathSwitches: 1
-  switchPathInterpolationSpeed: 5
-  targetCompatibility: {fileID: 0}
-  repathRateCompatibility: NaN
-  canSearchCompability: 0
 --- !u!114 &8071627810679980112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2663,9 +2648,67 @@ MonoBehaviour:
   targetFolRange: 30
   stopTargetRange: 10
   aiDist: {fileID: 8071627810679980112}
+  aipath: {fileID: 164553612419102820}
+  anim: {fileID: 7834721658539336315}
   currState: 0
   health: 0
   boss: 1
+--- !u!114 &164553612419102820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520890824578614641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+  radius: 0.035
+  height: 0.08
+  canMove: 1
+  maxSpeed: 1
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 0
+  enableRotation: 1
+  autoRepath:
+    mode: 2
+    interval: 0.5
+    sensitivity: 10
+    maximumInterval: 2
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
+--- !u!114 &7834721658539336315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520890824578614641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574efac033269774589ff7f718be76ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7777592714925401116}
+  enemy: {fileID: 970307730561862168}
 --- !u!1 &7616339466475023172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,6 +2814,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 1
   boss: 1
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &7903650677388659074
 GameObject:
@@ -2985,6 +3029,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &8389415712187209914
 GameObject:
@@ -3086,6 +3131,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &8436811272399870624
 GameObject:
@@ -3156,6 +3202,7 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 1
   boss: 1
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &8457822741534190798
 GameObject:
@@ -3570,4 +3617,5 @@ MonoBehaviour:
   enemy: {fileID: 970307730561862168}
   att_coll: 0
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}

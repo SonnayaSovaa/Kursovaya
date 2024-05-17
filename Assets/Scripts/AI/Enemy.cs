@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private float targetFolRange;
     //[SerializeField] private EnemyAttack enemyAttack;
-    float attackRange = 0.3f;
+    float attackRange = 0.9f;
 
     [SerializeField] private float stopTargetRange;
 

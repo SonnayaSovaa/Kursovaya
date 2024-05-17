@@ -139,6 +139,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &878653828459084250
 GameObject:
@@ -332,6 +333,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &1310008776341915229
 GameObject:
@@ -404,6 +406,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &1711662255311638253
 GameObject:
@@ -641,6 +644,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &2211854893844590066
 GameObject:
@@ -802,6 +806,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &3191492884822240776
 GameObject:
@@ -1274,6 +1279,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &4686163228883906777
 GameObject:
@@ -1318,10 +1324,10 @@ GameObject:
   - component: {fileID: 2604929888669776854}
   - component: {fileID: 4063145663503829119}
   - component: {fileID: 493887272322509117}
-  - component: {fileID: 6364864882606807893}
   - component: {fileID: 6020041625023707800}
   - component: {fileID: 8772356951579481657}
   - component: {fileID: 2840410137609035143}
+  - component: {fileID: 8562027759124603583}
   m_Layer: 0
   m_Name: Shroom_pref
   m_TagString: Untagged
@@ -1396,35 +1402,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &6364864882606807893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4952629640193186485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 847a14d4dc9cc43679ab34fc78e0182f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 4
-  autoRepath:
-    mode: 2
-    interval: 0.5
-    sensitivity: 20
-    maximumInterval: 2
-    visualizeSensitivity: 0
-  canMove: 1
-  speed: 1
-  orientation: 0
-  enableRotation: 1
-  rotationSpeed: 10
-  interpolatePathSwitches: 1
-  switchPathInterpolationSpeed: 5
-  targetCompatibility: {fileID: 0}
-  repathRateCompatibility: NaN
-  canSearchCompability: 0
 --- !u!114 &6020041625023707800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,13 +1428,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0218a433c3b87b4cb236619e2ead087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minWalkDist: 12
-  maxWalkDist: 14
+  minWalkDist: 1
+  maxWalkDist: 10
   reachPointDist: 1
   roamTarget: {fileID: 1711662255311638253}
-  targetFolRange: 15
-  stopTargetRange: 11
+  targetFolRange: 7
+  stopTargetRange: 15
   aiDist: {fileID: 6020041625023707800}
+  aipath: {fileID: 8562027759124603583}
+  anim: {fileID: 2840410137609035143}
   currState: 0
   health: 0
   boss: 0
@@ -1475,6 +1454,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4063145663503829119}
   enemy: {fileID: 8772356951579481657}
+--- !u!114 &8562027759124603583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4952629640193186485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+  radius: 0.01
+  height: 0.02
+  canMove: 1
+  maxSpeed: 1
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 0
+  enableRotation: 1
+  autoRepath:
+    mode: 2
+    interval: 0.5
+    sensitivity: 20
+    maximumInterval: 2
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
 --- !u!1 &5069413648264903734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,6 +1910,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &6308438925768112025
 GameObject:
@@ -2112,6 +2134,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &7290943789951026217
 GameObject:
@@ -2239,6 +2262,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &7435614641681292751
 GameObject:
@@ -2375,6 +2399,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &7958498489381011309
 GameObject:
@@ -2479,6 +2504,7 @@ MonoBehaviour:
   enemy: {fileID: 8772356951579481657}
   att_coll: 1
   boss: 0
+  main: {fileID: 0}
   udar: {fileID: 8300000, guid: 4aba87eba2f89fb4589b8b34b40ad9c2, type: 3}
 --- !u!1 &8149111548536766196
 GameObject:
