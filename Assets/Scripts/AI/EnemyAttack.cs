@@ -59,11 +59,6 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    public void TryAttackPlayer()
-    {
-        player.GetDamage(uron);
-    }
-
 
 
 }

@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private float targetFolRange;
     //[SerializeField] private EnemyAttack enemyAttack;
-    float attackRange = 0.9f;
+    public float attackRange = 1f;
 
     [SerializeField] private float stopTargetRange;
 
@@ -39,7 +39,9 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        player=FindObjectOfType<Player>();
+        PlayerPrefs.SetInt("Enemy_Dead", 0);
+
+        player =FindObjectOfType<Player>();
         currState = EnemyStates.Roaming;
         roamPos = GenerateRoamPos();
 
@@ -89,6 +91,7 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            aiDist.target = null;
             StartCoroutine(Death());
             anim.IsWalk(false);
             anim.IsRunning(false);
@@ -121,11 +124,12 @@ public class Enemy : MonoBehaviour
 
                 anim.IsWalk(false);
                 anim.IsRunning(true);
+                anim.PlayAttack(false);
 
-                if (Vector3.Distance(gameObject.transform.position, player.transform.position) < attackRange)
+                if (Vector3.Distance(gameObject.transform.position, player.transform.position) <= attackRange)
                 {
                     //attack.TryAttackPlayer();
-                    anim.PlayAttack();
+                    anim.PlayAttack(true);
                 }
 
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) >= stopTargetRange)
@@ -181,13 +185,13 @@ public class Enemy : MonoBehaviour
         if (boss)
         {
             PlayerPrefs.SetInt("Boss_Dead", 1);
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(2f);
         }
         else
         {
             int vragovUbito = PlayerPrefs.GetInt("Enemy_Dead");
             PlayerPrefs.SetInt("Enemy_Dead", vragovUbito + 1);
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(2f);
         }
         Destroy(this.gameObject);
        

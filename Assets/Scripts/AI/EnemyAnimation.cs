@@ -14,9 +14,9 @@ public class EnemyAnimation : MonoBehaviour
     private static readonly int Dead = Animator.StringToHash("dead");
 
 
-    public void PlayAttack()
+    public void PlayAttack(bool cond)
     {
-        animator.SetTrigger(Attack);
+        animator.SetBool(Attack, cond);
     }
 
     public void PlayDead()

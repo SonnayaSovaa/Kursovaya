@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 1
   boss: 0
   main: {fileID: 0}
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 1
   boss: 0
   main: {fileID: 0}
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -1682,7 +1682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -1815,6 +1815,7 @@ Transform:
   - {fileID: 7385510107907041103}
   - {fileID: 5054655984526911916}
   - {fileID: 8858673409401510408}
+  - {fileID: 2107152690603098316}
   m_Father: {fileID: 3250151414334240918}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5961773832201658321
@@ -1905,7 +1906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -1943,6 +1944,95 @@ Transform:
   - {fileID: 7646807356128967926}
   m_Father: {fileID: 5054655984526911916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6207349480774810724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107152690603098316}
+  - component: {fileID: 1475475488073188716}
+  - component: {fileID: 8045479896248462566}
+  - component: {fileID: 7361508591504705994}
+  m_Layer: 0
+  m_Name: collider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2107152690603098316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207349480774810724}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000003776904, y: 0.0000000959667, z: 2.7641838e-12, w: 1}
+  m_LocalPosition: {x: -0, y: 0.00154, z: -0.00001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7451738803898277940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475475488073188716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207349480774810724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8341603779454739349}
+  att_coll: 0
+  boss: 0
+  main: {fileID: 0}
+  udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
+--- !u!65 &8045479896248462566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207349480774810724}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0034, y: 0.0034, z: 0.0034}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7361508591504705994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207349480774810724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  att_coll: 0
+  boss: 0
+  main: {fileID: 0}
+  udar: {fileID: 8300000, guid: cca39ef11d9f04b4a9001a21b23ea8b7, type: 3}
 --- !u!1 &6317633349883814951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,7 +2121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -2188,7 +2278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -2207,7 +2297,6 @@ GameObject:
   - component: {fileID: 8313027824821686609}
   - component: {fileID: 8341603779454739349}
   - component: {fileID: 1063514643017200062}
-  - component: {fileID: 3998869763855000492}
   - component: {fileID: 2096894409211036358}
   m_Layer: 0
   m_Name: robot_small
@@ -2314,6 +2403,7 @@ MonoBehaviour:
   reachPointDist: 1
   roamTarget: {fileID: 4213763434063621234}
   targetFolRange: 7
+  attackRange: 1
   stopTargetRange: 15
   aiDist: {fileID: 8313027824821686609}
   aipath: {fileID: 2096894409211036358}
@@ -2335,19 +2425,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 525270771035419250}
   enemy: {fileID: 8341603779454739349}
---- !u!114 &3998869763855000492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6548759990243144370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e318e304e1634a8479d6f008d39969b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boss: 0
 --- !u!114 &2096894409211036358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2365,7 +2442,7 @@ MonoBehaviour:
   height: 0.035
   canMove: 1
   maxSpeed: 1
-  gravity: {x: NaN, y: NaN, z: NaN}
+  gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2377,15 +2454,15 @@ MonoBehaviour:
   autoRepath:
     mode: 2
     interval: 0.5
-    sensitivity: 20
+    sensitivity: 10
     maximumInterval: 2
     visualizeSensitivity: 0
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.88
+  slowdownDistance: 0.7
   pickNextWaypointDist: 1.13
-  endReachedDistance: 0.88
+  endReachedDistance: 0.7
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -2800,7 +2877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}
@@ -2957,7 +3034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 8341603779454739349}
   att_coll: 0
   boss: 0
   main: {fileID: 0}

@@ -3685,8 +3685,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.01, y: 0.01, z: 11.482061}
-  m_Center: {x: -0.00000995677, y: 0, z: 5.699317}
+  m_Size: {x: 0.01, y: 0.01, z: 0.67}
+  m_Center: {x: -0.00000995677, y: 0, z: 0.35}
 --- !u!54 &5576402839919586956
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5140,8 +5140,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.01, y: 0.01, z: 11.482061}
-  m_Center: {x: -0.00000995677, y: 0, z: 5.699317}
+  m_Size: {x: 0.01, y: 0.01, z: 0.67}
+  m_Center: {x: -0.00000995677, y: 0, z: 0.35}
 --- !u!114 &3905865775091874551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8330,7 +8330,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 1
-  m_Radius: 0.4
+  m_Radius: 0.3
   m_SlopeLimit: 0
   m_StepOffset: 0
   m_SkinWidth: 0.0001
@@ -8487,7 +8487,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.27
+  m_Radius: 0.3
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
