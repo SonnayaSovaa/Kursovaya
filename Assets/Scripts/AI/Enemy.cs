@@ -128,7 +128,6 @@ public class Enemy : MonoBehaviour
 
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) <= attackRange)
                 {
-                    //attack.TryAttackPlayer();
                     anim.PlayAttack(true);
                 }
 

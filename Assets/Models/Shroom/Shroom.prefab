@@ -605,7 +605,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 63.92, y: 63.92, z: 63.92}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8746736917841608260}
@@ -693,6 +693,7 @@ MonoBehaviour:
   reachPointDist: 1
   roamTarget: {fileID: 8811193427284792872}
   targetFolRange: 7
+  attackRange: 1
   stopTargetRange: 15
   aiDist: {fileID: 3222047588132710906}
   aipath: {fileID: 4492880950088059163}
@@ -743,15 +744,15 @@ MonoBehaviour:
   autoRepath:
     mode: 2
     interval: 0.5
-    sensitivity: 20
+    sensitivity: 10
     maximumInterval: 2
     visualizeSensitivity: 0
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.6
-  pickNextWaypointDist: 2
-  endReachedDistance: 0.2
+  slowdownDistance: 0.7
+  pickNextWaypointDist: 1.13
+  endReachedDistance: 0.7
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
