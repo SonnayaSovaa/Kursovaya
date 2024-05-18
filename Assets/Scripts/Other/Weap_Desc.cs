@@ -9,20 +9,39 @@ public class Weap_Desc : MonoBehaviour
     [SerializeField] TMP_Text rank;
     [SerializeField] TMP_Text uron;
 
-    public int real_uron;
+    public int real_uron=0;
 
     public GameObject[] weapons;
 
     public CurrentWeapon curr;
 
-    Player player;
-   
+    Transform TheWeapon;
+
+    [SerializeField] GameObject igrok;
+
+    Transform[] allWeap;   
 
     public bool weap=false;
 
     private void Start()
     {
-       player=FindAnyObjectByType<Player>(); 
+
+        TheWeapon = FindObjectOfType<Weap_Detecter>().gameObject.transform;
+
+        allWeap = TheWeapon.GetComponentsInChildren<Transform>();
+
+        weapons = new GameObject[allWeap.Length / 2];
+
+        int j = 0;
+        for (int i = allWeap.Length - 1; i >= 0; i--)
+        {
+            if (allWeap[i].gameObject.name.Contains("W_"))
+            {
+                weapons[j] = allWeap[i].gameObject;
+                j++;
+            }
+        }
+
     }
 
     public void InHand()
@@ -39,7 +58,7 @@ public class Weap_Desc : MonoBehaviour
                     int currUr = What(int.Parse(weapons[i].tag));
                     curr=weapons[i].AddComponent<CurrentWeapon>();
                     curr.currentUron = currUr;
-                    weapons[i].transform.parent = player.transform;
+                    weapons[i].transform.parent = igrok.transform;
 
                 }
                 else

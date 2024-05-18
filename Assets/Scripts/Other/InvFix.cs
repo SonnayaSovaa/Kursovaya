@@ -10,6 +10,7 @@ public class InvFix : MonoBehaviour
     bool changed=false;
     bool was_changed=false;
 
+
     private void Update()
     {
         

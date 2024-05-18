@@ -1,4 +1,5 @@
 using System.Linq;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
@@ -21,6 +22,7 @@ public class PipeRotate : MonoBehaviour
     [SerializeField] private AudioSource main;
 
     int score;
+    public int keyscore;
     int slojnost;
 
     public bool InTrig = false;
@@ -34,15 +36,18 @@ public class PipeRotate : MonoBehaviour
         switch (slojnost)
         {
             case 0:
-                score = 60;
+                keyscore = 4;
+                score = 250;
                 break;
 
             case 1:
-                score = 40;
+                keyscore = 2;
+                score = 200;
                 break;
 
             case 2:
-                score = 20;
+                keyscore = 0;
+                score = 150;
                 break;
 
         }
@@ -93,7 +98,7 @@ public class PipeRotate : MonoBehaviour
         if  (currRots.SequenceEqual(Pipe_vals))
         {
             //Debug.Log("WIN");
-            Win();
+            Win(score);
         }
     }
 
@@ -111,24 +116,20 @@ public class PipeRotate : MonoBehaviour
        
     }
 
-    void Win()
+    public void Win(int up)
     {
-        player.ScoreUp(score);
+        player.ScoreUp(up);
         tablo1.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
         tablo2.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
 
         //tablo1.color= new Color(191, 255, 186, 255);
         main.PlayOneShot(access);
 
-        SetInt("PipeRotat", 1);
+        PlayerPrefs.SetInt("PipeRotat", 1);
 
         Destroy(this);
     }
 
-    public void SetInt(string KeyName, int Value)
-    {
-        PlayerPrefs.SetInt(KeyName, Value);
-    }
 
     private void OnTriggerExit(Collider other)
     {

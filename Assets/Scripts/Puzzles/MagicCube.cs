@@ -1,8 +1,7 @@
 using System;
+using Unity.XR.CoreUtils;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class MagicCube : MonoBehaviour
@@ -21,15 +20,14 @@ public class MagicCube : MonoBehaviour
     [SerializeField] Player player;
 
     int score;
+    public int keyscore;
+
     int slojnost;
-
-
 
 
     private void Update()
     {
         Check();
-
     }
 
     private void Start()
@@ -41,15 +39,18 @@ public class MagicCube : MonoBehaviour
         switch (slojnost)
         {
             case 0:
-                score = 60;
+                keyscore = 4;
+                score = 250;
                 break;
 
             case 1:
-                score = 40;
+                keyscore = 2;
+                score = 200;
                 break;
 
             case 2:
-                score = 20;
+                keyscore = 0;
+                score = 150;
                 break;
 
         }
@@ -93,7 +94,7 @@ public class MagicCube : MonoBehaviour
 
             if (hor && ver && dia && vals[0] != 0 && vals[1] != 0 && vals[2] != 0 && vals[3] != 0 && vals[4] != 0 && vals[5] != 0 && vals[6] != 0 && vals[7] != 0 && vals[8] != 0)
             {
-                Win();
+                Win(score);
             }
 
            
@@ -101,9 +102,9 @@ public class MagicCube : MonoBehaviour
 
     }
 
-    void Win()
+    public void Win(int up)
     {
-        player.ScoreUp(score);
+        player.ScoreUp(up);
 
         tablo1.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
         tablo2.color = new Color(191 / 255f, 1f, 186 / 255f, 1f);
