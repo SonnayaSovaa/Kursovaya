@@ -2411,8 +2411,7 @@ MonoBehaviour:
   currState: 0
   health: 0
   boss: 0
-  key: {fileID: 4427784418515547161, guid: 06385382d7e51054aba7fa387980525e, type: 3}
-  spawn: {fileID: 0}
+  key: {fileID: 8668965697757834406, guid: 06385382d7e51054aba7fa387980525e, type: 3}
 --- !u!114 &1063514643017200062
 MonoBehaviour:
   m_ObjectHideFlags: 0

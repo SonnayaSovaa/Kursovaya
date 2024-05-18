@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class CurrentWeapon : MonoBehaviour
 {
-    public int currentUron;
+    public int currentUron=0;
 
 }

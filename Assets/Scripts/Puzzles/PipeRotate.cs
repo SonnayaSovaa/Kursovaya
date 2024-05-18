@@ -32,6 +32,8 @@ public class PipeRotate : MonoBehaviour
 
         slojnost = PlayerPrefs.GetInt("LevelDif");
 
+        player=FindObjectOfType<Player>();
+
 
         switch (slojnost)
         {

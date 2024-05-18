@@ -273,6 +273,7 @@ public class Weap_Desc : MonoBehaviour
         real_uron = 0;
 
         weap = false;
+        curr.currentUron = 0;
 
         foreach (var j in weapons)
         {

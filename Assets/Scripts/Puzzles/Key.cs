@@ -22,10 +22,10 @@ public class Key : MonoBehaviour
     
     void Update()
     {
-       if (this.gameObject.GetNamedChild("For_key [Dynamic Attach transorm") != null)
+       if (this.gameObject.GetNamedChild("[For_key] Dynamic Attach") != null)
         {
             if (scene == "Steam_Lab") rot.Win(rot.keyscore);
-            else rot.Win(rot.keyscore);
+            else cube.Win(cube.keyscore);
 
             Destroy(this.gameObject);
         } 

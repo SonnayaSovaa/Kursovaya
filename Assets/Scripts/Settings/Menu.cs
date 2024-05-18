@@ -42,7 +42,11 @@ public class Menu : MonoBehaviour
         audioSource.PlayOneShot(AudioClip);
     }
 
-
+    public void Denastr()
+    {
+        menu_nastroek.SetActive(false);
+        audioSource.PlayOneShot(AudioClip);
+    }
 
     public void SetInt(string KeyName, int Value)
     {

@@ -9,7 +9,6 @@ public class MagicCube : MonoBehaviour
 
     public GameObject[] points = new GameObject[9];
     int[] vals = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-    bool che;
 
     [SerializeField] private Image tablo1;
     [SerializeField] private Image tablo2;
@@ -17,7 +16,7 @@ public class MagicCube : MonoBehaviour
     [SerializeField] private AudioClip access;
     [SerializeField] private AudioSource main;
 
-    [SerializeField] Player player;
+    Player player;
 
     int score;
     public int keyscore;
@@ -34,7 +33,7 @@ public class MagicCube : MonoBehaviour
     {
         
         slojnost = PlayerPrefs.GetInt("LevelDif");
-
+        player = FindObjectOfType<Player>();
 
         switch (slojnost)
         {
