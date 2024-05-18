@@ -6,7 +6,6 @@ public class EnemySpawn : MonoBehaviour
 {
 
     [SerializeField] private GameObject enemy1;
-    //[SerializeField] private GameObject enemy2;
 
     [SerializeField] private int minX;
     [SerializeField] private int maxX;
@@ -15,30 +14,24 @@ public class EnemySpawn : MonoBehaviour
 
     [SerializeField] private float hight;
 
+    public int vragov_ubito=0;
+
     public int number1;
-    //[SerializeField] private int number2;
 
     private void Awake()
     {
         int LevelDif = PlayerPrefs.GetInt("LevelDif");
-        /*
-        if (LevelDif == 0) number1 = 15;
-        else if (LevelDif == 1) number1 = 23;
-        else number1 = 36;
-        */
+        
+        if (LevelDif == 0) number1 = 25;
+        else if (LevelDif == 1) number1 = 30;
+        else number1 = 40;
+        
         
 
         for (int i=0; i<number1; i++)
         {
             Spawn(enemy1);
         }
-
-        /*
-        for (int i = 0; i < number2; i++)
-        {
-            Spawn(enemy2);
-        }
-        */
     }
 
 

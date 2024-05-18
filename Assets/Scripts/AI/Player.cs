@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     [SerializeField] AudioClip Steam;
     [SerializeField] AudioClip Forest;
 
+    [SerializeField] public GameObject igrok;
+
     private void Update()
     {
         if (currhealth>0)

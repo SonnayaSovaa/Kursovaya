@@ -1,6 +1,8 @@
 using Pathfinding;
 using System.Collections;
 using UnityEngine;
+using System;
+using Shooter;
 
 public class Enemy : MonoBehaviour
 {
@@ -13,7 +15,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject roamTarget;
 
     [SerializeField] private float targetFolRange;
-    //[SerializeField] private EnemyAttack enemyAttack;
     public float attackRange = 1f;
 
     [SerializeField] private float stopTargetRange;
@@ -22,7 +23,6 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] AIPath aipath;
 
-    //[SerializeField] EnemyAttack attack;
     [SerializeField] EnemyAnimation anim;
 
     private Player player;
@@ -34,11 +34,22 @@ public class Enemy : MonoBehaviour
     public int health;
     int slojnost;
 
+    int score;
 
     public bool boss;
 
+    [SerializeField] GameObject key;
+    int keySpawn;
+
+    EnemySpawn spawn;
+
+    bool umer=true;
+
     private void Start()
     {
+        spawn=FindObjectOfType<EnemySpawn>();
+
+        keySpawn = Convert.ToInt32(spawn.number1/3-1);
         PlayerPrefs.SetInt("Enemy_Dead", 0);
 
         player =FindObjectOfType<Player>();
@@ -54,14 +65,17 @@ public class Enemy : MonoBehaviour
             {
                 case 0:
                     health = 50;
+                    score = 32;
                     break;
 
                 case 1:
                     health = 80;
+                    score = 27;
                     break;
 
                 case 2:
                     health = 120;
+                    score = 23;
                     break;
 
             }
@@ -72,14 +86,17 @@ public class Enemy : MonoBehaviour
             {
                 case 0:
                     health = 180;
+                    score = 150;
                     break;
 
                 case 1:
                     health = 240;
+                    score = 200;
                     break;
 
                 case 2:
                     health = 360;
+                    score = 225;
                     break;
 
             }
@@ -88,14 +105,17 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("SMERT   "+spawn.vragov_ubito);
 
         if (health <= 0)
         {
-            aiDist.target = null;
-            StartCoroutine(Death());
+            Death(umer);            
+            player.ScoreUp(score);
+            aiDist.target = null;            
             anim.IsWalk(false);
             anim.IsRunning(false);
             anim.PlayDead();
+            (this.gameObject.GetComponent<AIPath>() as MonoBehaviour).enabled = false;
         }
         switch (currState)
         {
@@ -116,7 +136,6 @@ public class Enemy : MonoBehaviour
                 anim.IsRunning(false);
 
                 break;
-
 
             case EnemyStates.Following:
 
@@ -158,14 +177,14 @@ public class Enemy : MonoBehaviour
 
     private float GenerateRandomWalkDist()
     {
-        var randDist = Random.Range(minWalkDist, maxWalkDist);
+        var randDist = UnityEngine.Random.Range(minWalkDist, maxWalkDist);
         return randDist;
     }
 
 
     private Vector3 GenerateRandomDir()
     {
-        var newDir = new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f));
+        var newDir = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0f, UnityEngine.Random.Range(-1f, 1f));
         return newDir.normalized;
     }
 
@@ -179,24 +198,40 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    IEnumerator Death()
+    void Death(bool cond)
     {
-        if (boss)
+        if (cond)
         {
-            PlayerPrefs.SetInt("Boss_Dead", 1);
-            yield return new WaitForSeconds(2f);
+            if (boss)
+            {
+                PlayerPrefs.SetInt("Boss_Dead", 1);
+            }
+            else
+            {
+                spawn.vragov_ubito++;
+                int vragovUbito = PlayerPrefs.GetInt("Enemy_Dead");
+
+                PlayerPrefs.SetInt("Enemy_Dead", vragovUbito + 1);
+
+            }
+
+            GenKey(this.gameObject.transform.position);
+            umer = false;
         }
-        else
-        {
-            int vragovUbito = PlayerPrefs.GetInt("Enemy_Dead");
-            PlayerPrefs.SetInt("Enemy_Dead", vragovUbito + 1);
-            yield return new WaitForSeconds(2f);
-        }
-        Destroy(this.gameObject);
-       
-       
     }
 
+
+    void GenKey(Vector3 pos)
+    {
+        Destroy(this.gameObject, 2f);
+        if (spawn.vragov_ubito == keySpawn)
+        {
+            var keyInstamce = Instantiate(key);
+            var newPos = pos + new Vector3(0, 1, 0);
+            keyInstamce.transform.position = newPos;
+        }
+        
+    }
 }
 
 

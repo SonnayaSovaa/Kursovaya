@@ -34,7 +34,7 @@ public class TheEnd : MonoBehaviour
         vrag_num = PlayerPrefs.GetInt("Enemy_Dead");
         time = PlayerPrefs.GetFloat("Time");
 
-        if (igrok_umer <= 0 || score<200)
+        if (igrok_umer <= 0 || score<1500)
         {
             endState = "ПОРАЖЕНИЕ";
         }
@@ -49,7 +49,7 @@ public class TheEnd : MonoBehaviour
         }
         else
         {
-            if (score < 200)
+            if (score < 1500)
                 texttt = "Поздравлем с выживанием! Однако вам не хватает очков, чтобы пройти в следующий этап. Поробуете поучаствовать в турнире в следующий раз.";
             else
                 texttt = "Поздравляем с прохождением турнира! Вы набрали достаточно очков, чтобы пройти в следующий этап.";

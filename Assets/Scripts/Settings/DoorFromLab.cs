@@ -85,7 +85,7 @@ public class DoorFromLab : MonoBehaviour
                     else if (this.name == "ToLes")
                     {
                         golov = PlayerPrefs.GetInt("MagicCube");
-                        if (golov == 0 && inHand)
+                        if (true)//(golov == 0 && inHand)
                             DoorOpen(this.name);
                     }
 

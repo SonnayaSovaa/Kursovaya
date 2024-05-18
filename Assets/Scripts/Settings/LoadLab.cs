@@ -7,13 +7,15 @@ public class DoorToLab : MonoBehaviour
 
     string m_Scene;
 
-    [SerializeField] private GameObject Igrok;
+    public GameObject Igrok;
 
     Weap_Desc weapon;
 
-    private void Start()
+    private void Awake()
     {
-        weapon = FindObjectOfType<Weap_Desc>();
+        Player player= FindObjectOfType<Player>();
+        Igrok = player.igrok;
+        weapon =FindObjectOfType<Weap_Desc>();
     }
 
     public void Update()
@@ -21,11 +23,12 @@ public class DoorToLab : MonoBehaviour
         inHand = weapon.weap;
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        DontDestroyOnLoad(Igrok);
+        
         if (other.tag == "Player")
         {
+            DontDestroyOnLoad(Igrok);
             string currScene = SceneManager.GetActiveScene().name;
 
             if (this.name == "ToSteam")
@@ -35,6 +38,7 @@ public class DoorToLab : MonoBehaviour
                 if (prohodSteam == 0 && inHand)
                 {
                     m_Scene = "Steam_Lab";
+                    Load(m_Scene);
                 }
             }
 
@@ -42,9 +46,10 @@ public class DoorToLab : MonoBehaviour
             {
                 int prohodForest = PlayerPrefs.GetInt("MagicCube");
 
-                if (prohodForest == 0 && inHand)
+                if (true)//(prohodForest == 0 && inHand)
                 {
                     m_Scene = "Forest";
+                    Load(m_Scene);
                 }
             }
 
@@ -55,6 +60,7 @@ public class DoorToLab : MonoBehaviour
                 if (dead == 1)
                 {
                     m_Scene = "End";
+                    Load(m_Scene);
                 }
             }
 
@@ -66,6 +72,7 @@ public class DoorToLab : MonoBehaviour
                 if (prohodForest == 1 && prohodSteam == 1 && inHand)
                 {
                     m_Scene = "Arena";
+                    Load(m_Scene);
                 }
             }
 
