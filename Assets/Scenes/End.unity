@@ -558,6 +558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184301746}
   - component: {fileID: 184301747}
+  - component: {fileID: 184301748}
   m_Layer: 0
   m_Name: Menu_Script
   m_TagString: Untagged
@@ -597,8 +598,20 @@ MonoBehaviour:
   scorer: {fileID: 585344581}
   fintext: {fileID: 1311951035}
   state: {fileID: 1287228682}
-  AudioClip: {fileID: 8300000, guid: f13f435c5cf57d645a93cfb0e541b7b0, type: 3}
+  AudioClip: {fileID: 8300000, guid: 721d27e6bc06847488ef1c54a2272347, type: 3}
   audioSource: {fileID: 2033789667}
+--- !u!114 &184301748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184301743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9252eaad3448aba4e9453f0d6ddc2bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271206219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfc19277113c6e44a3e849bb2f1a04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioClip: {fileID: 8300000, guid: 721d27e6bc06847488ef1c54a2272347, type: 3}
+  AudioClip: {fileID: 8300000, guid: f13f435c5cf57d645a93cfb0e541b7b0, type: 3}
   mainAudio: {fileID: 2033789667}
 --- !u!114 &338684204
 MonoBehaviour:
@@ -2160,7 +2173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfc19277113c6e44a3e849bb2f1a04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioClip: {fileID: 8300000, guid: 721d27e6bc06847488ef1c54a2272347, type: 3}
+  AudioClip: {fileID: 8300000, guid: f13f435c5cf57d645a93cfb0e541b7b0, type: 3}
   mainAudio: {fileID: 2033789667}
 --- !u!114 &828242032
 MonoBehaviour:
@@ -3637,6 +3650,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2305613593545396999, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708738725634732114, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

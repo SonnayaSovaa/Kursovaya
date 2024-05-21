@@ -21,7 +21,7 @@ public class Weap_Desc : MonoBehaviour
 
     Transform[] allWeap;   
 
-    public bool weap=false;
+    public bool weap;
 
     private void Start()
     {

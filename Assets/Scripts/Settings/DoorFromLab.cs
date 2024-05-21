@@ -8,13 +8,13 @@ using System.Data;
 
 public class DoorFromLab : MonoBehaviour
 {
-    ActionBasedController controller_L;
-    ActionBasedController controller_R;
+    public ActionBasedController controller_L;
+    public ActionBasedController controller_R;
 
     ActionBasedController[] controllers;
 
     int golov;
-    public static bool inHand = false;
+    public bool inHand;
 
     [SerializeField] GameObject door;
 
@@ -46,7 +46,7 @@ public class DoorFromLab : MonoBehaviour
     public void OnTriggerStay(Collider other)
     {
         Debug.Log("Door1");
-        if ((other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() == 1 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() == 1))
+        if (other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() >0 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() >0)
         {
             inHand = weapon.weap;
 

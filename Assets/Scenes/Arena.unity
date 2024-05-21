@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.22344199, g: 0.31106317, b: 0.49711412, a: 1}
+  m_IndirectSpecularColor: {r: 0.22344324, g: 0.31106362, b: 0.49711007, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3975,6 +3975,7 @@ GameObject:
   - component: {fileID: 1877549167}
   - component: {fileID: 1877549166}
   - component: {fileID: 1877549170}
+  - component: {fileID: 1877549171}
   m_Layer: 0
   m_Name: floor
   m_TagString: Untagged
@@ -4099,6 +4100,18 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: c494008f1500ace498d1f4156eb3fafa, type: 2}
   m_BuildHeightMesh: 0
+--- !u!114 &1877549171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877549165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9252eaad3448aba4e9453f0d6ddc2bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1879571088
 BoxCollider:
   m_ObjectHideFlags: 0
