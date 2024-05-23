@@ -88,7 +88,7 @@ public class Weap_Desc : MonoBehaviour
                         real_uron = 21;
                         break;
                     case 3:
-                        description.text = "Магическо ядовитое копьё. Сттрого воспрещено использовать в пищу.";
+                        description.text = "Магическо ядовитое копьё. Строго воспрещено использовать в пищу.";
                         rank.text = "4";
                         real_uron = 36;
                         break;

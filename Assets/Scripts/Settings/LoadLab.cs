@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DoorToLab : MonoBehaviour
@@ -11,11 +12,14 @@ public class DoorToLab : MonoBehaviour
 
     Weap_Desc weapon;
 
+    GameObject loading;
+
     private void Awake()
     {
         Player player= FindObjectOfType<Player>();
         Igrok = player.igrok;
         weapon =FindObjectOfType<Weap_Desc>();
+        loading = player.loading;
     }
 
     public void Update()
@@ -104,9 +108,11 @@ public class DoorToLab : MonoBehaviour
 
         void Load(string Sc_name)
         {
-            SceneManager.LoadScene(Sc_name);
+            loading.SetActive(true);
+            SceneManager.LoadSceneAsync(Sc_name);
         }
 
+        
 
         
     }

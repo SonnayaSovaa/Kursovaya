@@ -612,6 +612,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9252eaad3448aba4e9453f0d6ddc2bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
+  heal: {fileID: 0}
 --- !u!1 &271206219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3652,8 +3654,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2969009990172235766, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522296970096424168, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Shag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706029719708895772, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754817630197985533, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5349335358473119157, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918086677919174669, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135937927785994048, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_AudioClipForOnSelectEntered
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c7e5a3f544a51543bd89d87aa9798bf, type: 3}
+    - target: {fileID: 7135937927785994048, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_PlayAudioClipOnSelectEntered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_AudioClipForOnSelectEntered
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c7e5a3f544a51543bd89d87aa9798bf, type: 3}
+    - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_PlayAudioClipOnSelectEntered
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8708738725634732114, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153818633094611992, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

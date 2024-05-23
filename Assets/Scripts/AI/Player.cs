@@ -1,12 +1,23 @@
 using System;
+using System.Runtime.InteropServices;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.OpenXR.Input;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] public GameObject loading;
+
+    [SerializeField] private Image health1;
+    [SerializeField] private Image health2;
+    [SerializeField] private Image health3;
+    [SerializeField] private Image health4;
+
+
     public int currhealth = 100;
 
     [SerializeField] TMP_Text timer;
@@ -20,12 +31,15 @@ public class Player : MonoBehaviour
 
     public ActionBasedController controller_L;
 
-    public bool Shag;
+    //public bool Shag;
     [SerializeField] public AudioSource playerAudio;
-    [SerializeField] AudioClip Steam;
-    [SerializeField] AudioClip Forest;
+    [SerializeField] AudioClip Uron;
+    //[SerializeField] AudioClip Steam;
+    //[SerializeField] AudioClip Forest;
 
     [SerializeField] public GameObject igrok;
+
+
 
     private void Update()
     {
@@ -34,7 +48,8 @@ public class Player : MonoBehaviour
 
         timer.text = $"{Convert.ToInt32(time / 3600)}:{Convert.ToInt32(Math.Floor(time % 3600 / 60))}:{Convert.ToInt32(time % 60)}";
 
-        if (Shag && controller_L.positionAction.action.ReadValue<float>()>0)
+        /*
+        if (Shag)
         {
             if (SceneManager.GetActiveScene().name == "Steam_Lab")
             {
@@ -46,17 +61,22 @@ public class Player : MonoBehaviour
             }
 
         }
+        */
+        
     }
 
     private void Start()
     {
-        //currhealth = PlayerPrefs.GetInt("Health");
+        currhealth = PlayerPrefs.GetInt("Health");
         currhealth = 100;
         healthSl.value = currhealth/100;
+        loading.SetActive(false);
+
     }
 
     public void GetDamage(int uron)
     {
+        playerAudio.PlayOneShot(Uron);
         if (currhealth - uron <= 0)
         {
             currhealth = 0;
@@ -65,6 +85,12 @@ public class Player : MonoBehaviour
 
         else currhealth -= uron;
         healthSl.value = currhealth / 100;
+
+        health1.color = new Color(0, 0, 0, 1 - currhealth / 100);
+        health2.color = new Color(0, 0, 0, 1 - currhealth / 100);
+        health3.color = new Color(0, 0, 0, 1 - currhealth / 100);
+        health4.color = new Color(0, 0, 0, 1 - currhealth / 100);
+
     }
 
     void Death()

@@ -9,7 +9,10 @@ public class Health : MonoBehaviour
     int heal;
 
 
-
+    [SerializeField] private Image health1;
+    [SerializeField] private Image health2;
+    [SerializeField] private Image health3;
+    [SerializeField] private Image health4;
 
     private void Start()
     {
@@ -37,6 +40,12 @@ public class Health : MonoBehaviour
             player.currhealth+=heal;
             if (healthSl.value * 100 + heal <= 100) healthSl.value = (healthSl.value * 100 + heal) / 100;
             else healthSl.value = 1;
+
+
+            health1.color = new Color(0, 0, 0, 1 - player.currhealth / 100);
+            health2.color = new Color(0, 0, 0, 1 - player.currhealth / 100);
+            health3.color = new Color(0, 0, 0, 1 - player.currhealth / 100);
+            health4.color = new Color(0, 0, 0, 1 - player.currhealth / 100);
 
             Destroy(other.gameObject);
         }

@@ -23,6 +23,8 @@ public class Menu : MonoBehaviour
 
         SetFloat("Time", 0);
 
+        DontDestroyOnLoad(audioSource);
+
         SceneManager.LoadScene("Start");
 
     }
