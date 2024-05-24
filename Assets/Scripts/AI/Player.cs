@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -31,15 +32,53 @@ public class Player : MonoBehaviour
 
     public ActionBasedController controller_L;
 
-    //public bool Shag;
+    public bool Shag;
     [SerializeField] public AudioSource playerAudio;
+
     [SerializeField] AudioClip Uron;
-    //[SerializeField] AudioClip Steam;
-    //[SerializeField] AudioClip Forest;
+    [SerializeField] AudioClip Steam;
+    [SerializeField] AudioClip Forest;
 
     [SerializeField] public GameObject igrok;
 
+    private Controls controls;
 
+    private void Awake()
+    {
+        controls = new Controls();
+        controls.control.MoveAudio.performed += ctx => MovingAudio();
+    }
+
+
+    private void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
+    }
+
+
+    public void MovingAudio()
+    {
+        Debug.Log("AAAAAAAAAAA");
+        if (Shag)
+        {
+            if (SceneManager.GetActiveScene().name == "Steam_Lab")
+            {
+                playerAudio.clip=Steam;
+                playerAudio.Play();
+            }
+            else
+            {
+                playerAudio.clip = Forest;
+                playerAudio.Play();
+            }
+
+        }
+    }
 
     private void Update()
     {
@@ -47,22 +86,7 @@ public class Player : MonoBehaviour
             time += Time.deltaTime;
 
         timer.text = $"{Convert.ToInt32(time / 3600)}:{Convert.ToInt32(Math.Floor(time % 3600 / 60))}:{Convert.ToInt32(time % 60)}";
-
-        /*
-        if (Shag)
-        {
-            if (SceneManager.GetActiveScene().name == "Steam_Lab")
-            {
-                playerAudio.PlayOneShot(Steam);
-            }
-            else
-            {
-                playerAudio.PlayOneShot(Forest);
-            }
-
-        }
-        */
-        
+               
     }
 
     private void Start()

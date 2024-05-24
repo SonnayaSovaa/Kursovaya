@@ -14,12 +14,32 @@ public class Pause : MonoBehaviour
     [SerializeField] public AudioSource playerAudio;
     [SerializeField] AudioClip click;
 
+    private Controls controls;
+
+
+    private void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
+    }
+
+
+    private void Awake()
+    {
+        controls = new Controls();
+        controls.pause.Pause.started += ctx => MakePause();
+    }
+
+
     public void MakePause()
     {
         if (activate) Play();
         else Stop();
     }
-
 
 
 
