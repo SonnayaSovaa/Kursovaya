@@ -3670,6 +3670,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4975833955433813487, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_DefaultActionMap
+      value: 5e532d9c-42da-4c22-b4b1-672530a3d0e7
+      objectReference: {fileID: 0}
     - target: {fileID: 5349335358473119157, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_IsActive
       value: 0

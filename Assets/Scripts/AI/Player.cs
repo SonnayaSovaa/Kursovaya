@@ -93,6 +93,14 @@ public class Player : MonoBehaviour
 
     }
 
+    public void MoveAudio(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            playerAudio.PlayOneShot(Uron);
+        }
+    }
+
     void Death()
     {
         SetInt("Score", score);
