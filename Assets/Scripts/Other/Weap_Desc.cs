@@ -301,13 +301,13 @@ public class Weap_Desc : MonoBehaviour
 
         foreach (var t in weapons)
         {
-            if (t!=null)// && t.name.Contains("For"))
+            if (t!=null)
             {
                 count++;
             }
         }
 
-        Debug.Log("Count   " + count);
+        //Debug.Log("Count   " + count);
 
         if (FindObjectOfType<CurrentWeapon>().gameObject != null) weapons[count] = FindObjectOfType<CurrentWeapon>().gameObject;
 
