@@ -70,7 +70,7 @@ public class Chest_Open : MonoBehaviour
                                 i.parent = null;
 
                                 Rigidbody ri = i.GetComponent<Rigidbody>();
-                                ri.AddForce(Vector3.up*150);
+                                ri.AddForce(Vector3.up*180);
                             }
                         }
                         break;

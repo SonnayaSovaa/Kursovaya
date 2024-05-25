@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro;
 using Unity.XR.CoreUtils;
 using System;
+using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class Weap_Desc : MonoBehaviour
 {
@@ -23,6 +25,8 @@ public class Weap_Desc : MonoBehaviour
 
     public bool weap;
 
+    [SerializeField] Player player;
+
     private void Start()
     {
 
@@ -30,17 +34,19 @@ public class Weap_Desc : MonoBehaviour
 
         allWeap = TheWeapon.GetComponentsInChildren<Transform>();
 
-        weapons = new GameObject[allWeap.Length / 2];
+        weapons = new GameObject[35];
 
         int j = 0;
         for (int i = allWeap.Length - 1; i >= 0; i--)
         {
-            if (allWeap[i].gameObject.name.Contains("W_"))
+            if (allWeap[i]!=null && allWeap[i].gameObject.name.Contains("W_"))
             {
                 weapons[j] = allWeap[i].gameObject;
                 j++;
             }
         }
+
+        if (GetComponent<CurrentWeapon>() != null) weapons[weapons.Length-1] = FindObjectOfType<CurrentWeapon>().gameObject;
 
     }
 
@@ -51,18 +57,18 @@ public class Weap_Desc : MonoBehaviour
         {
             for (int i = 0; i < weapons.Length; i++)
             {
-                if (weapons[i].GetNamedChild("[Right Controller] Dynamic Attach") || weapons[i].GetNamedChild("[Left Controller] Dynamic Attach"))
+                if (weapons[i]!=null &&(weapons[i].GetNamedChild("[Right Controller] Dynamic Attach") || weapons[i].GetNamedChild("[Left Controller] Dynamic Attach")))
                 {
                     Debug.Log("INHAND");
                     weap = true;
                     int currUr = What(int.Parse(weapons[i].tag));
                     curr=weapons[i].AddComponent<CurrentWeapon>();
                     curr.currentUron = currUr;
-                    weapons[i].transform.parent = igrok.transform;
+                    //weapons[i].transform.parent = igrok.transform;
 
                 }
                 else
-                    (weapons[i].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
+                   if (weapons[i] != null) (weapons[i].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
             }
 
 
@@ -267,23 +273,62 @@ public class Weap_Desc : MonoBehaviour
 
     public void OutHand()
     {
+        TheWeapon = FindObjectOfType<Weap_Detecter>().gameObject.transform;
+
         description.text = "Что ж, всего лишь ваши руки.";
         rank.text = "0";
         uron.text = "0";
         real_uron = 0;
 
         weap = false;
-        curr.currentUron = 0;
+        
 
-        foreach (var j in weapons)
+        allWeap = TheWeapon.GetComponentsInChildren<Transform>();
+
+        weapons = new GameObject[35];
+
+        int j = 0;
+        for (int i = allWeap.Length - 2; i >= 0; i=i-2)
         {
-            (j.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
-            if (j.GetComponent<CurrentWeapon>() != null)
+            if (allWeap[i].gameObject.name.Contains("W_"))
             {
-                j.transform.parent = TheWeapon.transform;
-                Destroy(j.GetComponent<CurrentWeapon>());
+                weapons[j] = allWeap[i].gameObject;
+                j++;
             }
         }
+
+        int count = 0;
+
+        foreach (var t in weapons)
+        {
+            if (t!=null)// && t.name.Contains("For"))
+            {
+                count++;
+            }
+        }
+
+        Debug.Log("Count   " + count);
+
+        if (FindObjectOfType<CurrentWeapon>().gameObject != null) weapons[count] = FindObjectOfType<CurrentWeapon>().gameObject;
+
+
+        foreach (var k in weapons)
+        {
+            if (k != null)
+            {
+                (k.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
+                if (k.GetComponent<CurrentWeapon>() != null)
+                {
+                    k.transform.parent = TheWeapon;
+                    Destroy(k.GetComponent<CurrentWeapon>());
+                }
+            }
+        }
+
+        curr.currentUron = 0;
+
+
+
     } 
 
 

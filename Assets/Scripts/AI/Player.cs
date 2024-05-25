@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        currhealth = PlayerPrefs.GetInt("Health");
+        //currhealth = PlayerPrefs.GetInt("Health");
         currhealth = 100;
         healthSl.value = currhealth/100;
         loading.SetActive(false);

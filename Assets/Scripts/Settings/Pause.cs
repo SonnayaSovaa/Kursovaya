@@ -108,9 +108,11 @@ public class Pause : MonoBehaviour
 
     public void ToMenu()
     {
+        Time.timeScale = 1f;
+        pause.SetActive(false);
         playerAudio.PlayOneShot(click);
         loading.SetActive(true);
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync("Menu");
     }
 }
 

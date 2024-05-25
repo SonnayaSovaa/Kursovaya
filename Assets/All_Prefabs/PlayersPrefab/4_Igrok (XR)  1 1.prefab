@@ -1216,6 +1216,7 @@ Transform:
   m_Children:
   - {fileID: 4165462404787120707}
   - {fileID: 4890167657380562904}
+  - {fileID: 3252553587285950250}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &8428467931199400914
@@ -5709,6 +5710,7 @@ MonoBehaviour:
   curr: {fileID: 0}
   igrok: {fileID: 1516643606573672127}
   weap: 0
+  player: {fileID: 4522296970096424168}
 --- !u!114 &1956136149891107707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9237,6 +9239,52 @@ RectTransform:
   m_AnchoredPosition: {x: -0.4059999, y: -0.21300006}
   m_SizeDelta: {x: 11.023836, y: 11.023836}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &7366084674620638534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3252553587285950250}
+  - component: {fileID: 1530379736802622423}
+  m_Layer: 0
+  m_Name: XR Interaction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3252553587285950250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366084674620638534}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -21.41734, y: -27.985752, z: 203.97849}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2305613593545396999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1530379736802622423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366084674620638534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
 --- !u!1 &7446448433912813788
 GameObject:
   m_ObjectHideFlags: 0

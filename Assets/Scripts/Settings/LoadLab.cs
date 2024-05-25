@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DoorToLab : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class DoorToLab : MonoBehaviour
             Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
             DontDestroyOnLoad(Igrok);
+            //DontDestroyOnLoad(FindObjectOfType<XRInteractionManager>().gameObject);
+            DontDestroyOnLoad(FindObjectOfType<CurrentWeapon>().gameObject);
             string currScene = SceneManager.GetActiveScene().name;
 
             if (this.name == "ToSteam")
