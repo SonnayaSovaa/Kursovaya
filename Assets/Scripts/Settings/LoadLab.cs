@@ -32,6 +32,8 @@ public class DoorToLab : MonoBehaviour
         
         if (other.tag == "Player")
         {
+            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+
             DontDestroyOnLoad(Igrok);
             string currScene = SceneManager.GetActiveScene().name;
 
@@ -48,6 +50,7 @@ public class DoorToLab : MonoBehaviour
 
             else if (this.name == "ToLes")
             {
+                Debug.Log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
                 int prohodForest = PlayerPrefs.GetInt("MagicCube");
 
                 if (true)//(prohodForest == 0 && inHand)
@@ -108,6 +111,7 @@ public class DoorToLab : MonoBehaviour
 
         void Load(string Sc_name)
         {
+            Debug.Log("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
             loading.SetActive(true);
             SceneManager.LoadSceneAsync(Sc_name);
         }

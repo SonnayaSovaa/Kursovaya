@@ -280,7 +280,7 @@ public class Weap_Desc : MonoBehaviour
             (j.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
             if (j.GetComponent<CurrentWeapon>() != null)
             {
-                j.transform.parent = null;
+                j.transform.parent = TheWeapon.transform;
                 Destroy(j.GetComponent<CurrentWeapon>());
             }
         }

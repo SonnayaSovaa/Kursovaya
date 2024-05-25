@@ -42,10 +42,10 @@ public class Health : MonoBehaviour
             else healthSl.value = 1;
 
 
-            health1.color = new Color(0, 0, 0, 1 - player.currhealth / 100);
-            health2.color = new Color(0, 0, 0, 1 - player.currhealth / 100);
-            health3.color = new Color(0, 0, 0, 1 - player.currhealth / 100);
-            health4.color = new Color(0, 0, 0, 1 - player.currhealth / 100);
+            health1.color = new Color(1, 1, 1, 1 - player.currhealth / 100);
+            health2.color = new Color(1, 1, 1, 1 - player.currhealth / 100);
+            health3.color = new Color(1, 1, 1, 1 - player.currhealth / 100);
+            health4.color = new Color(1, 1, 1, 1 - player.currhealth / 100);
 
             Destroy(other.gameObject);
         }
