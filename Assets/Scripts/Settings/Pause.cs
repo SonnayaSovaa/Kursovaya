@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.Loading;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class Pause : MonoBehaviour
@@ -15,6 +19,19 @@ public class Pause : MonoBehaviour
     [SerializeField] AudioClip click;
 
     private Controls controls;
+
+    [SerializeField] Player player;
+    [SerializeField] Weap_Desc weap;
+
+    [SerializeField] Slider slider;
+    [SerializeField] public TMP_Text description;
+    [SerializeField] public TMP_Text rank;
+    [SerializeField] public TMP_Text uron;
+    [SerializeField] public TMP_Text timer;
+    [SerializeField] public TMP_Text Score;
+
+    [SerializeField] GameObject loading;
+
 
 
     private void OnEnable()
@@ -43,8 +60,9 @@ public class Pause : MonoBehaviour
 
 
 
-    void Play()
+    public void Play()
     {
+        Time.timeScale = 1f;
 
         playerAudio.PlayOneShot(click);
 
@@ -56,7 +74,7 @@ public class Pause : MonoBehaviour
         igrok.GetComponent<Collider>().enabled = true;
         igrok.GetComponent<Collider>().enabled = true;
 
-        Time.timeScale = 1f;
+        
 
         activate = false;
 
@@ -65,6 +83,14 @@ public class Pause : MonoBehaviour
 
     void Stop()
     {
+        Time.timeScale = 0f;
+
+        slider.value = player.healthSl.value;
+        description.text = weap.description.text;
+        Score.text = player.Score.text;
+        timer.text = player.timer.text;
+        uron.text = weap.uron.text;
+        rank.text = weap.rank.text;
 
         playerAudio.PlayOneShot(click);
 
@@ -74,13 +100,17 @@ public class Pause : MonoBehaviour
 
         igrok.GetComponent<Collider>().enabled = false;
         igrok.GetComponent<Collider>().enabled = false;
+        
 
-        Time.timeScale = 0f;
+        activate = true;        
 
-        activate = true;
+    }
 
-        Debug.Log("PAAAAAAAAAAAAAAAUSA");
-
+    public void ToMenu()
+    {
+        playerAudio.PlayOneShot(click);
+        loading.SetActive(true);
+        SceneManager.LoadSceneAsync(0);
     }
 }
 

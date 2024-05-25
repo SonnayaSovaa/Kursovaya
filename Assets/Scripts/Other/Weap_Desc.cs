@@ -5,9 +5,9 @@ using System;
 
 public class Weap_Desc : MonoBehaviour
 {
-    [SerializeField] TMP_Text description;
-    [SerializeField] TMP_Text rank;
-    [SerializeField] TMP_Text uron;
+    [SerializeField] public TMP_Text description;
+    [SerializeField] public TMP_Text rank;
+    [SerializeField] public TMP_Text uron;
 
     public int real_uron=0;
 

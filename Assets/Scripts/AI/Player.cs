@@ -21,10 +21,10 @@ public class Player : MonoBehaviour
 
     public int currhealth = 100;
 
-    [SerializeField] TMP_Text timer;
-    [SerializeField] TMP_Text Score;
+    [SerializeField] public  TMP_Text timer;
+    [SerializeField] public TMP_Text Score;
 
-    [SerializeField] private Slider healthSl;
+    [SerializeField] public Slider healthSl;
 
     float time = 0;
 
@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        loading.SetActive(false);
         controls = new Controls();
         controls.control.MoveAudio.performed += ctx => MovingAudio();
     }
@@ -131,6 +132,7 @@ public class Player : MonoBehaviour
         SetInt("Health", 0);
         SetFloat("Time", time);
 
+        loading.SetActive(true);
         SceneManager.LoadScene("End");
     }
 
