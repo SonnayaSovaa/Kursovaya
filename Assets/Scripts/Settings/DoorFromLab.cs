@@ -22,6 +22,8 @@ public class DoorFromLab : MonoBehaviour
 
     string currScene;
 
+    Transform movingpoint;
+
     private void Start()
     {
         weapon = FindObjectOfType<Weap_Desc>();
@@ -98,20 +100,28 @@ public class DoorFromLab : MonoBehaviour
 
                     break;
                 case "Arena":
-                    Destroy(door);
+                    StartCoroutine(moveObject());
                     break;
             }
         }
 
     }
 
-   
 
+    public IEnumerator moveObject()
+    {
+        float totalMovementTime = 30f; //the amount of time you want the movement to take
+        float currentMovementTime = 0f;//The amount of time that has passed
+        while (Vector3.Distance(transform.localPosition, movingpoint.position) > 0)
+        {
+            currentMovementTime += Time.deltaTime;
+            transform.localPosition = Vector3.Lerp(this.gameObject.transform.position, movingpoint.position, currentMovementTime / totalMovementTime);
+            yield return null;
+        }
+    }
 
     void DoorOpen(string name)
     {
-        Debug.Log("Door");
-
         if (name=="Steam_Lab" || name=="Forest") door.transform.Translate(Vector3.left * 2 * Time.deltaTime);
         else door.transform.Translate(Vector3.right * 2 * Time.deltaTime);
 

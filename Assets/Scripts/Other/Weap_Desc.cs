@@ -1,9 +1,6 @@
 using UnityEngine;
 using TMPro;
 using Unity.XR.CoreUtils;
-using System;
-using UnityEngine.SceneManagement;
-using System.Linq;
 
 public class Weap_Desc : MonoBehaviour
 {

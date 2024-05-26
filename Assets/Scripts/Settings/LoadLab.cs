@@ -33,10 +33,7 @@ public class DoorToLab : MonoBehaviour
         
         if (other.tag == "Player")
         {
-            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-
             DontDestroyOnLoad(Igrok);
-            //DontDestroyOnLoad(FindObjectOfType<XRInteractionManager>().gameObject);
             DontDestroyOnLoad(FindObjectOfType<CurrentWeapon>().gameObject);
             string currScene = SceneManager.GetActiveScene().name;
 
@@ -53,10 +50,9 @@ public class DoorToLab : MonoBehaviour
 
             else if (this.name == "ToLes")
             {
-                Debug.Log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
                 int prohodForest = PlayerPrefs.GetInt("MagicCube");
 
-                if (true)//(prohodForest == 0 && inHand)
+                if (prohodForest == 0 && inHand)
                 {
                     m_Scene = "Forest";
                     Load(m_Scene);
@@ -94,7 +90,7 @@ public class DoorToLab : MonoBehaviour
                 {
                     int prohodSteam = PlayerPrefs.GetInt("PipeRotat");
 
-                    if (true)//(prohodSteam == 1 && inHand)
+                    if (prohodSteam == 1 && inHand)
                     {
                         Load(m_Scene);
                     }
@@ -114,7 +110,7 @@ public class DoorToLab : MonoBehaviour
 
         void Load(string Sc_name)
         {
-            Debug.Log("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
+            
             loading.SetActive(true);
             SceneManager.LoadSceneAsync(Sc_name);
         }

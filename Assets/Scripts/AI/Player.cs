@@ -1,13 +1,9 @@
 using System;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.OpenXR.Input;
 
 public class Player : MonoBehaviour
 {
@@ -29,8 +25,6 @@ public class Player : MonoBehaviour
     float time = 0;
 
     public int score;
-
-    public ActionBasedController controller_L;
 
     public bool Shag;
     [SerializeField] public AudioSource playerAudio;

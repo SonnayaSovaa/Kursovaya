@@ -103,8 +103,6 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("SMERT   "+spawn.vragov_ubito);
-
         if (health <= 0)
         {
             Death(umer);            
