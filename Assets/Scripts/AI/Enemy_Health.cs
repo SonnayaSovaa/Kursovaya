@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
 
 public class Enemy_Health : MonoBehaviour
 {
@@ -75,10 +76,11 @@ public class Enemy_Health : MonoBehaviour
         }
         else if (other.tag.Contains("1") || other.tag.Contains("2") || other.tag.Contains("3") || other.tag.Contains("4") || other.tag.Contains("5") || other.tag.Contains("6") || other.tag.Contains("7") || other.tag.Contains("8") || other.tag.Contains("9") || other.tag.Contains("0"))
         {
-            weapon = FindFirstObjectByType<CurrentWeapon>();
+            
             int tagg = Convert.ToInt32(other.tag);
-            if (tagg < 37 && tagg >= 0)
+            if (other.gameObject.GetComponent<CurrentWeapon>()!=null && tagg < 37 && tagg >= 0)
             {
+                weapon = FindObjectOfType<CurrentWeapon>();
                 main.PlayOneShot(udar);
                 enemy.health -= weapon.currentUron;
             }
