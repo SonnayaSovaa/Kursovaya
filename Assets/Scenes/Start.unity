@@ -620,6 +620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: 0
   heal: {fileID: 0}
+  real_weapons: []
 --- !u!1 &116944866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5795,6 +5796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: 1
   heal: {fileID: 1774858604}
+  real_weapons: []
 --- !u!82 &1370468810
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6082,7 +6084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1442146024
 BoxCollider:
   m_ObjectHideFlags: 0
