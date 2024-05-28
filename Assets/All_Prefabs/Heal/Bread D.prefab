@@ -73,12 +73,20 @@ PrefabInstance:
       value: Bread D
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b76ae5bcf671be04a9427c55402e5dba, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b76ae5bcf671be04a9427c55402e5dba, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b76ae5bcf671be04a9427c55402e5dba, type: 3}
       propertyPath: m_TagString
       value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770796334625795017, guid: b76ae5bcf671be04a9427c55402e5dba, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

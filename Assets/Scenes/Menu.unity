@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13267374, g: 0.19028595, b: 0.3330065, a: 1}
+  m_IndirectSpecularColor: {r: 0.13255924, g: 0.18992284, b: 0.33261073, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1644,6 +1644,18 @@ PrefabInstance:
       propertyPath: m_PlayAudioClipOnSelectEntered
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7135937927785994048, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135937927785994048, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135937927785994048, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7243355930862788211, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1655,6 +1667,18 @@ PrefabInstance:
     - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_PlayAudioClipOnSelectEntered
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8708738725634732114, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
@@ -3178,7 +3202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &873699689
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5944,7 +5968,7 @@ RectTransform:
   m_Father: {fileID: 496869837}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -0.018000126, y: 0}
   m_SizeDelta: {x: 0.98, y: 0.17506}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6033,7 +6057,7 @@ RectTransform:
   m_Father: {fileID: 103577602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -0.026000023, y: 0}
   m_SizeDelta: {x: 0.549, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

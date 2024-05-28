@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using Unity.XR.CoreUtils;
+using UnityEngine.SceneManagement;
 
 public class Weap_Desc : MonoBehaviour
 {
@@ -306,8 +307,12 @@ public class Weap_Desc : MonoBehaviour
 
         //Debug.Log("Count   " + count);
 
-        if (FindObjectOfType<CurrentWeapon>().gameObject != null) weapons[count] = FindObjectOfType<CurrentWeapon>().gameObject;
+        if (SceneManager.GetActiveScene().name != "Start" && FindObjectOfType<CurrentWeapon>().gameObject != null)
+        {
+            weapons[count] = FindObjectOfType<CurrentWeapon>().gameObject;
 
+            curr.currentUron = 0;
+        }
 
         foreach (var k in weapons)
         {
@@ -322,7 +327,7 @@ public class Weap_Desc : MonoBehaviour
             }
         }
 
-        curr.currentUron = 0;
+        
 
 
 

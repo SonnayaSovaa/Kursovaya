@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13267374, g: 0.19028595, b: 0.3330065, a: 1}
+  m_IndirectSpecularColor: {r: 0.13255924, g: 0.18992284, b: 0.33261073, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3698,6 +3698,14 @@ PrefabInstance:
       propertyPath: m_PlayAudioClipOnSelectEntered
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7135937927785994048, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135937927785994048, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_AudioClipForOnSelectEntered
       value: 
@@ -3705,6 +3713,14 @@ PrefabInstance:
     - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_PlayAudioClipOnSelectEntered
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8708738725634732114, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
