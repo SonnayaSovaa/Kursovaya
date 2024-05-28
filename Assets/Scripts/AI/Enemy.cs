@@ -63,17 +63,17 @@ public class Enemy : MonoBehaviour
             {
                 case 0:
                     health = 50;
-                    score = 32;
+                    score = 16;
                     break;
 
                 case 1:
                     health = 80;
-                    score = 27;
+                    score = 14;
                     break;
 
                 case 2:
                     health = 120;
-                    score = 23;
+                    score = 11;
                     break;
 
             }
@@ -106,7 +106,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Death(umer);            
-            player.ScoreUp(score);
+            
             aiDist.target = null;            
             anim.IsWalk(false);
             anim.IsRunning(false);
@@ -210,7 +210,7 @@ public class Enemy : MonoBehaviour
                 PlayerPrefs.SetInt("Enemy_Dead", vragovUbito + 1);
 
             }
-
+            player.ScoreUp(score);
             GenKey(this.gameObject.transform.position);
             umer = false;
         }

@@ -38,10 +38,10 @@ public class Player : MonoBehaviour
     private Controls controls;
 
     private void Awake()
-    {
-        loading.SetActive(false);
+    {;
         controls = new Controls();
         controls.control.MoveAudio.performed += ctx => MovingAudio();
+
     }
 
 

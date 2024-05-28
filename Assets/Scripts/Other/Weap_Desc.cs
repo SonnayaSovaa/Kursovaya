@@ -32,7 +32,9 @@ public class Weap_Desc : MonoBehaviour
 
         allWeap = TheWeapon.GetComponentsInChildren<Transform>();
 
-        weapons = new GameObject[35];
+
+        if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
+        else weapons = new GameObject[3];
 
         int j = 0;
         for (int i = allWeap.Length - 1; i >= 0; i--)
@@ -283,10 +285,11 @@ public class Weap_Desc : MonoBehaviour
 
         allWeap = TheWeapon.GetComponentsInChildren<Transform>();
 
-        weapons = new GameObject[35];
+        if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
+        else weapons = new GameObject[3];
 
         int j = 0;
-        for (int i = allWeap.Length - 2; i >= 0; i=i-2)
+        for (int i = allWeap.Length - 1; i >= 0; i--)
         {
             if (allWeap[i].gameObject.name.Contains("W_"))
             {
@@ -295,21 +298,28 @@ public class Weap_Desc : MonoBehaviour
             }
         }
 
-        int count = 0;
-
-        foreach (var t in weapons)
-        {
-            if (t!=null)
-            {
-                count++;
-            }
-        }
+        
 
         //Debug.Log("Count   " + count);
 
         if (SceneManager.GetActiveScene().name != "Start" && FindObjectOfType<CurrentWeapon>().gameObject != null)
         {
+            int count = 0;
+
+            foreach (var t in weapons)
+            {
+                if (t != null)
+                {
+                    count++;
+                }
+            }
             weapons[count] = FindObjectOfType<CurrentWeapon>().gameObject;
+
+            curr.currentUron = 0;
+        }
+        else if (SceneManager.GetActiveScene().name == "Start" && FindObjectOfType<CurrentWeapon>().gameObject != null)
+        {
+            weapons[2] = FindObjectOfType<CurrentWeapon>().gameObject;
 
             curr.currentUron = 0;
         }

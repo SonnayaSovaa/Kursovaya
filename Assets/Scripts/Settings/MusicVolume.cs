@@ -12,9 +12,15 @@ public class MusicVolume : MonoBehaviour
 
     [SerializeField] GameObject heal;
 
+    Player player;
+
     private void Awake()
     {
+
+        player=FindObjectOfType<Player>();
         mus = FindObjectsOfType<AudioSource>();
+
+        player.loading.SetActive(false);
 
         float k= PlayerPrefs.GetFloat("SoundValue");
 

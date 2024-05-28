@@ -43,14 +43,17 @@ public class DoorFromLab : MonoBehaviour
         }
     }
 
-
+    private void Update()
+    {
+        inHand = weapon.weap;
+    }
 
     public void OnTriggerStay(Collider other)
     {
         Debug.Log("Door1");
         if (other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() >0 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() >0)
         {
-            inHand = weapon.weap;
+            
 
             
             Debug.Log("Door");
