@@ -319,7 +319,17 @@ public class Weap_Desc : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Start" && FindObjectOfType<CurrentWeapon>().gameObject != null)
         {
-            weapons[2] = FindObjectOfType<CurrentWeapon>().gameObject;
+            int pos = 0;
+            foreach (var t in weapons)
+            {
+                pos++;
+                if (t==null)
+                {
+                    weapons[pos]= FindObjectOfType<CurrentWeapon>().gameObject;
+                    break;
+                }
+            }
+
 
             curr.currentUron = 0;
         }
