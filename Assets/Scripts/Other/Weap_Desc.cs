@@ -19,23 +19,35 @@ public class Weap_Desc : MonoBehaviour
 
     [SerializeField] GameObject igrok;
 
-    Transform[] allWeap;   
+    //Transform[] allWeap;   
 
     public bool weap;
 
     [SerializeField] Player player;
 
+    MusicVolume forWeapMass;
+
     private void Start()
     {
+        forWeapMass=FindObjectOfType<MusicVolume>();
 
-        TheWeapon = FindObjectOfType<Weap_Detecter>().gameObject.transform;
+        GameObject[] we = forWeapMass.real_weapons;
 
-        allWeap = TheWeapon.GetComponentsInChildren<Transform>();
+        //TheWeapon = FindObjectOfType<Weap_Detecter>().gameObject.transform;
 
+        //allWeap = TheWeapon.GetComponentsInChildren<Transform>();
+        
 
         if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
         else weapons = new GameObject[3];
+        
+        for (int i=0; i<weapons.Length; i++)
+        {
+            weapons[i] = we[i];
+        }
 
+
+        /*
         int j = 0;
         for (int i = allWeap.Length - 1; i >= 0; i--)
         {
@@ -45,8 +57,8 @@ public class Weap_Desc : MonoBehaviour
                 j++;
             }
         }
-
-        if (GetComponent<CurrentWeapon>() != null) weapons[weapons.Length-1] = FindObjectOfType<CurrentWeapon>().gameObject;
+        */
+        if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
 
     }
 
@@ -283,40 +295,56 @@ public class Weap_Desc : MonoBehaviour
         weap = false;
         
 
-        allWeap = TheWeapon.GetComponentsInChildren<Transform>();
+        //allWeap = TheWeapon.GetComponentsInChildren<Transform>();
+
+        /*
+         int j = 0;
+         for (int i = allWeap.Length - 1; i >= 0; i--)
+         {
+             if (allWeap[i].gameObject.name.Contains("W_"))
+             {
+                 weapons[j] = allWeap[i].gameObject;
+                 j++;
+             }
+         }
+        */
+        forWeapMass = FindObjectOfType<MusicVolume>();
+
+        //Debug.Log("Count   " + count);
+
+        GameObject[] we = forWeapMass.real_weapons;
+
+        //TheWeapon = FindObjectOfType<Weap_Detecter>().gameObject.transform;
+
+        //allWeap = TheWeapon.GetComponentsInChildren<Transform>();
+
 
         if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
         else weapons = new GameObject[3];
 
-        int j = 0;
-        for (int i = allWeap.Length - 1; i >= 0; i--)
+        for (int i = 0; i < weapons.Length; i++)
         {
-            if (allWeap[i].gameObject.name.Contains("W_"))
-            {
-                weapons[j] = allWeap[i].gameObject;
-                j++;
-            }
+            weapons[i] = we[i];
         }
+        if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
+        /*
 
-        
-
-        //Debug.Log("Count   " + count);
-
-        if (SceneManager.GetActiveScene().name != "Start" && FindObjectOfType<CurrentWeapon>().gameObject != null)
+        if (FindObjectOfType<CurrentWeapon>() != null)
         {
-            int count = 0;
-
+            int pos = 0;
             foreach (var t in weapons)
             {
-                if (t != null)
+                pos++;
+                if (t == null)
                 {
-                    count++;
+                    weapons[pos] = FindObjectOfType<CurrentWeapon>().gameObject;
+                    break;
                 }
             }
-            weapons[count] = FindObjectOfType<CurrentWeapon>().gameObject;
 
             curr.currentUron = 0;
         }
+        
         else if (SceneManager.GetActiveScene().name == "Start" && FindObjectOfType<CurrentWeapon>().gameObject != null)
         {
             int pos = 0;
@@ -332,7 +360,7 @@ public class Weap_Desc : MonoBehaviour
 
 
             curr.currentUron = 0;
-        }
+        }*/
 
         foreach (var k in weapons)
         {

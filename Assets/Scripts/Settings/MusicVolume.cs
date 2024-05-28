@@ -14,8 +14,20 @@ public class MusicVolume : MonoBehaviour
 
     Player player;
 
+    TheWeapon[] weapons;
+
+    public GameObject[] real_weapons;
+
     private void Awake()
     {
+        weapons = FindObjectsOfType<TheWeapon>();
+
+        real_weapons= new GameObject[weapons.Length];
+
+        for (int i=0; i<weapons.Length; i++)
+        {
+            real_weapons[i] = weapons[i].gameObject;
+        }
 
         player=FindObjectOfType<Player>();
         mus = FindObjectsOfType<AudioSource>();

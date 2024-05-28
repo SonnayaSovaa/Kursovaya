@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Health : MonoBehaviour
 {
@@ -46,6 +47,8 @@ public class Health : MonoBehaviour
             health2.color = new Color(1, 1, 1, 1 - player.currhealth / 100);
             health3.color = new Color(1, 1, 1, 1 - player.currhealth / 100);
             health4.color = new Color(1, 1, 1, 1 - player.currhealth / 100);
+
+            (other.gameObject.GetComponent<XRGrabInteractable>() as MonoBehaviour).enabled = false;
 
             Destroy(other.gameObject);
         }

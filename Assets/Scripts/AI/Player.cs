@@ -37,8 +37,10 @@ public class Player : MonoBehaviour
 
     private Controls controls;
 
+
+
     private void Awake()
-    {;
+    {
         controls = new Controls();
         controls.control.MoveAudio.performed += ctx => MovingAudio();
 
