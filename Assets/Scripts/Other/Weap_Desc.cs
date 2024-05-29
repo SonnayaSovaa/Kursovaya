@@ -320,7 +320,9 @@ public class Weap_Desc : MonoBehaviour
 
 
         if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
-        else weapons = new GameObject[3];
+        else
+            if (PlayerPrefs.GetInt("PipeRotat")+ PlayerPrefs.GetInt("MagicCube")>0) weapons = new GameObject[4];
+            else weapons = new GameObject[3];
 
         for (int i = 0; i < weapons.Length; i++)
         {

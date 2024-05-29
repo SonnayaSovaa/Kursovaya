@@ -34,6 +34,20 @@ public class TheEnd : MonoBehaviour
         vrag_num = PlayerPrefs.GetInt("Enemy_Dead");
         time = PlayerPrefs.GetFloat("Time");
 
+        int LevelDif = PlayerPrefs.GetInt("LevelDif");
+
+        int dopScore;
+
+        int usingTime = Convert.ToInt32(time / 60);
+
+        if (LevelDif == 0) dopScore=-Convert.ToInt32((usingTime*usingTime)/14)+300;
+        else if (LevelDif == 1) dopScore = -Convert.ToInt32((usingTime * usingTime) / 10) + 400;
+        else dopScore = -Convert.ToInt32((usingTime * usingTime) / 8) + 500;
+        if (dopScore < 0) dopScore = 0;
+
+        score += dopScore;
+
+
         if (igrok_umer <= 0 || score<1500)
         {
             endState = "ÏÎÐÀÆÅÍÈÅ";
