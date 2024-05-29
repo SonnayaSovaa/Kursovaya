@@ -407,10 +407,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: W_35
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_AttachPointCompatibilityMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7718737696107837512, guid: f3c99443224b80c4a949f780e9bf81b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.162
@@ -1030,10 +1026,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2073365572}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_AttachPointCompatibilityMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2887084332120598817, guid: 8c598bb90c8b6bb48838c936512e486f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.266

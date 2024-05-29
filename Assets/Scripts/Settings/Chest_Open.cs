@@ -19,6 +19,8 @@ public class Chest_Open : MonoBehaviour
     ActionBasedController[] controllers;
     private void Start()
     {
+        audioo = GetComponent<AudioSource>();
+
         controllers = FindObjectsOfType<ActionBasedController>();
         if (controllers[0].tag=="Right")
         {

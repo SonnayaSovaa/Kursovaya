@@ -2462,7 +2462,7 @@ MonoBehaviour:
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 0.7
-  pickNextWaypointDist: 1.13
+  pickNextWaypointDist: 1.2
   endReachedDistance: 0.7
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
