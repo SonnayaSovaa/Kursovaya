@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.22336951, g: 0.31062904, b: 0.49674284, a: 1}
+  m_IndirectSpecularColor: {r: 0.22344324, g: 0.31106362, b: 0.49711007, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -407,7 +407,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: W_35
       objectReference: {fileID: 0}
-    - target: {fileID: 1756668562964721009, guid: f3c99443224b80c4a949f780e9bf81b6, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_AttachPointCompatibilityMode
       value: 1
       objectReference: {fileID: 0}
@@ -1030,7 +1030,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2073365572}
     m_Modifications:
-    - target: {fileID: 2764080531631097813, guid: 8c598bb90c8b6bb48838c936512e486f, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_AttachPointCompatibilityMode
       value: 1
       objectReference: {fileID: 0}
@@ -1609,7 +1609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448640301867404427, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.073166
+      value: -39.15
       objectReference: {fileID: 0}
     - target: {fileID: 448640301867404427, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1643,6 +1643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4_Igrok (XR)  1 1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1600634724248338192, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_SelectActionTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2439393019950953763, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -1659,12 +1663,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6452832179362410159, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_SelectActionTrigger
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6609632004433794713, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3482592852587761905, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
@@ -5021,6 +5030,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 138322879974939778, guid: 16c4e631a1a841e4fafc6693ee8d97e4, type: 3}
   m_PrefabInstance: {fileID: 1010025722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1018093952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5885737599710183014, guid: 08c4c93f8ac0ce443a0d0400a5496e3c, type: 3}
+  m_PrefabInstance: {fileID: 1976153037}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1080032935
 GameObject:
@@ -8940,9 +8954,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9052122562398364671, guid: 08c4c93f8ac0ce443a0d0400a5496e3c, type: 3}
-      propertyPath: m_AttachPointCompatibilityMode
-      value: 1
+      propertyPath: m_TrackScale
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9052122562398364671, guid: 08c4c93f8ac0ce443a0d0400a5496e3c, type: 3}
+      propertyPath: m_AttachPointCompatibilityMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9220777127723808128, guid: 08c4c93f8ac0ce443a0d0400a5496e3c, type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9220777127723808128, guid: 08c4c93f8ac0ce443a0d0400a5496e3c, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 1018093952}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
