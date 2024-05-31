@@ -31,7 +31,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""name"": ""MoveAudio"",
                     ""type"": ""Value"",
                     ""id"": ""a2cee1cc-3dff-47cb-ab3e-161e9a1aaa3f"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
