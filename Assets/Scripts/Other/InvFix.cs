@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using Unity.XR.CoreUtils;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class InvFix : MonoBehaviour
 {
@@ -41,6 +45,7 @@ public class InvFix : MonoBehaviour
             else
             {
                 currobj.SetActive(false);
+                this.GetComponent<Collider>().enabled = false;
             }
 
         }
@@ -52,6 +57,7 @@ public class InvFix : MonoBehaviour
             }
             else
             {
+                this.GetComponent<Collider>().enabled = true;
                 currobj.SetActive(true);
             }
         }
@@ -65,8 +71,9 @@ public class InvFix : MonoBehaviour
             
             currobj = other.gameObject;
             this.tag = "Zanyat";
-
         }
+
+        //if (currobj.GetNamedChild("[point] Dynamic Attach")) this.GetComponent<Collider>().enabled = false;
     }
 
     private void OnTriggerExit(Collider other)

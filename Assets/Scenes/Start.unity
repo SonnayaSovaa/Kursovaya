@@ -5118,6 +5118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4_Igrok (XR)  1 1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3842741527277280709, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
