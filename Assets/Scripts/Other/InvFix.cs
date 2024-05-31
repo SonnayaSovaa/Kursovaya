@@ -62,7 +62,7 @@ public class InvFix : MonoBehaviour
     {
         if (other.tag == "38" || other.tag == "39")
         {
-
+            
             currobj = other.gameObject;
             this.tag = "Zanyat";
 
@@ -74,7 +74,7 @@ public class InvFix : MonoBehaviour
         if (other.tag == "38" || other.tag == "39")
         {
             this.tag = "Svoboden";
-            currobj = null;
+            currobj = null;            
         }
     }
 
