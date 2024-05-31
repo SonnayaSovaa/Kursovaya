@@ -414,6 +414,10 @@ PrefabInstance:
       value: 0.32778
       objectReference: {fileID: 0}
     - target: {fileID: 1856342808627478486, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 921830481561794867}
+    - target: {fileID: 1856342808627478486, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -506,6 +510,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2460116546365939721, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 921830481561794867}
+    - target: {fileID: 2460116546365939721, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -585,6 +593,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3337865513041297125, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 921830481561794867}
     - target: {fileID: 3354229635707296759, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.07639791
@@ -757,6 +769,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.081
       objectReference: {fileID: 0}
+    - target: {fileID: 5108246735053244675, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 921830481561794867}
     - target: {fileID: 5108246735053244675, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -939,6 +955,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7182260663652383962, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 921830481561794867}
+    - target: {fileID: 7182260663652383962, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -1039,6 +1059,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8631093743525765981, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 921830481561794867}
+    - target: {fileID: 8631093743525765981, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -1081,6 +1105,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4795490044855459468}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7877711402696665145, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 710882620947564119}
+    - targetCorrespondingSourceObject: {fileID: 7877711402696665145, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2280728727339905026}
     - targetCorrespondingSourceObject: {fileID: 5853201126738581438, guid: 372272216daa19f4999534d62146bad1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5627509170862507514}
@@ -1170,6 +1200,11 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!1 &921830481561794867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1516643606573672127, guid: 372272216daa19f4999534d62146bad1, type: 3}
+  m_PrefabInstance: {fileID: 1857396897865457548}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1585059784875114860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 880893371564154592, guid: 372272216daa19f4999534d62146bad1, type: 3}
@@ -1435,6 +1470,65 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!1 &8400775071805323189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7877711402696665145, guid: 372272216daa19f4999534d62146bad1, type: 3}
+  m_PrefabInstance: {fileID: 1857396897865457548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &710882620947564119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400775071805323189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &2280728727339905026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400775071805323189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_ClickSpeed: 0.3
+  m_MoveDeadzone: 0.6
+  m_RepeatDelay: 0.5
+  m_RepeatRate: 0.1
+  m_TrackedDeviceDragThresholdMultiplier: 1.4
+  m_TrackedScrollDeltaMultiplier: 5
+  m_ActiveInputMode: 0
+  m_MaxTrackedDeviceRaycastDistance: 1000
+  m_EnableXRInput: 1
+  m_EnableMouseInput: 1
+  m_EnableTouchInput: 1
+  m_PointAction: {fileID: 0}
+  m_LeftClickAction: {fileID: 0}
+  m_MiddleClickAction: {fileID: 0}
+  m_RightClickAction: {fileID: 0}
+  m_ScrollWheelAction: {fileID: 0}
+  m_NavigateAction: {fileID: 0}
+  m_SubmitAction: {fileID: 0}
+  m_CancelAction: {fileID: 0}
+  m_EnableBuiltinActionsAsFallback: 1
+  m_EnableGamepadInput: 1
+  m_EnableJoystickInput: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
 --- !u!1 &8912793639482525449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7094953046816938117, guid: 372272216daa19f4999534d62146bad1, type: 3}

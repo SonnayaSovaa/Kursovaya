@@ -14,6 +14,7 @@ public class InvFix : MonoBehaviour
     bool changed=false;
     bool was_changed=false;
 
+    [SerializeField] GameObject Point;
 
     private void Update()
     {
@@ -67,13 +68,13 @@ public class InvFix : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "38" || other.tag == "39")
-        {
-            
+        {            
             currobj = other.gameObject;
-            this.tag = "Zanyat";
+            currobj.transform.parent = Point.transform;
+            this.tag = "Zanyat";            
         }
 
-        //if (currobj.GetNamedChild("[point] Dynamic Attach")) this.GetComponent<Collider>().enabled = false;
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -81,8 +82,14 @@ public class InvFix : MonoBehaviour
         if (other.tag == "38" || other.tag == "39")
         {
             this.tag = "Svoboden";
+            currobj.transform.parent = null;
             currobj = null;            
         }
+    }
+
+    public void SetP()
+    {
+
     }
 
 }
