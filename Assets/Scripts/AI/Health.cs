@@ -38,9 +38,16 @@ public class Health : MonoBehaviour
     {
         if (other.tag=="38")
         {
-            player.currhealth+=heal;
-            if (healthSl.value * 100 + heal <= 100) healthSl.value = (healthSl.value * 100 + heal) / 100;
-            else healthSl.value = 1;
+            if (player.currhealth + heal > 100)
+            {
+                player.currhealth = 100;
+                healthSl.value = 100;
+            }
+            else
+            {
+                player.currhealth += heal;
+                healthSl.value = player.currhealth;
+            }
 
 
             health1.color = new Color(1, 1, 1, 1 - player.currhealth / 100);

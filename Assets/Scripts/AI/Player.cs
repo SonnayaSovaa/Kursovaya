@@ -60,7 +60,6 @@ public class Player : MonoBehaviour
 
     public void MovingAudio()
     {
-        Debug.Log("AAAAAAAAAAA");
         if (Shag)
         {
             if (SceneManager.GetActiveScene().name == "Steam_Lab")
@@ -90,7 +89,7 @@ public class Player : MonoBehaviour
     {
         //currhealth = PlayerPrefs.GetInt("Health");
         currhealth = 100;
-        healthSl.value = currhealth/100;
+        healthSl.value = currhealth;
         loading.SetActive(false);
 
     }
@@ -105,7 +104,8 @@ public class Player : MonoBehaviour
         }
 
         else currhealth -= uron;
-        healthSl.value = currhealth / 100;
+
+        healthSl.value = currhealth;
 
         health1.color = new Color(1, 1, 1, 1 - currhealth / 100);
         health2.color = new Color(1, 1, 1, 1 - currhealth / 100);
@@ -129,7 +129,9 @@ public class Player : MonoBehaviour
         SetFloat("Time", time);
 
         loading.SetActive(true);
-        SceneManager.LoadScene("End");
+        
+        SceneManager.LoadSceneAsync("End");
+        //Destroy(igrok);
     }
 
 

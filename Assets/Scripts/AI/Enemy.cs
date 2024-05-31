@@ -56,23 +56,25 @@ public class Enemy : MonoBehaviour
 
         slojnost = PlayerPrefs.GetInt("LevelDif");
 
+        aipath.maxSpeed = 2f;
+
 
         if (!boss)  //prosto vrag 
         {
             switch (slojnost)
             {
                 case 0:
-                    health = 50;
+                    health = 3*50;
                     score = 16;
                     break;
 
                 case 1:
-                    health = 80;
+                    health = 3*80;
                     score = 14;
                     break;
 
                 case 2:
-                    health = 120;
+                    health = 3 * 120;
                     score = 11;
                     break;
 
@@ -149,7 +151,7 @@ public class Enemy : MonoBehaviour
                 if (Vector3.Distance(gameObject.transform.position, player.transform.position) >= stopTargetRange)
                 {
                     currState = EnemyStates.Roaming;
-                    aipath.maxSpeed = 1.5f;
+                    aipath.maxSpeed = 3f;
                 }
                 break;
         }
@@ -190,7 +192,7 @@ public class Enemy : MonoBehaviour
         if (Vector3.Distance(gameObject.transform.position, player.transform.position) < targetFolRange)
         {
             currState=EnemyStates.Following;
-            aipath.maxSpeed= 1f;
+            aipath.maxSpeed= 2f;
         }
     }
 

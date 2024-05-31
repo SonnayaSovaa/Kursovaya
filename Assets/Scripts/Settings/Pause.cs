@@ -32,6 +32,9 @@ public class Pause : MonoBehaviour
 
     [SerializeField] GameObject loading;
 
+    float turn;
+    float move;
+
 
 
     private void OnEnable()
@@ -49,6 +52,9 @@ public class Pause : MonoBehaviour
     {
         controls = new Controls();
         controls.pause.Pause.started += ctx => MakePause();
+
+        move = igrok.GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed;
+        turn = igrok.GetComponent<ActionBasedContinuousTurnProvider>().turnSpeed;
     }
 
 
@@ -68,13 +74,8 @@ public class Pause : MonoBehaviour
 
         pause.SetActive(false);
 
-        (igrok.GetComponent<ActionBasedContinuousMoveProvider>() as MonoBehaviour).enabled = true;
-        (igrok.GetComponent<ActionBasedContinuousTurnProvider>() as MonoBehaviour).enabled = true;
-
-        igrok.GetComponent<Collider>().enabled = true;
-        igrok.GetComponent<Collider>().enabled = true;
-
-        
+        igrok.GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed = move;
+        igrok.GetComponent<ActionBasedContinuousTurnProvider>().turnSpeed = turn;
 
         activate = false;
 
@@ -86,6 +87,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0f;
 
         slider.value = player.healthSl.value;
+
         description.text = weap.description.text;
         Score.text = player.Score.text;
         timer.text = player.timer.text;
@@ -95,12 +97,10 @@ public class Pause : MonoBehaviour
         playerAudio.PlayOneShot(click);
 
         pause.SetActive(true);
-        (igrok.GetComponent<ActionBasedContinuousMoveProvider>() as MonoBehaviour).enabled = false;
-        (igrok.GetComponent<ActionBasedContinuousTurnProvider>() as MonoBehaviour).enabled = false;
 
-        igrok.GetComponent<Collider>().enabled = false;
-        igrok.GetComponent<Collider>().enabled = false;
-        
+
+        igrok.GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed = 0f;
+        igrok.GetComponent<ActionBasedContinuousTurnProvider>().turnSpeed = 0f;
 
         activate = true;        
 

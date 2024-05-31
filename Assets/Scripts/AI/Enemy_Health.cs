@@ -21,6 +21,8 @@ public class Enemy_Health : MonoBehaviour
 
     [SerializeField] AudioClip udar;
 
+    float timer=0;
+
 
     private void Start()
     {
@@ -68,6 +70,11 @@ public class Enemy_Health : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        timer += Time.deltaTime;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player" && att_coll)
@@ -76,13 +83,17 @@ public class Enemy_Health : MonoBehaviour
         }
         else if (other.tag.Contains("1") || other.tag.Contains("2") || other.tag.Contains("3") || other.tag.Contains("4") || other.tag.Contains("5") || other.tag.Contains("6") || other.tag.Contains("7") || other.tag.Contains("8") || other.tag.Contains("9") || other.tag.Contains("0"))
         {
-            
-            int tagg = Convert.ToInt32(other.tag);
-            if (other.gameObject.GetComponent<CurrentWeapon>()!=null && tagg < 37 && tagg >= 0)
+            if (timer >= 2)
             {
-                weapon = FindObjectOfType<CurrentWeapon>();
-                main.PlayOneShot(udar);
-                enemy.health -= weapon.currentUron;
+                int tagg = Convert.ToInt32(other.tag);
+                if (other.gameObject.GetComponent<CurrentWeapon>() != null && tagg < 37 && tagg >= 0)
+                {
+                    weapon = FindObjectOfType<CurrentWeapon>();
+                    main.PlayOneShot(udar);
+                    enemy.health -= weapon.currentUron;
+                    timer = 0;
+                }
+                
             }
         }
     }

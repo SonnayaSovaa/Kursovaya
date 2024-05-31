@@ -8,8 +8,6 @@ public class MusicVolume : MonoBehaviour
 {
     AudioSource[] mus;
 
-    public bool start;
-
     [SerializeField] GameObject heal;
 
     Player player;
@@ -18,25 +16,40 @@ public class MusicVolume : MonoBehaviour
 
     public GameObject[] real_weapons;
 
+    string currSc;
+
+    [SerializeField] GameObject StartIgrok;
+
     private void Awake()
     {
-        weapons = FindObjectsOfType<TheWeapon>();
+        float k = PlayerPrefs.GetFloat("SoundValue");
 
-        real_weapons= new GameObject[weapons.Length];
+        int mc = PlayerPrefs.GetInt("MagicCube");
+        int pp = PlayerPrefs.GetInt("PipeRotat");
+        currSc = SceneManager.GetActiveScene().name;
 
-        for (int i=0; i<weapons.Length; i++)
+        if (currSc != "TheEnd")
         {
-            real_weapons[i] = weapons[i].gameObject;
+
+            weapons = FindObjectsOfType<TheWeapon>();
+
+            real_weapons = new GameObject[weapons.Length];
+
+            for (int i = 0; i < weapons.Length; i++)
+            {
+                real_weapons[i] = weapons[i].gameObject;
+            }
+
+            player = FindObjectOfType<Player>();
+            mus = FindObjectsOfType<AudioSource>();
+
+            player.loading.SetActive(false);
         }
 
-        player=FindObjectOfType<Player>();
-        mus = FindObjectsOfType<AudioSource>();
 
-        player.loading.SetActive(false);
 
-        float k= PlayerPrefs.GetFloat("SoundValue");
 
-        if (SceneManager.GetActiveScene().name != "Start")
+        if (currSc != "Start")
         {
             foreach (AudioSource source in mus)
             {
@@ -44,10 +57,15 @@ public class MusicVolume : MonoBehaviour
             }
         }
 
-        int mc = PlayerPrefs.GetInt("MagicCube");
-        int pp = PlayerPrefs.GetInt("PipeRotat");
+        else
+        {
+            if (StartIgrok != null &&  (pp==1 || mc==1))
+                Destroy(StartIgrok);
+        }
 
-        if (start && mc==1 && pp==1)
+        
+
+        if (currSc!="Start" && mc==1 && pp==1)
         {
             heal.SetActive(true);
         }
