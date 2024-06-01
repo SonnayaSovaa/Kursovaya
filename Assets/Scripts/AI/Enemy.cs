@@ -5,6 +5,8 @@ using System;
 public class Enemy : MonoBehaviour
 {
 
+    public bool boss_umer;
+
     [SerializeField] private float minWalkDist;
     [SerializeField] private float maxWalkDist;
 
@@ -203,6 +205,7 @@ public class Enemy : MonoBehaviour
             if (boss)
             {
                 PlayerPrefs.SetInt("Boss_Dead", 1);
+                boss_umer = true;
             }
             else
             {

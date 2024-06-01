@@ -20,6 +20,8 @@ public class MusicVolume : MonoBehaviour
 
     [SerializeField] GameObject StartIgrok;
 
+    [SerializeField] GameObject source;
+
     private void Awake()
     {
         float k = PlayerPrefs.GetFloat("SoundValue");
@@ -59,8 +61,11 @@ public class MusicVolume : MonoBehaviour
 
         else
         {
-            if (StartIgrok != null &&  (pp==1 || mc==1))
+            if (StartIgrok != null && (pp == 1 || mc == 1))
+            {
+                source.SetActive(true);
                 Destroy(StartIgrok);
+            }
         }
 
         

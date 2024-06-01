@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] public Slider healthSl;
 
-    float time = 0;
+    public float time = 0;
 
     public int score;
 
