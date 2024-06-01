@@ -66,17 +66,17 @@ public class Enemy : MonoBehaviour
             switch (slojnost)
             {
                 case 0:
-                    health = 3*50;
+                    health = 60;
                     score = 16;
                     break;
 
                 case 1:
-                    health = 3*80;
+                    health = 85;
                     score = 14;
                     break;
 
                 case 2:
-                    health = 3 * 120;
+                    health = 120;
                     score = 11;
                     break;
 

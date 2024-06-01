@@ -22,7 +22,7 @@ public class MusicVolume : MonoBehaviour
 
     [SerializeField] GameObject source;
 
-    private void Awake()
+    private void Start()
     {
         float k = PlayerPrefs.GetFloat("SoundValue");
 
@@ -30,7 +30,7 @@ public class MusicVolume : MonoBehaviour
         int pp = PlayerPrefs.GetInt("PipeRotat");
         currSc = SceneManager.GetActiveScene().name;
 
-        if (currSc != "TheEnd")
+        if (currSc != "TheEnd"|| currSc != "Menu")
         {
 
             weapons = FindObjectsOfType<TheWeapon>();

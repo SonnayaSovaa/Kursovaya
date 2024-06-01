@@ -82,7 +82,7 @@ public class InvFix : MonoBehaviour
         if (other.tag == "38" || other.tag == "39")
         {
             this.tag = "Svoboden";
-            currobj.transform.parent = null;
+            if (currobj!=null)currobj.transform.parent = null;
             currobj = null;            
         }
     }

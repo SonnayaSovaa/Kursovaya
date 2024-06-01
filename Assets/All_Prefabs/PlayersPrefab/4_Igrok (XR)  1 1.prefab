@@ -656,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 3211882013064675913}
+  Point: {fileID: 0}
 --- !u!1 &921532286759630209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,7 +1097,6 @@ GameObject:
   - component: {fileID: 1226838806496127387}
   - component: {fileID: 201038568405979557}
   - component: {fileID: 7099290969698222911}
-  - component: {fileID: 2721696309397218747}
   m_Layer: 3
   m_Name: 4_Igrok (XR)  1 1
   m_TagString: Player
@@ -1251,44 +1251,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &2721696309397218747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516643606573672127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 201038568405979557}
-  m_TurnSpeed: 35
-  m_LeftHandTurnAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Left Hand Turn
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: 2bc4c0a4-a3c4-46ee-a74d-3f0b41ce7c75
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  m_RightHandTurnAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Hand Turn
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: 95919d15-5dc7-40fe-bae1-3a34abc65eb7
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1638882734477329191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,6 +2420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 3211882013064675913}
+  Point: {fileID: 0}
 --- !u!1 &2246481870663246742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +3876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 3211882013064675913}
+  Point: {fileID: 0}
 --- !u!1 &3664932191177460410
 GameObject:
   m_ObjectHideFlags: 0
@@ -5303,6 +5267,7 @@ MonoBehaviour:
   timer: {fileID: 3124535873841303037}
   Score: {fileID: 870576801204191135}
   healthSl: {fileID: 476467947602349037}
+  time: 0
   score: 0
   Shag: 0
   playerAudio: {fileID: 9153818633094611992}
@@ -5842,6 +5807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 3211882013064675913}
+  Point: {fileID: 0}
 --- !u!1 &5289489596173147335
 GameObject:
   m_ObjectHideFlags: 0
@@ -6205,6 +6171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 3211882013064675913}
+  Point: {fileID: 0}
 --- !u!1 &5918086677919174669
 GameObject:
   m_ObjectHideFlags: 0
@@ -8383,6 +8350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 3211882013064675913}
+  Point: {fileID: 0}
 --- !u!1 &7118969414133554695
 GameObject:
   m_ObjectHideFlags: 0
