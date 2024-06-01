@@ -24,6 +24,8 @@ public class DoorFromLab : MonoBehaviour
 
     Transform movingpoint;
 
+
+
     private void Start()
     {
         weapon = FindObjectOfType<Weap_Desc>();
@@ -53,9 +55,7 @@ public class DoorFromLab : MonoBehaviour
         Debug.Log("Door1");
         if (other.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() >0 || other.tag == "Right" && controller_R.selectAction.action.ReadValue<float>() >0)
         {
-            
-
-            
+                       
             Debug.Log("Door");
 
 

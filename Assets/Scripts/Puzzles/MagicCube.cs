@@ -22,7 +22,7 @@ public class MagicCube : MonoBehaviour
 
     int slojnost;
 
-
+    [SerializeField] GameObject anotherDoor;
     private void Update()
     {
         Check();
@@ -110,7 +110,9 @@ public class MagicCube : MonoBehaviour
         //tablo1.color= new Color(191, 255, 186, 255);
         main.PlayOneShot(access);
         PlayerPrefs.SetInt("MagicCube", 1);
+        Destroy(anotherDoor);
         Destroy(this);
+
     }
 
 

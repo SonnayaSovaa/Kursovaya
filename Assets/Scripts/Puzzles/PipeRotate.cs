@@ -27,6 +27,8 @@ public class PipeRotate : MonoBehaviour
 
     public bool InTrig = false;
 
+    [SerializeField] GameObject anotherDoor;
+
     private void Start()
     {
 
@@ -128,7 +130,7 @@ public class PipeRotate : MonoBehaviour
         main.PlayOneShot(access);
 
         PlayerPrefs.SetInt("PipeRotat", 1);
-
+        Destroy(anotherDoor);
         Destroy(this);
     }
 
