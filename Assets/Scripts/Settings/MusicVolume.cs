@@ -12,7 +12,7 @@ public class MusicVolume : MonoBehaviour
 
     Player player;
 
-    TheWeapon[] weapons;
+    public TheWeapon[] weapons;
 
     public GameObject[] real_weapons;
 
@@ -22,7 +22,7 @@ public class MusicVolume : MonoBehaviour
 
     [SerializeField] GameObject source;
 
-    private void Start()
+    private void Awake()
     {
         float k = PlayerPrefs.GetFloat("SoundValue");
 

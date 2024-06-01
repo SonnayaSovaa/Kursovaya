@@ -10,6 +10,10 @@ public class PlayerImput : MonoBehaviour
     [SerializeField] private InputActionProperty _gripAction;
     [SerializeField] private InputActionProperty _triggerAction;
     private bool flag=true;
+    public int tag;
+    int tagweap;
+    [SerializeField]Weap_Desc weap;
+
     void Update()
     {
         if (flag)
@@ -19,8 +23,9 @@ public class PlayerImput : MonoBehaviour
             _animator.SetFloat("Grip", gripvalue);
             _animator.SetFloat("Trigger", activationvalue);
         }
-}
-   public void OnTriggerStay(Collider other)
+    }
+
+    public void OnTriggerStay(Collider other)
     {
         if (other.tag.Contains("1") || other.tag.Contains("2") || other.tag.Contains("3") || other.tag.Contains("4") ||
             other.tag.Contains("5") || other.tag.Contains("6") || other.tag.Contains("7") || other.tag.Contains("8") ||
@@ -29,7 +34,7 @@ public class PlayerImput : MonoBehaviour
             flag = false;
             _animator.SetFloat("Grip", 0);
             _animator.SetFloat("Trigger", 0);
-            int tag = Convert.ToInt32(other.tag);
+            tag = Convert.ToInt32(other.tag);
             switch (tag)
             {
                 case 37:
@@ -49,6 +54,13 @@ public class PlayerImput : MonoBehaviour
         flag=true;
         _animator.SetBool("Hill", false);
         _animator.SetBool("Key", false);
-        _animator.SetBool("Wep",false);
+        _animator.SetBool("Wep",false);  
+           
+
+            if (0 < tagweap && tagweap < 37)
+            {
+                weap.OutHand();
+            }
+        }
     }
-}
+
