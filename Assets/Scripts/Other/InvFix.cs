@@ -1,10 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using Unity.XR.CoreUtils;
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
-using UnityEngine.Assertions.Must;
 
 public class InvFix : MonoBehaviour
 {

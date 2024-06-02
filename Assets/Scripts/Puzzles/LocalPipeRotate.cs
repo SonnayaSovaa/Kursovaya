@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.XR.Interaction.Toolkit.AR;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
