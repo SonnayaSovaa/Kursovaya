@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.022000313, y: 0.22799683, z: -1.765316}
-  m_LocalScale: {x: 2.33, y: 2.33, z: 2.33}
+  m_LocalScale: {x: 1.2819997, y: 1.282, z: 1.2819997}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3655586615597300357}
@@ -156,7 +156,7 @@ MonoBehaviour:
   Os_x: 0
   Os_y: 0
   Os_z: 0
-  audioo: {fileID: 0}
+  audio: {fileID: 1022909397576125890}
 --- !u!82 &1022909397576125890
 AudioSource:
   m_ObjectHideFlags: 0
