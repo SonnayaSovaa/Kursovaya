@@ -51,6 +51,8 @@ TagManager:
   - 41
   - 55
   - 39
+  - L
+  - R
   layers:
   - Default
   - TransparentFX

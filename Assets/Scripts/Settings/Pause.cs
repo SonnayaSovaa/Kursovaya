@@ -13,7 +13,7 @@ public class Pause : MonoBehaviour
     [SerializeField] GameObject pause;
     [SerializeField] GameObject igrok;
 
-    static bool activate=false;
+    public bool activate=false;
 
     [SerializeField] public AudioSource playerAudio;
     [SerializeField] AudioClip click;

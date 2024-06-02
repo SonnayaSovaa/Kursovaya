@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Loading;
 using UnityEngine;
 
 public class ForButton : MonoBehaviour
@@ -14,6 +15,8 @@ public class ForButton : MonoBehaviour
 
     public static bool chek = false;
 
+    [SerializeField] Pause pause;
+
     private void Update()
     {
         chek = SetInv;
@@ -21,7 +24,7 @@ public class ForButton : MonoBehaviour
         if (40<igrok.transform.eulerAngles.x && 90> igrok.transform.eulerAngles.x)
 
         {
-            button.SetActive(true);
+            if (!pause.activate) button.SetActive(true);
         }
         else
         {
