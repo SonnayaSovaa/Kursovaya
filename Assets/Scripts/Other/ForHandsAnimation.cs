@@ -36,7 +36,8 @@ public class PlayerImput : MonoBehaviour
 
             if (0 <= tagg && tagg< 37)
             {
-                weap.InHand();
+                
+                //weap.InHand();
             }
         }
     }
@@ -79,7 +80,7 @@ public class PlayerImput : MonoBehaviour
 
             if (0 <= tagg && tagg < 37)
             {
-                weap.OutHand();
+                //weap.OutHand();
             }
         }
 

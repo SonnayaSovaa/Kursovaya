@@ -201,6 +201,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afacb8c4103ad65489991b3887bf7508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  description: "\u0414\u0440\u0435\u0432\u043D\u0438\u0439 \u043C\u0435\u0447 \u0417\u0430\u043C\u0451\u0440\u0437\u0448\u0435\u0433\u043E
+    \u043E\u043A\u0435\u0430\u043D\u0430."
+  rank: 5
+  real_uron: 42
 --- !u!114 &-3286372109875641966
 MonoBehaviour:
   m_ObjectHideFlags: 0

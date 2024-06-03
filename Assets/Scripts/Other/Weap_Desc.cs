@@ -30,7 +30,7 @@ public class Weap_Desc : MonoBehaviour
 
     [SerializeField] PlayerImput L_trig;
     [SerializeField] PlayerImput R_trig;
-
+/*
     private void Start()
     {
         forWeapMass = FindObjectOfType<MusicVolume>();
@@ -62,7 +62,7 @@ public class Weap_Desc : MonoBehaviour
                 j++;
             }
         }
-        */
+        
 
     }
 
@@ -104,18 +104,14 @@ public class Weap_Desc : MonoBehaviour
             }
             //}
         //}
-    }
+    }*/
 
     int What(int cur_tag)
     {
 
         switch (cur_tag)
         {
-            case 0:
-                description.text = "Довольно обычная крепкая булава.";
-                rank.text = "2";
-                real_uron = 16;
-                break;
+           
             case 1:
                 description.text = "Простое аккуратное копьё. Ничего необычного.";
                 rank.text = "2";
@@ -302,7 +298,7 @@ public class Weap_Desc : MonoBehaviour
         return real_uron;
     }
            
-        
+      /*  
     
 
     public void OutHand()
@@ -319,7 +315,7 @@ public class Weap_Desc : MonoBehaviour
 
         //allWeap = TheWeapon.GetComponentsInChildren<Transform>();
 
-        /*
+        
          int j = 0;
          for (int i = allWeap.Length - 1; i >= 0; i--)
          {
@@ -329,7 +325,7 @@ public class Weap_Desc : MonoBehaviour
                  j++;
              }
          }
-        */
+        
 
 
         //Debug.Log("Count   " + count);
@@ -351,7 +347,7 @@ public class Weap_Desc : MonoBehaviour
             weapons[i] = we[i];
         }
         if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null && weapons[weapons.Length - 1] == null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
-        /*
+        
 
         if (FindObjectOfType<CurrentWeapon>() != null)
         {
@@ -384,7 +380,7 @@ public class Weap_Desc : MonoBehaviour
 
 
             curr.currentUron = 0;
-        }*/
+        }
 
         foreach (var k in weapons)
         {
@@ -403,7 +399,7 @@ public class Weap_Desc : MonoBehaviour
 
 
 
-    } 
+    } */
 
 
 

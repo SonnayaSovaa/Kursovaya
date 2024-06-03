@@ -11,7 +11,7 @@ public class DoorToLab : MonoBehaviour
 
     public GameObject Igrok;
 
-    Weap_Desc weapon;
+    //Weap_Desc weapon;
 
     GameObject loading;
 
@@ -19,13 +19,13 @@ public class DoorToLab : MonoBehaviour
     {
         Player player= FindObjectOfType<Player>();
         Igrok = player.igrok;
-        weapon =FindObjectOfType<Weap_Desc>();
+        //weapon =FindObjectOfType<Weap_Desc>();
         loading = player.loading;
     }
 
     public void Update()
     {
-        inHand = weapon.weap;
+        //inHand = weapon.weap;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,14 +34,14 @@ public class DoorToLab : MonoBehaviour
         if (other.tag == "Player")
         {
             DontDestroyOnLoad(Igrok);
-            DontDestroyOnLoad(FindObjectOfType<CurrentWeapon>().gameObject);
+            //DontDestroyOnLoad(FindObjectOfType<CurrentWeapon>().gameObject);
             string currScene = SceneManager.GetActiveScene().name;
 
             if (this.name == "ToSteam")
             {
                 int prohodSteam = PlayerPrefs.GetInt("PipeRotat");
 
-                if (prohodSteam == 0 && inHand)
+                if (prohodSteam == 0)
                 {
                     m_Scene = "Steam_Lab";
                     Load(m_Scene);
@@ -52,7 +52,7 @@ public class DoorToLab : MonoBehaviour
             {
                 int prohodForest = PlayerPrefs.GetInt("MagicCube");
 
-                if (prohodForest == 0 && inHand)
+                if (prohodForest == 0)
                 {
                     m_Scene = "Forest";
                     Load(m_Scene);
@@ -67,6 +67,7 @@ public class DoorToLab : MonoBehaviour
                 {
                     m_Scene = "End";
                     Load(m_Scene);
+                    Igrok.SetActive(false);
                 }
             }
 
@@ -90,7 +91,7 @@ public class DoorToLab : MonoBehaviour
                 {
                     int prohodSteam = PlayerPrefs.GetInt("PipeRotat");
 
-                    if (prohodSteam == 1 && inHand)
+                    if (prohodSteam == 1)
                     {
                         Load(m_Scene);
                     }
@@ -99,7 +100,7 @@ public class DoorToLab : MonoBehaviour
                 {
                     int prohodForest = PlayerPrefs.GetInt("MagicCube");
 
-                    if (prohodForest == 1 && inHand)
+                    if (prohodForest == 1)
                     {
                         Load(m_Scene);
                     }
