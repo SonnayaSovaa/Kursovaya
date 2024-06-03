@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using probnik;
 using Unity.VisualScripting;
 
 public class Enemy_Health : MonoBehaviour
@@ -15,7 +16,7 @@ public class Enemy_Health : MonoBehaviour
 
     public bool boss;
 
-    CurrentWeapon weapon;
+    WeaponGrab weapon;
 
     public AudioSource main;
 
@@ -86,11 +87,11 @@ public class Enemy_Health : MonoBehaviour
             if (timer >= 2)
             {
                 int tagg = Convert.ToInt32(other.tag);
-                if (other.gameObject.GetComponent<CurrentWeapon>() != null && tagg < 37 && tagg >= 0)
+                if (other.gameObject.GetComponent<WeaponGrab>() != null)
                 {
-                    weapon = FindObjectOfType<CurrentWeapon>();
+                    //weapon = FindObjectOfType<CurrentWeapon>();
                     main.PlayOneShot(udar);
-                    enemy.health -= weapon.currentUron;
+                    enemy.health -= weapon.real_uron;
                     timer = 0;
                 }
                 
