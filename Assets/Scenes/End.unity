@@ -613,8 +613,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heal: {fileID: 0}
+  weapons: []
   real_weapons: []
-  StartIgrok: {fileID: 0}
+  StartIgrok: {fileID: 281357674}
+  source: {fileID: 0}
 --- !u!1 &271206219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +1005,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 372272216daa19f4999534d62146bad1, type: 3}
+--- !u!1 &281357674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1516643606573672127, guid: 372272216daa19f4999534d62146bad1, type: 3}
+  m_PrefabInstance: {fileID: 281357673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &286690457
 GameObject:
   m_ObjectHideFlags: 0

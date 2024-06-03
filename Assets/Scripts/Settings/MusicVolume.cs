@@ -55,7 +55,13 @@ public class MusicVolume : MonoBehaviour
         {
             foreach (AudioSource source in mus)
             {
-                source.volume = source.volume * k;
+                if (source.name=="Menuaudio") Destroy(source);
+                else source.volume = source.volume * k;
+            }
+
+            if (currSc == "TheEnd")
+            {
+                Destroy(StartIgrok);
             }
         }
 

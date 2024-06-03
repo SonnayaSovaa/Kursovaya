@@ -6289,6 +6289,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3893656962542082840, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4005026477391520105, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: Point
       value: 
@@ -6309,6 +6313,10 @@ PrefabInstance:
       propertyPath: Point
       value: 
       objectReference: {fileID: 279161114}
+    - target: {fileID: 9223189927021812426, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8156457932507143312, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}

@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 8829220556938948400}
   - component: {fileID: 3423562587907565631}
   - component: {fileID: 3010095080058465825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (5)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -283,128 +283,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3482592852587761905
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4795490044855459468}
-  - component: {fileID: 3678240295582214744}
-  m_Layer: 3
-  m_Name: DirectInteractor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4795490044855459468
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3482592852587761905}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 86863912945898010}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3678240295582214744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3482592852587761905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_InteractionLayers:
-    m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
-  m_KeepSelectedTargetValid: 1
-  m_DisableVisualsWhenBlockedInGroup: 1
-  m_StartingSelectedInteractable: {fileID: 0}
-  m_StartingTargetFilter: {fileID: 0}
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 0
-  m_AllowHoveredActivate: 0
-  m_TargetPriorityMode: 0
-  m_PlayAudioClipOnSelectEntered: 0
-  m_AudioClipForOnSelectEntered: {fileID: 0}
-  m_PlayAudioClipOnSelectExited: 0
-  m_AudioClipForOnSelectExited: {fileID: 0}
-  m_PlayAudioClipOnSelectCanceled: 0
-  m_AudioClipForOnSelectCanceled: {fileID: 0}
-  m_PlayAudioClipOnHoverEntered: 0
-  m_AudioClipForOnHoverEntered: {fileID: 0}
-  m_PlayAudioClipOnHoverExited: 0
-  m_AudioClipForOnHoverExited: {fileID: 0}
-  m_PlayAudioClipOnHoverCanceled: 0
-  m_AudioClipForOnHoverCanceled: {fileID: 0}
-  m_AllowHoverAudioWhileSelecting: 1
-  m_PlayHapticsOnSelectEntered: 0
-  m_HapticSelectEnterIntensity: 0
-  m_HapticSelectEnterDuration: 0
-  m_PlayHapticsOnSelectExited: 0
-  m_HapticSelectExitIntensity: 0
-  m_HapticSelectExitDuration: 0
-  m_PlayHapticsOnSelectCanceled: 0
-  m_HapticSelectCancelIntensity: 0
-  m_HapticSelectCancelDuration: 0
-  m_PlayHapticsOnHoverEntered: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
-  m_PlayHapticsOnHoverExited: 0
-  m_HapticHoverExitIntensity: 0
-  m_HapticHoverExitDuration: 0
-  m_PlayHapticsOnHoverCanceled: 0
-  m_HapticHoverCancelIntensity: 0
-  m_HapticHoverCancelDuration: 0
-  m_AllowHoverHapticsWhileSelecting: 1
-  m_ImproveAccuracyWithSphereCollider: 0
-  m_PhysicsLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_PhysicsTriggerInteraction: 1
 --- !u!1 &3793945989067226899
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +295,7 @@ GameObject:
   - component: {fileID: 1307973468153338240}
   - component: {fileID: 553958860038422872}
   - component: {fileID: 6057610788936126897}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (2)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -550,7 +428,7 @@ GameObject:
   - component: {fileID: 5606488338257013339}
   - component: {fileID: 1379022220617613311}
   - component: {fileID: 126649005663760328}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (4)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -683,7 +561,7 @@ GameObject:
   - component: {fileID: 7618447644964587953}
   - component: {fileID: 253565185288197852}
   - component: {fileID: 8380814633981961912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (3)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -816,7 +694,7 @@ GameObject:
   - component: {fileID: 5784033246288087711}
   - component: {fileID: 5420628845631026184}
   - component: {fileID: 6571686744375489101}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (1)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -1330,6 +1208,10 @@ PrefabInstance:
     - target: {fileID: 1856342808627478486, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872386750902628000, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1956136149891107707, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: button
@@ -2000,6 +1882,10 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6828657233331457042, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6850815856152055020, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.23301189
@@ -2010,7 +1896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094953046816938117, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7118969414133554695, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_TagString
@@ -2051,6 +1937,10 @@ PrefabInstance:
     - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366084674620638534, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7367625211789852233, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2295,9 +2185,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8660785570821353062, guid: 372272216daa19f4999534d62146bad1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8695776772653431509}
-    - targetCorrespondingSourceObject: {fileID: 1797594753607273878, guid: 372272216daa19f4999534d62146bad1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4795490044855459468}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1516643606573672127, guid: 372272216daa19f4999534d62146bad1, type: 3}
       insertIndex: -1
@@ -2315,11 +2202,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2802765314252894209}
   m_SourcePrefab: {fileID: 100100000, guid: 372272216daa19f4999534d62146bad1, type: 3}
---- !u!4 &86863912945898010 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1797594753607273878, guid: 372272216daa19f4999534d62146bad1, type: 3}
-  m_PrefabInstance: {fileID: 1857396897865457548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &208110980769617143 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1956136149891107707, guid: 372272216daa19f4999534d62146bad1, type: 3}

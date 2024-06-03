@@ -1278,7 +1278,7 @@ GameObject:
   - component: {fileID: 368446328}
   - component: {fileID: 368446327}
   m_Layer: 0
-  m_Name: For_Music
+  m_Name: Menuaudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6079,6 +6079,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4_Igrok (XR)  1 1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 925585586984495880, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: weap
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307973468153338240, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712806595626384283, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: weap
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1875794753029031113, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6107,6 +6119,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5606488338257013339, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784033246288087711, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6357479388519985009, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6118,6 +6138,10 @@ PrefabInstance:
     - target: {fileID: 6997867153924534238, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618447644964587953, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: Point
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7926619726805859537, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: Point
@@ -6131,6 +6155,10 @@ PrefabInstance:
       propertyPath: Point
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8829220556938948400, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: Point
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8845418348847368396, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -6146,6 +6174,10 @@ PrefabInstance:
     - target: {fileID: 8943322670774423594, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9223189927021812426, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

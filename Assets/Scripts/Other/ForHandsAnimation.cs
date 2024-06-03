@@ -34,7 +34,7 @@ public class PlayerImput : MonoBehaviour
         {
             tagg = Convert.ToInt32(other.tag);
 
-            if (0 < tagg && tagg< 37)
+            if (0 <= tagg && tagg< 37)
             {
                 weap.InHand();
             }
@@ -74,7 +74,7 @@ public class PlayerImput : MonoBehaviour
             _animator.SetBool("Wep", false);
 
 
-            if (0 < tagg && tagg < 37)
+            if (0 <= tagg && tagg < 37)
             {
                 weap.OutHand();
             }

@@ -39,17 +39,19 @@ public class Weap_Desc : MonoBehaviour
         //GameObject[] we = forWeapMass.real_weapons;
 
 
+        GameObject[] we = forWeapMass.real_weapons;
+
+
         if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
         else
             if (PlayerPrefs.GetInt("PipeRotat") + PlayerPrefs.GetInt("MagicCube") > 0) weapons = new GameObject[4];
-            else weapons = new GameObject[3];
+        else weapons = new GameObject[3];
 
         for (int i = 0; i < weapons.Length; i++)
         {
-            weapons[i] = forWeapMass.weapons[i].gameObject;
+            weapons[i] = we[i];
         }
         if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
-
         /*
         int j = 0;
         for (int i = allWeap.Length - 1; i >= 0; i--)
@@ -61,7 +63,6 @@ public class Weap_Desc : MonoBehaviour
             }
         }
         */
-        if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
 
     }
 
@@ -79,13 +80,13 @@ public class Weap_Desc : MonoBehaviour
                     Debug.Log("INHAND");
                     weap = true;
                     int currUr = What(int.Parse(weapons[i].tag));
-                    curr = weapons[i].AddComponent<CurrentWeapon>();
+                    if (weapons[i].GetComponent<CurrentWeapon>() == null) curr = weapons[i].AddComponent<CurrentWeapon>();
                     curr.currentUron = currUr;
                     //weapons[i].transform.parent = igrok.transform;
 
                 }
                 else
-                   if (weapons[i] != null) (weapons[i].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
+                   if (weapons[i] != null) (weapons[i].GetComponent("TheWeapon") as MonoBehaviour).enabled = false;
             }
             //}
         //}
@@ -335,7 +336,7 @@ public class Weap_Desc : MonoBehaviour
         {
             weapons[i] = we[i];
         }
-        if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
+        if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null && weapons[weapons.Length - 1] == null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
         /*
 
         if (FindObjectOfType<CurrentWeapon>() != null)
@@ -375,7 +376,7 @@ public class Weap_Desc : MonoBehaviour
         {
             if (k != null)
             {
-                (k.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
+                (k.GetComponent("TheWeapon") as MonoBehaviour).enabled = true;
                 if (k.GetComponent<CurrentWeapon>() != null)
                 {
                     k.transform.parent = TheWeapon;
