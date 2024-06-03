@@ -2135,6 +2135,14 @@ PrefabInstance:
       value: 0.5773
       objectReference: {fileID: 0}
     - target: {fileID: 8708738725634732114, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Left
+      value: 
+      objectReference: {fileID: 5286538579181746296}
+    - target: {fileID: 8708738725634732114, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: Right
+      value: 
+      objectReference: {fileID: 389788098709310925}
+    - target: {fileID: 8708738725634732114, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: L_trig
       value: 
       objectReference: {fileID: 1712806595626384283}
@@ -2201,6 +2209,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7094953046816938117, guid: 372272216daa19f4999534d62146bad1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2802765314252894209}
+    - targetCorrespondingSourceObject: {fileID: 7118969414133554695, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 389788098709310925}
+    - targetCorrespondingSourceObject: {fileID: 3417645014632443679, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5286538579181746296}
   m_SourcePrefab: {fileID: 100100000, guid: 372272216daa19f4999534d62146bad1, type: 3}
 --- !u!114 &208110980769617143 stripped
 MonoBehaviour:
@@ -2270,7 +2284,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1521824752803542148, guid: 372272216daa19f4999534d62146bad1, type: 3}
   m_PrefabInstance: {fileID: 1857396897865457548}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8866853560154046859}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4466d39467b7d243970437f0d0f2637, type: 3}
@@ -2281,7 +2295,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1009879600361071639, guid: 372272216daa19f4999534d62146bad1, type: 3}
   m_PrefabInstance: {fileID: 1857396897865457548}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 3939284818329858195}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4466d39467b7d243970437f0d0f2637, type: 3}
@@ -2297,6 +2311,29 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3211882013064675913, guid: 372272216daa19f4999534d62146bad1, type: 3}
   m_PrefabInstance: {fileID: 1857396897865457548}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3939284818329858195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3417645014632443679, guid: 372272216daa19f4999534d62146bad1, type: 3}
+  m_PrefabInstance: {fileID: 1857396897865457548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5286538579181746296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939284818329858195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11692032dc5e88e4eb4d364f9b9036b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  igrok: {fileID: 921830481561794867}
+  weap: {fileID: 0}
+  inhand: 0
+  description: 
+  rank: 
+  real_uron: 0
 --- !u!1 &4260348624330203860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2511038418174639448, guid: 372272216daa19f4999534d62146bad1, type: 3}
@@ -2401,6 +2438,29 @@ MonoBehaviour:
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
+--- !u!1 &8866853560154046859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7118969414133554695, guid: 372272216daa19f4999534d62146bad1, type: 3}
+  m_PrefabInstance: {fileID: 1857396897865457548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &389788098709310925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866853560154046859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11692032dc5e88e4eb4d364f9b9036b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  igrok: {fileID: 921830481561794867}
+  weap: {fileID: 0}
+  inhand: 0
+  description: 
+  rank: 
+  real_uron: 0
 --- !u!1 &8912793639482525449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7094953046816938117, guid: 372272216daa19f4999534d62146bad1, type: 3}
