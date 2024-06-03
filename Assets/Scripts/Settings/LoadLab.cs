@@ -41,7 +41,7 @@ public class DoorToLab : MonoBehaviour
             {
                 int prohodSteam = PlayerPrefs.GetInt("PipeRotat");
 
-                if (prohodSteam == 0 && inHand)
+                if (prohodSteam == 0)
                 {
                     m_Scene = "Steam_Lab";
                     Load(m_Scene);
@@ -52,7 +52,7 @@ public class DoorToLab : MonoBehaviour
             {
                 int prohodForest = PlayerPrefs.GetInt("MagicCube");
 
-                if (prohodForest == 0 && inHand)
+                if (prohodForest == 0)
                 {
                     m_Scene = "Forest";
                     Load(m_Scene);

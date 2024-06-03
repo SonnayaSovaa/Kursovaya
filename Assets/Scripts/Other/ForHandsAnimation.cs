@@ -28,7 +28,7 @@ public class PlayerImput : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag.Contains("1") || other.tag.Contains("2") || other.tag.Contains("3") || other.tag.Contains("4") ||
+       /* if (other.tag.Contains("1") || other.tag.Contains("2") || other.tag.Contains("3") || other.tag.Contains("4") ||
             other.tag.Contains("5") || other.tag.Contains("6") || other.tag.Contains("7") || other.tag.Contains("8") ||
             other.tag.Contains("9") || other.tag.Contains("0"))
         {
@@ -38,7 +38,7 @@ public class PlayerImput : MonoBehaviour
             {
                 weap.InHand();
             }
-        }
+        }*/
     }
 
     public void OnTriggerStay(Collider other)
@@ -72,7 +72,7 @@ public class PlayerImput : MonoBehaviour
         _animator.SetBool("Wep", false);
 
 
-        if (this.tag == "R" && other.gameObject.GetNamedChild("[Right Controller] Dynamic Attach") != null || this.tag == "L" && other.gameObject.GetNamedChild("[Left Controller] Dynamic Attach") != null)
+       /* if (this.tag == "R" && other.gameObject.GetNamedChild("[Right Controller] Dynamic Attach") != null || this.tag == "L" && other.gameObject.GetNamedChild("[Left Controller] Dynamic Attach") != null)
         {
             
 
@@ -81,7 +81,7 @@ public class PlayerImput : MonoBehaviour
             {
                 weap.OutHand();
             }
-        }
+        }*/
 
     }
 }
