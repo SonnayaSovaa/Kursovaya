@@ -51,7 +51,7 @@ public class MusicVolume : MonoBehaviour
 
 
 
-        if (currSc != "Start")
+        if (currSc != "Start" && currSc!="Menu")
         {
             foreach (AudioSource source in mus)
             {

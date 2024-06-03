@@ -66,12 +66,15 @@ public class PlayerImput : MonoBehaviour
     }
     public void OnTriggerExit(Collider other)
     {
+        flag = true;
+        _animator.SetBool("Hill", false);
+        _animator.SetBool("Key", false);
+        _animator.SetBool("Wep", false);
+
+
         if (this.tag == "R" && other.gameObject.GetNamedChild("[Right Controller] Dynamic Attach") != null || this.tag == "L" && other.gameObject.GetNamedChild("[Left Controller] Dynamic Attach") != null)
         {
-            flag = true;
-            _animator.SetBool("Hill", false);
-            _animator.SetBool("Key", false);
-            _animator.SetBool("Wep", false);
+            
 
 
             if (0 <= tagg && tagg < 37)

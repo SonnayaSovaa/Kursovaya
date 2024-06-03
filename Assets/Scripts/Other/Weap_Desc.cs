@@ -68,12 +68,26 @@ public class Weap_Desc : MonoBehaviour
 
     public void InHand()
     {
+        forWeapMass = FindObjectOfType<MusicVolume>();
+
+        GameObject[] we = forWeapMass.real_weapons;
+
+
+        if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
+        else
+            if (PlayerPrefs.GetInt("PipeRotat") + PlayerPrefs.GetInt("MagicCube") > 0) weapons = new GameObject[4];
+            else weapons = new GameObject[3];
+
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            weapons[i] = we[i];
+        }
         //if ((0 < L_trig.tagg && L_trig.tagg < 37) || (0 < R_trig.tagg && R_trig.tagg < 37))
         //{
 
-            //if (TagDetecter.hoverTag < 37)
-            //{
-            for (int i = 0; i < weapons.Length; i++)
+        //if (TagDetecter.hoverTag < 37)
+        //{
+        for (int i = 0; i < weapons.Length; i++)
             {
                 if (weapons[i] != null && (weapons[i].GetNamedChild("[Right Controller] Dynamic Attach") || weapons[i].GetNamedChild("[Left Controller] Dynamic Attach")))
                 {
@@ -86,7 +100,7 @@ public class Weap_Desc : MonoBehaviour
 
                 }
                 else
-                   if (weapons[i] != null) (weapons[i].GetComponent("TheWeapon") as MonoBehaviour).enabled = false;
+                   if (weapons[i] != null) (weapons[i].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
             }
             //}
         //}
@@ -376,7 +390,7 @@ public class Weap_Desc : MonoBehaviour
         {
             if (k != null)
             {
-                (k.GetComponent("TheWeapon") as MonoBehaviour).enabled = true;
+                (k.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
                 if (k.GetComponent<CurrentWeapon>() != null)
                 {
                     k.transform.parent = TheWeapon;
