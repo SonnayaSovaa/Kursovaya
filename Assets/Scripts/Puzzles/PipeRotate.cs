@@ -1,9 +1,6 @@
 using System.Linq;
-using Unity.XR.CoreUtils;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class PipeRotate : MonoBehaviour
 {

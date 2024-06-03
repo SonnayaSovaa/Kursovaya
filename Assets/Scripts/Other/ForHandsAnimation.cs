@@ -1,10 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 public class PlayerImput : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
@@ -14,6 +11,25 @@ public class PlayerImput : MonoBehaviour
     public int tagg;
 
     [SerializeField] Weap_Desc weap;
+
+    ActionBasedController[] controllers;
+    public ActionBasedController controller_L;
+    public ActionBasedController controller_R;
+
+    private void Start()
+    {
+        controllers = FindObjectsOfType<ActionBasedController>();
+        if (controllers[0].tag == "Right")
+        {
+            controller_R = controllers[0];
+            controller_L = controllers[1];
+        }
+        else
+        {
+            controller_L = controllers[0];
+            controller_R = controllers[1];
+        }
+    }
 
     void Update()
     {
@@ -34,7 +50,7 @@ public class PlayerImput : MonoBehaviour
         {
             tagg = Convert.ToInt32(other.tag);
 
-            if (0 < tagg && tagg< 37)
+            if (0 <= tagg && tagg< 37)
             {
                 weap.InHand();
             }
@@ -66,15 +82,16 @@ public class PlayerImput : MonoBehaviour
     }
     public void OnTriggerExit(Collider other)
     {
-        if (this.tag == "R" && other.gameObject.GetNamedChild("[Right Controller] Dynamic Attach") != null || this.tag == "L" && other.gameObject.GetNamedChild("[Left Controller] Dynamic Attach") != null)
+        flag = true;
+        _animator.SetBool("Hill", false);
+        _animator.SetBool("Key", false);
+        _animator.SetBool("Wep", false);
+
+
+        if (this.tag == "R" && controller_R.selectAction.action.ReadValue<float>() == 0 || this.tag == "L" && controller_L.selectAction.action.ReadValue<float>() == 0)
         {
-            flag = true;
-            _animator.SetBool("Hill", false);
-            _animator.SetBool("Key", false);
-            _animator.SetBool("Wep", false);
-
-
-            if (0 < tagg && tagg < 37)
+            
+            if (0 <= tagg && tagg < 37)
             {
                 weap.OutHand();
             }

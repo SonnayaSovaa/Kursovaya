@@ -1,10 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
-using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
-using System.Data;
 
 public class DoorFromLab : MonoBehaviour
 {
