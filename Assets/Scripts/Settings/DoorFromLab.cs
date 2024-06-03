@@ -5,6 +5,7 @@ using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 using System.Data;
+using probnik;
 
 public class DoorFromLab : MonoBehaviour
 {
@@ -18,12 +19,12 @@ public class DoorFromLab : MonoBehaviour
 
     [SerializeField] GameObject door;
 
-    Weap_Desc weapon;
-
+    [SerializeField] private WeaponGrab weaponL;
+    [SerializeField] private WeaponGrab weaponR;
 
     private void Start()
     {
-        weapon = FindObjectOfType<Weap_Desc>();
+        //weapon = FindObjectOfType<Weap_Desc>();
 
         controllers = FindObjectsOfType<ActionBasedController>();
         if (controllers[0].tag == "Right")
@@ -44,11 +45,6 @@ public class DoorFromLab : MonoBehaviour
             Destroy(this);
         if (this.name=="ToStaem" && pp==1) Destroy(this);
     } 
-
-    private void Update()
-    {
-       // inHand = weapon.weap;
-    }
 
     public void OnTriggerStay(Collider other)
     {

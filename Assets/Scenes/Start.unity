@@ -856,6 +856,8 @@ MonoBehaviour:
   controller_R: {fileID: 0}
   inHand: 0
   door: {fileID: 129632533}
+  weaponL: {fileID: 0}
+  weaponR: {fileID: 0}
 --- !u!65 &129632539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6909,6 +6911,8 @@ MonoBehaviour:
   controller_R: {fileID: 0}
   inHand: 0
   door: {fileID: 1187131968}
+  weaponL: {fileID: 0}
+  weaponR: {fileID: 0}
 --- !u!65 &1187131974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7757,7 +7761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1442146024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7795,6 +7799,8 @@ MonoBehaviour:
   controller_R: {fileID: 0}
   inHand: 0
   door: {fileID: 1442146023}
+  weaponL: {fileID: 0}
+  weaponR: {fileID: 0}
 --- !u!65 &1442146026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8537,7 +8543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1551457438
 Transform:
   m_ObjectHideFlags: 0
@@ -8590,6 +8596,8 @@ MonoBehaviour:
   controller_R: {fileID: 0}
   inHand: 0
   door: {fileID: 1551457437}
+  weaponL: {fileID: 0}
+  weaponR: {fileID: 0}
 --- !u!65 &1551457441
 BoxCollider:
   m_ObjectHideFlags: 0

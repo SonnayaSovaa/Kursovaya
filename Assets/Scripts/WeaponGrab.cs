@@ -19,11 +19,11 @@ namespace probnik
 		
 		private void OnTriggerEnter(Collider other)
 		{
-			Debug.Log("COOLIDER");
-			if (GetComponent("TheWeapon")!=null)
+			
+			if (other.gameObject.GetComponent<TheWeapon>()!=null)
 			{ 
-				wep = GetComponent("TheWeapon");	
-				Debug.Log("COOOOOOOOOOOOOLIDER");
+				wep = other.gameObject.GetComponent<TheWeapon>();	
+				
 				weap = other.gameObject;
 				weap.transform.SetParent(igrok.transform);
 				description = wep.description;
@@ -34,13 +34,15 @@ namespace probnik
 		}
 		private void OnTriggerExit(Collider other)
 		{
-			if (TryGetComponent<TheWeapon>(out TheWeapon wep))
-			{
-				other.transform.parent = null;
+			Debug.Log("hfnfmdtugkm,f yg");
+			if (other.gameObject.GetComponent<TheWeapon>()!=null)
+			{ 
+				weap.transform.SetParent(null);
 				//weap = null;
 				inhand = false;
 				real_uron = 0;
 			}
+				
 		}
 
 	}

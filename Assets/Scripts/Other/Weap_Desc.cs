@@ -19,7 +19,6 @@ public class Weap_Desc : MonoBehaviour
     {
         if (Left.inhand)
         {
-            Debug.Log("HAAAAAAAAAAAAAAAAAAAAAAAAAAAND");
             description.text = Left.description;
             rank.text = Left.rank;
             uron.text = Convert.ToString(Left.real_uron);
