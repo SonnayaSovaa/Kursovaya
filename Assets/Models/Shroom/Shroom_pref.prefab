@@ -1428,12 +1428,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0218a433c3b87b4cb236619e2ead087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boss_umer: 0
   minWalkDist: 1
   maxWalkDist: 10
   reachPointDist: 1
   roamTarget: {fileID: 1711662255311638253}
   targetFolRange: 7
-  attackRange: 1
+  attackRange: 1.32
   stopTargetRange: 15
   aiDist: {fileID: 6020041625023707800}
   aipath: {fileID: 8562027759124603583}
@@ -1441,6 +1442,7 @@ MonoBehaviour:
   currState: 0
   health: 0
   boss: 0
+  key: {fileID: 0}
 --- !u!114 &2840410137609035143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1490,9 +1492,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.7
-  pickNextWaypointDist: 1.13
-  endReachedDistance: 0.7
+  slowdownDistance: 1.15
+  pickNextWaypointDist: 1.32
+  endReachedDistance: 1.15
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0

@@ -146,7 +146,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.58198744
+  m_Radius: 0.69
   m_Center: {x: -0.0000000054976828, y: 0, z: -0.08198741}
 --- !u!114 &3010095080058465825
 MonoBehaviour:
@@ -476,7 +476,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.58198744
+  m_Radius: 0.69
   m_Center: {x: -0.0000000054976828, y: 0, z: -0.08198741}
 --- !u!114 &6057610788936126897
 MonoBehaviour:
@@ -609,7 +609,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.58198744
+  m_Radius: 0.69
   m_Center: {x: -0.0000000054976828, y: 0, z: -0.08198741}
 --- !u!114 &126649005663760328
 MonoBehaviour:
@@ -742,7 +742,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.58198744
+  m_Radius: 0.69
   m_Center: {x: -0.0000000054976828, y: 0, z: -0.08198741}
 --- !u!114 &8380814633981961912
 MonoBehaviour:
@@ -875,7 +875,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.58198744
+  m_Radius: 0.69
   m_Center: {x: -0.0000000054976828, y: 0, z: -0.08198741}
 --- !u!114 &6571686744375489101
 MonoBehaviour:
@@ -1695,6 +1695,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3825334559783592797, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Radius
+      value: 0.69
+      objectReference: {fileID: 0}
     - target: {fileID: 4043312885862017711, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -2301,7 +2305,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1516643606573672127, guid: 372272216daa19f4999534d62146bad1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4181346530198099149}
+      addedObject: {fileID: 8958494736850371111}
     - targetCorrespondingSourceObject: {fileID: 7877711402696665145, guid: 372272216daa19f4999534d62146bad1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 710882620947564119}
@@ -2341,7 +2345,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1516643606573672127, guid: 372272216daa19f4999534d62146bad1, type: 3}
   m_PrefabInstance: {fileID: 1857396897865457548}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4181346530198099149
+--- !u!114 &8958494736850371111
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2350,39 +2354,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 921830481561794867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
+  m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 0}
-  m_TurnAmount: 15
-  m_DebounceTime: 0.3
-  m_EnableTurnLeftRight: 1
-  m_EnableTurnAround: 1
-  m_DelayTime: 0
-  m_LeftHandSnapTurnAction:
+  m_TurnSpeed: 60
+  m_LeftHandTurnAction:
     m_UseReference: 0
     m_Action:
-      m_Name: Left Hand Snap Turn
+      m_Name: Left Hand Turn
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 8242b7ac-cfd6-44b5-97f9-b9a2e783fc5e
+      m_Id: aa52ef64-6ec9-4d17-b670-061609168ce8
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
-  m_RightHandSnapTurnAction:
+  m_RightHandTurnAction:
     m_UseReference: 1
     m_Action:
-      m_Name: Right Hand Snap Turn
+      m_Name: Right Hand Turn
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: fcb70c75-8e52-4409-b0a6-b7b37855bb70
+      m_Id: 2809de87-c4df-436c-a921-a39c945fc301
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &925585586984495880 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1521824752803542148, guid: 372272216daa19f4999534d62146bad1, type: 3}

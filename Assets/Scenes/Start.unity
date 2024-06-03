@@ -6233,13 +6233,17 @@ PrefabInstance:
       propertyPath: Point
       value: 
       objectReference: {fileID: 279161114}
+    - target: {fileID: 86863912945898010, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1135
+      objectReference: {fileID: 0}
     - target: {fileID: 448640301867404427, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -309.38
       objectReference: {fileID: 0}
     - target: {fileID: 448640301867404427, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 62.75
+      value: 63.062
       objectReference: {fileID: 0}
     - target: {fileID: 448640301867404427, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6277,6 +6281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4_Igrok (XR)  1 1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1986838228743963419, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2439393019950953763, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -6293,10 +6301,18 @@ PrefabInstance:
       propertyPath: Point
       value: 
       objectReference: {fileID: 279161114}
+    - target: {fileID: 4260348624330203860, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4315251454603247493, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: Point
       value: 
       objectReference: {fileID: 279161114}
+    - target: {fileID: 4574176516705010598, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6855305414126016143, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: Point
       value: 
@@ -6305,6 +6321,10 @@ PrefabInstance:
       propertyPath: Point
       value: 
       objectReference: {fileID: 279161114}
+    - target: {fileID: 8429569821056044777, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1157
+      objectReference: {fileID: 0}
     - target: {fileID: 8820942699930329942, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: Point
       value: 

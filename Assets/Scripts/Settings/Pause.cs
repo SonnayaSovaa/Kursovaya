@@ -54,7 +54,7 @@ public class Pause : MonoBehaviour
         controls.pause.Pause.started += ctx => MakePause();
 
         move = igrok.GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed;
-        turn = igrok.GetComponent<ActionBasedSnapTurnProvider>().turnAmount;
+        turn = igrok.GetComponent<ActionBasedContinuousTurnProvider>().turnSpeed;
     }
 
 
@@ -75,7 +75,7 @@ public class Pause : MonoBehaviour
         pause.SetActive(false);
 
         igrok.GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed = move;
-        igrok.GetComponent<ActionBasedSnapTurnProvider>().turnAmount = turn;
+        igrok.GetComponent<ActionBasedContinuousTurnProvider>().turnSpeed = turn;
 
         activate = false;
 
@@ -100,7 +100,7 @@ public class Pause : MonoBehaviour
 
 
         igrok.GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed = 0f;
-        igrok.GetComponent<ActionBasedSnapTurnProvider>().turnAmount = 0f;
+        igrok.GetComponent<ActionBasedContinuousTurnProvider>().turnSpeed = 0f;
 
         activate = true;        
 
