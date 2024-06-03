@@ -47,7 +47,7 @@ public class DoorFromLab : MonoBehaviour
 
     private void Update()
     {
-        //inHand = weapon.weap;
+        inHand = weapon.weap;
     }
 
     public void OnTriggerStay(Collider other)
