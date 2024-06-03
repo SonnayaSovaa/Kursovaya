@@ -88,12 +88,12 @@ public class Pause : MonoBehaviour
 
         slider.value = player.healthSl.value;
 
-        description.text = weap.description.text;
+        /*description.text = weap.description.text;
         Score.text = player.Score.text;
         timer.text = player.timer.text;
         uron.text = weap.uron.text;
         rank.text = weap.rank.text;
-
+        */
         playerAudio.PlayOneShot(click);
 
         pause.SetActive(true);

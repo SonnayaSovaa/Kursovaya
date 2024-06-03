@@ -11,7 +11,7 @@ public class DoorToLab : MonoBehaviour
 
     public GameObject Igrok;
 
-    Weap_Desc weapon;
+    //Weap_Desc weapon;
 
     GameObject loading;
 
@@ -19,13 +19,13 @@ public class DoorToLab : MonoBehaviour
     {
         Player player= FindObjectOfType<Player>();
         Igrok = player.igrok;
-        weapon =FindObjectOfType<Weap_Desc>();
+       // weapon =FindObjectOfType<Weap_Desc>();
         loading = player.loading;
     }
 
     public void Update()
     {
-        inHand = weapon.weap;
+       // inHand = weapon.weap;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,7 +34,7 @@ public class DoorToLab : MonoBehaviour
         if (other.tag == "Player")
         {
             DontDestroyOnLoad(Igrok);
-            DontDestroyOnLoad(FindObjectOfType<CurrentWeapon>().gameObject);
+            //DontDestroyOnLoad(FindObjectOfType<CurrentWeapon>().gameObject);
             string currScene = SceneManager.GetActiveScene().name;
 
             if (this.name == "ToSteam")
