@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 7058841297396408594}
   - component: {fileID: 5736950096148811913}
   - component: {fileID: 1181740456905671921}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: DirectInteractor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 8829220556938948400}
   - component: {fileID: 3423562587907565631}
   - component: {fileID: 3010095080058465825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (5)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 4795490044855459468}
   - component: {fileID: 3678240295582214744}
   - component: {fileID: 8831962344976277513}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: DirectInteractor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 1307973468153338240}
   - component: {fileID: 553958860038422872}
   - component: {fileID: 6057610788936126897}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (2)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 5606488338257013339}
   - component: {fileID: 1379022220617613311}
   - component: {fileID: 126649005663760328}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (4)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 7618447644964587953}
   - component: {fileID: 253565185288197852}
   - component: {fileID: 8380814633981961912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (3)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -982,7 +982,7 @@ GameObject:
   - component: {fileID: 5784033246288087711}
   - component: {fileID: 5420628845631026184}
   - component: {fileID: 6571686744375489101}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: point (1)
   m_TagString: Svoboden
   m_Icon: {fileID: 0}
@@ -1497,6 +1497,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1872386750902628000, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1956136149891107707, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: button
       value: 
@@ -1732,6 +1736,10 @@ PrefabInstance:
     - target: {fileID: 3417645014632443679, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_TagString
       value: L
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445184185887802516, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3512519284890093987, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2170,6 +2178,10 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6828657233331457042, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6850815856152055020, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.23301189
@@ -2180,7 +2192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094953046816938117, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7118969414133554695, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_TagString
@@ -2221,6 +2233,10 @@ PrefabInstance:
     - target: {fileID: 7339702144751882150, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366084674620638534, guid: 372272216daa19f4999534d62146bad1, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7367625211789852233, guid: 372272216daa19f4999534d62146bad1, type: 3}
       propertyPath: m_LocalPosition.z

@@ -39,8 +39,8 @@ public class TheWeapon : XRGrabInteractable
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
-        if (args.interactor.tag== "Right" && controller_R.selectAction.action.ReadValue<float>() == 0 || args.interactor.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() == 0) SetParentToWorld();
-        //base.OnSelectExited(args);
+        //if (args.interactor.tag== "Right" && controller_R.selectAction.action.ReadValue<float>() == 0 || args.interactor.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() == 0) SetParentToWorld();
+        base.OnSelectExited(args);
     }
 
     public void SetParentToXRRig()
@@ -50,7 +50,7 @@ public class TheWeapon : XRGrabInteractable
 
     public void SetParentToWorld()
     {
-        //transform.SetParent(null);
+        transform.SetParent(null);
     }
 }
 
