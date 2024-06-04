@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+
+public class TheWeapon : MonoBehaviour { }
+
+/*
 public class TheWeapon : XRGrabInteractable
 {
 
@@ -39,7 +43,8 @@ public class TheWeapon : XRGrabInteractable
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
-        //if (args.interactor.tag== "Right" && controller_R.selectAction.action.ReadValue<float>() == 0 || args.interactor.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() == 0) SetParentToWorld();
+        //if (args.interactor.tag== "Right" && controller_R.selectAction.action.ReadValue<float>() == 0 || args.interactor.tag == "Left" && controller_L.selectAction.action.ReadValue<float>() == 0)
+        SetParentToWorld();
         base.OnSelectExited(args);
     }
 
@@ -53,4 +58,4 @@ public class TheWeapon : XRGrabInteractable
         transform.SetParent(null);
     }
 }
-
+*/

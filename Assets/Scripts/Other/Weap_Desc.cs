@@ -84,7 +84,7 @@ public class Weap_Desc : MonoBehaviour
 
                 }
                 else
-                   if (weapons[i] != null) (weapons[i].GetComponent("TheWeapon") as MonoBehaviour).enabled = false;
+                   if (weapons[i] != null) (weapons[i].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
             }
             //}
         //}
@@ -374,7 +374,7 @@ public class Weap_Desc : MonoBehaviour
         {
             if (k != null)
             {
-                (k.GetComponent("TheWeapon") as MonoBehaviour).enabled = true;
+                (k.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
                 if (k.GetComponent<CurrentWeapon>() != null)
                 {
                     k.transform.parent = TheWeapon;

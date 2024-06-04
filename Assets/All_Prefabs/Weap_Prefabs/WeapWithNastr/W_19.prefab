@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 394507702534844523}
   - component: {fileID: 891214434042685822}
   - component: {fileID: -3472851480391681064}
+  - component: {fileID: -2909920012346162438}
   m_Layer: 4
   m_Name: W_19
   m_TagString: 19
@@ -200,6 +201,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afacb8c4103ad65489991b3887bf7508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2909920012346162438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860365216224624753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayerMask:
@@ -290,7 +303,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 4649560464007054508}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -298,7 +311,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -340,4 +353,3 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  attach: {fileID: 0}
