@@ -16,7 +16,7 @@ public class Enemy_Health : MonoBehaviour
 
     public bool boss;
 
-    WeaponGrab weapon;
+    private WeaponGrab weapon;
 
     public AudioSource main;
 
@@ -89,6 +89,7 @@ public class Enemy_Health : MonoBehaviour
                 int tagg = Convert.ToInt32(other.tag);
                 if (other.gameObject.GetComponent<WeaponGrab>() != null)
                 {
+                    weapon = GetComponent<WeaponGrab>();
                     //weapon = FindObjectOfType<CurrentWeapon>();
                     main.PlayOneShot(udar);
                     enemy.health -= weapon.real_uron;
