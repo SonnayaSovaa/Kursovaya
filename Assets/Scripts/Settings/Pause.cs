@@ -113,6 +113,8 @@ public class Pause : MonoBehaviour
         playerAudio.PlayOneShot(click);
         loading.SetActive(true);
         SceneManager.LoadSceneAsync("Menu");
+        player.gameObject.SetActive(false);
+        
     }
 }
 

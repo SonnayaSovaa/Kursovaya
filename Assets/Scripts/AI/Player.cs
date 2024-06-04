@@ -131,6 +131,7 @@ public class Player : MonoBehaviour
         loading.SetActive(true);
         
         SceneManager.LoadSceneAsync("End");
+        igrok.SetActive(false);
         //Destroy(igrok);
     }
 

@@ -8,13 +8,13 @@ public class MusicVolume : MonoBehaviour
 {
     AudioSource[] mus;
 
-    [SerializeField] GameObject heal;
+    //[SerializeField] GameObject heal;
 
     Player player;
 
     public TheWeapon[] weapons;
 
-    public GameObject[] real_weapons;
+    //public GameObject[] real_weapons;
 
     string currSc;
 
@@ -33,14 +33,14 @@ public class MusicVolume : MonoBehaviour
         if (currSc != "TheEnd"|| currSc != "Menu")
         {
 
-            weapons = FindObjectsOfType<TheWeapon>();
+           // weapons = FindObjectsOfType<TheWeapon>();
 
-            real_weapons = new GameObject[weapons.Length];
+            //real_weapons = new GameObject[weapons.Length];
 
-            for (int i = 0; i < weapons.Length; i++)
+           /* for (int i = 0; i < weapons.Length; i++)
             {
                 real_weapons[i] = weapons[i].gameObject;
-            }
+            }*/
 
             player = FindObjectOfType<Player>();
             mus = FindObjectsOfType<AudioSource>();
@@ -76,9 +76,9 @@ public class MusicVolume : MonoBehaviour
 
         
 
-        if (currSc!="Start" && mc==1 && pp==1)
+        /*if (currSc!="Start" && mc==1 && pp==1)
         {
             heal.SetActive(true);
-        }
+        }*/
     }
 }
