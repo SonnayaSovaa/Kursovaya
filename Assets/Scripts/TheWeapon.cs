@@ -11,8 +11,4 @@ public class TheWeapon : MonoBehaviour
    public int real_uron;
    public string tag;
 
-   private void Awake()
-   {
-      tag = this.gameObject.tag;
-   }
 }

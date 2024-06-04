@@ -11,9 +11,9 @@ public class PlayerImput : MonoBehaviour
     [SerializeField] private InputActionProperty _gripAction;
     [SerializeField] private InputActionProperty _triggerAction;
     private bool flag = true;
-    public int tagg;
+    //public int tagg;
 
-    [SerializeField] Weap_Desc weap;
+    //[SerializeField] Weap_Desc weap;
 
     void Update()
     {

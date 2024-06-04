@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f13e87d5-1d3a-45d4-9e2b-e966c808d71c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kursovaya/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Robot/robot_pref.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Robot/robot_pref.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Robot/robot_small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Robot/robot_small.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Shroom/Shroom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Shroom/Shroom.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Enemy_Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Enemy_Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/ForHandsAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/ForHandsAnimation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/TheEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/TheEnd.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TheWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TheWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponGrab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponGrab.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +154,7 @@
       <workItem from="1717448222606" duration="10492000" />
       <workItem from="1717459304974" duration="713000" />
       <workItem from="1717491678934" duration="492000" />
-      <workItem from="1717495740917" duration="6923000" />
+      <workItem from="1717495740917" duration="8930000" />
     </task>
     <servers />
   </component>

@@ -623,9 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9252eaad3448aba4e9453f0d6ddc2bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heal: {fileID: 0}
   weapons: []
-  real_weapons: []
   StartIgrok: {fileID: 0}
   source: {fileID: 0}
 --- !u!1 &116944866
@@ -6327,13 +6325,63 @@ PrefabInstance:
     - {fileID: 6773874321747821832, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
     - {fileID: 8367442933198881392, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8866853560154046859, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1059849459}
   m_SourcePrefab: {fileID: 100100000, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
 --- !u!1 &1059849456 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 921830481561794867, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
   m_PrefabInstance: {fileID: 1059849455}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1059849457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8866853560154046859, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+  m_PrefabInstance: {fileID: 1059849455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1059849458 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8609472742340651009, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+  m_PrefabInstance: {fileID: 1059849455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1059849459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059849457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4466d39467b7d243970437f0d0f2637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1059849458}
+  _gripAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5d727132-5dc7-4550-941c-1f9ba4e06bd9
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  _triggerAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 98890355-b981-45f2-ba2b-8fc94af89e77
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1063026165
 GameObject:
   m_ObjectHideFlags: 0
@@ -7626,9 +7674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9252eaad3448aba4e9453f0d6ddc2bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heal: {fileID: 1774858604}
   weapons: []
-  real_weapons: []
   StartIgrok: {fileID: 1059849456}
   source: {fileID: 564990197}
 --- !u!4 &1370468811

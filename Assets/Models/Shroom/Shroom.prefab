@@ -695,7 +695,7 @@ MonoBehaviour:
   reachPointDist: 1
   roamTarget: {fileID: 8811193427284792872}
   targetFolRange: 7
-  attackRange: 1.2
+  attackRange: 1.6
   stopTargetRange: 15
   aiDist: {fileID: 3222047588132710906}
   aipath: {fileID: 4492880950088059163}

@@ -281,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1712806595626384283, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4181346530198099149, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
       propertyPath: m_System
@@ -301,13 +301,61 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6997867153924534238, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
-    - {fileID: 1712806595626384283, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
-    - {fileID: 925585586984495880, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4260348624330203860, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8866853560154046859, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 35840677}
   m_SourcePrefab: {fileID: 100100000, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+--- !u!1 &35840675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8866853560154046859, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+  m_PrefabInstance: {fileID: 35840674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &35840676 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8609472742340651009, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
+  m_PrefabInstance: {fileID: 35840674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &35840677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35840675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4466d39467b7d243970437f0d0f2637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 35840676}
+  _gripAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5d727132-5dc7-4550-941c-1f9ba4e06bd9
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  _triggerAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 98890355-b981-45f2-ba2b-8fc94af89e77
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &46011649
 GameObject:
   m_ObjectHideFlags: 0

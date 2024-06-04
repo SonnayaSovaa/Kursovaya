@@ -417,7 +417,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.001436862
   m_Height: 0.0046496973
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667790854388133422}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 915d947b2b814d1469d9a1b45b80ea3b, type: 3}
   m_Name: 
@@ -2405,7 +2405,7 @@ MonoBehaviour:
   reachPointDist: 1
   roamTarget: {fileID: 4213763434063621234}
   targetFolRange: 7
-  attackRange: 1.2
+  attackRange: 1.6
   stopTargetRange: 15
   aiDist: {fileID: 8313027824821686609}
   aipath: {fileID: 2096894409211036358}
