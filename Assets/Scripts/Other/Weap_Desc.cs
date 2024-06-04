@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using Unity.XR.CoreUtils;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Weap_Desc : MonoBehaviour
 {
@@ -27,28 +28,39 @@ public class Weap_Desc : MonoBehaviour
 
     MusicVolume forWeapMass;
 
+    TheWeapon[] Tweapons;
+
 
     //[SerializeField] PlayerImput L_trig;
     //[SerializeField] PlayerImput R_trig;
 
+
     private void Start()
     {
-        forWeapMass = FindObjectOfType<MusicVolume>();
 
+        //forWeapMass = FindObjectOfType<MusicVolume>();
 
-        //GameObject[] we = forWeapMass.real_weapons;
+        Tweapons = FindObjectsOfType<TheWeapon>();
 
 
         if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
         else
             if (PlayerPrefs.GetInt("PipeRotat") + PlayerPrefs.GetInt("MagicCube") > 0) weapons = new GameObject[4];
-            else weapons = new GameObject[3];
+        else weapons = new GameObject[3];
+
+        for (int i = 0; i < Tweapons.Length; i++)
+        {
+            weapons[i] = Tweapons[i].gameObject;
+        }
+        //GameObject[] we = forWeapMass.real_weapons;
+
+
 
         for (int i = 0; i < weapons.Length; i++)
         {
-            weapons[i] = forWeapMass.weapons[i].gameObject;
+            weapons[i] = Tweapons[i].gameObject;
         }
-        if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null && weapons[weapons.Length - 1] != null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
+        //if (SceneManager.GetActiveScene().name != "Start" && GetComponent<CurrentWeapon>() != null && weapons[weapons.Length - 1] != null) weapons[weapons.Length - 1] = FindObjectOfType<CurrentWeapon>().gameObject;
 
         /*
         int j = 0;
@@ -64,14 +76,37 @@ public class Weap_Desc : MonoBehaviour
 
     }
 
-    public void InHand()
+    public IEnumerator InHand()
     {
+        yield return new WaitForSeconds(0.5f);
+        Tweapons = FindObjectsOfType<TheWeapon>();
+
+        weapons = new GameObject[Tweapons.Length];
+
+        for (int i = 0; i < Tweapons.Length; i++)
+        {
+            weapons[i] = Tweapons[i].gameObject;
+        }
+
+        /*
+        if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
+        else
+            if (PlayerPrefs.GetInt("PipeRotat") + PlayerPrefs.GetInt("MagicCube") > 0) weapons = new GameObject[4];
+        else weapons = new GameObject[3];
+      
+
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            weapons[i] = forWeapMass.weapons[i].gameObject;
+        }
+          */
+
         //if ((0 < L_trig.tagg && L_trig.tagg < 37) || (0 < R_trig.tagg && R_trig.tagg < 37))
         //{
 
-            //if (TagDetecter.hoverTag < 37)
-            //{
-            for (int i = 0; i < weapons.Length; i++)
+        //if (TagDetecter.hoverTag < 37)
+        //{
+        for (int i = 0; i < weapons.Length; i++)
             {
                 if (weapons[i] != null && (weapons[i].GetNamedChild("[Right Controller] Dynamic Attach") || weapons[i].GetNamedChild("[Left Controller] Dynamic Attach")))
                 {
@@ -84,7 +119,7 @@ public class Weap_Desc : MonoBehaviour
 
                 }
                 else
-                   if (weapons[i] != null) (weapons[i].GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = false;
+                   if (weapons[i] != null) (weapons[i].GetComponent("TheWeapon") as MonoBehaviour).enabled = false;
             }
             //}
         //}
@@ -92,7 +127,7 @@ public class Weap_Desc : MonoBehaviour
 
     int What(int cur_tag)
     {
-
+        
         switch (cur_tag)
         {
             case 0:
@@ -285,12 +320,14 @@ public class Weap_Desc : MonoBehaviour
         //PlayerPrefs.SetInt("Uron", real_uron);
         return real_uron;
     }
-           
-        
-    
 
-    public void OutHand()
+
+
+
+    public IEnumerator OutHand()
     {
+        yield return new WaitForSeconds(0.5f);
+
         TheWeapon = FindObjectOfType<Weap_Detecter>().gameObject.transform;
 
         description.text = "Что ж, всего лишь ваши руки.";
@@ -320,6 +357,26 @@ public class Weap_Desc : MonoBehaviour
         //TheWeapon = FindObjectOfType<Weap_Detecter>().gameObject.transform;
 
         //allWeap = TheWeapon.GetComponentsInChildren<Transform>();
+
+
+        Tweapons = FindObjectsOfType<TheWeapon>();
+
+        if (SceneManager.GetActiveScene().name != "Start") weapons = new GameObject[35];
+        else
+                    if (PlayerPrefs.GetInt("PipeRotat") + PlayerPrefs.GetInt("MagicCube") > 0) weapons = new GameObject[4];
+        else weapons = new GameObject[3];
+
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            weapons[i] = Tweapons[i].gameObject;
+        }
+
+        for (int i = 0; i < Tweapons.Length; i++)
+        {
+            weapons[i] = Tweapons[i].gameObject;
+        }
+
+        /*
         forWeapMass = FindObjectOfType<MusicVolume>();
 
         GameObject[] we = forWeapMass.real_weapons;
@@ -369,12 +426,13 @@ public class Weap_Desc : MonoBehaviour
 
             curr.currentUron = 0;
         }*/
+        
 
         foreach (var k in weapons)
         {
             if (k != null)
             {
-                (k.GetComponent("XRGrabInteractable") as MonoBehaviour).enabled = true;
+                (k.GetComponent("TheWeapon") as MonoBehaviour).enabled = true;
                 if (k.GetComponent<CurrentWeapon>() != null)
                 {
                     k.transform.parent = TheWeapon;
@@ -384,7 +442,7 @@ public class Weap_Desc : MonoBehaviour
         }
 
         
-
+        
 
 
     } 

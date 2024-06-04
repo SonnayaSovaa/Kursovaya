@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class TheWeapon : MonoBehaviour { }
+//public class TheWeapon : MonoBehaviour { }
 
-/*
+
 public class TheWeapon : XRGrabInteractable
 {
 
@@ -29,6 +29,8 @@ public class TheWeapon : XRGrabInteractable
             controller_L = controllers[0];
             controller_R = controllers[1];
         }
+
+
     }
 
 
@@ -58,4 +60,3 @@ public class TheWeapon : XRGrabInteractable
         transform.SetParent(null);
     }
 }
-*/

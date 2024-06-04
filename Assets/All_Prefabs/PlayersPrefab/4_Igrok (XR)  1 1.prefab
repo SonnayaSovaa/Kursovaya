@@ -3490,8 +3490,10 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  tag: 0
+  tagg: 0
   weap: {fileID: 0}
+  controller_L: {fileID: 0}
+  controller_R: {fileID: 0}
 --- !u!136 &2521705978499748327
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5204,6 +5206,7 @@ MonoBehaviour:
   nastr: {fileID: 2791231135308061738}
   inv: {fileID: 3211882013064675913}
   SetInv: 0
+  pause: {fileID: 0}
 --- !u!114 &6150137364579311575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5237,8 +5240,6 @@ MonoBehaviour:
   igrok: {fileID: 1516643606573672127}
   weap: 0
   player: {fileID: 4522296970096424168}
-  L_trig: {fileID: 0}
-  R_trig: {fileID: 0}
 --- !u!114 &1956136149891107707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5253,6 +5254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 6000722267384557201}
   igrok: {fileID: 1516643606573672127}
+  activate: 0
   playerAudio: {fileID: 9153818633094611992}
   click: {fileID: 8300000, guid: 721d27e6bc06847488ef1c54a2272347, type: 3}
   player: {fileID: 4522296970096424168}
@@ -8084,8 +8086,10 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  tag: 0
+  tagg: 0
   weap: {fileID: 0}
+  controller_L: {fileID: 0}
+  controller_R: {fileID: 0}
 --- !u!136 &3925095150944418211
 CapsuleCollider:
   m_ObjectHideFlags: 0

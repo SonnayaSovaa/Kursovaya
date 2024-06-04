@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -53,7 +54,7 @@ public class PlayerImput : MonoBehaviour
 
             if (0 <= tagg && tagg< 37)
             {
-                weap.InHand();
+                StartCoroutine(weap.InHand());
             }
         }
     }
@@ -94,7 +95,7 @@ public class PlayerImput : MonoBehaviour
             
             if (0 <= tagg && tagg < 37)
             {
-                weap.OutHand();
+                StartCoroutine(weap.OutHand());
             }
         }
 
