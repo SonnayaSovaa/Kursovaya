@@ -36,37 +36,41 @@ public class TheEnd : MonoBehaviour
 
         int LevelDif = PlayerPrefs.GetInt("LevelDif");
 
-        int dopScore;
 
-        int usingTime = Convert.ToInt32(time / 60);
-
-        if (LevelDif == 0) dopScore=-Convert.ToInt32((usingTime*usingTime)/14)+300;
-        else if (LevelDif == 1) dopScore = -Convert.ToInt32((usingTime * usingTime) / 10) + 400;
-        else dopScore = -Convert.ToInt32((usingTime * usingTime) / 8) + 500;
-        if (dopScore < 0) dopScore = 0;
-
-        score += dopScore;
 
 
         if (igrok_umer <= 0 || score<1500)
         {
-            endState = "ПОРАЖЕНИЕ";
+            endState = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
         }
         else
         { 
-           endState = "ПОБЕДА";
+           endState = "пїЅпїЅпїЅпїЅпїЅпїЅ";
+           
         }
 
         if (igrok_umer <= 0)
         {
-            texttt = "Вы умерли. С кем не бывает. Попробуете поучаствовать в турнире в следующий раз.";
+            texttt = "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ.";
         }
         else
         {
             if (score < 1500)
-                texttt = "Поздравлем с выживанием! Однако вам не хватает очков, чтобы пройти в следующий этап. Поробуете поучаствовать в турнире в следующий раз.";
+                texttt = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ.";
             else
-                texttt = "Поздравляем с прохождением турнира! Вы набрали достаточно очков, чтобы пройти в следующий этап.";
+            {
+                texttt = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.";
+                int dopScore;
+
+                int usingTime = Convert.ToInt32(time / 60);
+
+                if (LevelDif == 0) dopScore=-Convert.ToInt32((usingTime*usingTime)/14)+300;
+                else if (LevelDif == 1) dopScore = -Convert.ToInt32((usingTime * usingTime) / 10) + 400;
+                else dopScore = -Convert.ToInt32((usingTime * usingTime) / 8) + 500;
+                if (dopScore < 0) dopScore = 0;
+
+                score += dopScore;
+            }
         }
 
 

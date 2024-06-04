@@ -16,7 +16,7 @@ public class Enemy_Health : MonoBehaviour
 
     public bool boss;
 
-    private WeaponGrab weapon;
+    private TheWeapon weapon;
 
     public AudioSource main;
 
@@ -46,7 +46,7 @@ public class Enemy_Health : MonoBehaviour
                     break;
 
                 case 2:
-                    uron = 5;
+                    uron = 25;
                     break;
 
             }
@@ -83,22 +83,20 @@ public class Enemy_Health : MonoBehaviour
         {
             player.GetDamage(uron);
         }
-        else if (other.tag.Contains("1") || other.tag.Contains("2") || other.tag.Contains("3") || other.tag.Contains("4") || other.tag.Contains("5") || other.tag.Contains("6") || other.tag.Contains("7") || other.tag.Contains("8") || other.tag.Contains("9") || other.tag.Contains("0"))
+        else 
         {
-            
-                int tagg = Convert.ToInt32(other.tag);
-                if (tagg<37 || tagg>=0)
+               // int tagg = Convert.ToInt32(other.tag);
+                if (other.gameObject.GetComponent<TheWeapon>()!=null)
                 {
                     Debug.Log("UDARRRRRRR");
-                   // if (timer >= 2)
-                   // {
-                        weapon = other.GetComponent<WeaponGrab>();
+                    if (timer >= 2)
+                    {
+                        weapon = other.gameObject.GetComponent<TheWeapon>();
                         //weapon = FindObjectOfType<CurrentWeapon>();
                         main.PlayOneShot(udar);
-                        Debug.Log(other.tag);
-                       // enemy.health -= weapon.real_uron;
-                        //timer = 0;
-                   // }
+                        enemy.health -= weapon.real_uron;
+                        timer = 0;
+                    }
                 }
                 
             

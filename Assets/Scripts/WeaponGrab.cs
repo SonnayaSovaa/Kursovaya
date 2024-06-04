@@ -16,6 +16,7 @@ namespace probnik
 		public string rank;
 		public int real_uron;
 		public TheWeapon wep;
+		public string tagg;
 		
 		private void OnTriggerEnter(Collider other)
 		{
@@ -30,6 +31,7 @@ namespace probnik
 				rank = wep.rank;
 				real_uron = wep.real_uron;
 				inhand = true;
+				tagg = other.tag;
 			}
 		}
 		private void OnTriggerExit(Collider other)
@@ -41,6 +43,7 @@ namespace probnik
 				//weap = null;
 				inhand = false;
 				real_uron = 0;
+				tagg = null;
 			}
 				
 		}

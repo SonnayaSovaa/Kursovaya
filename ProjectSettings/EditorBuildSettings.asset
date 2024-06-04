@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SCENES/Start.unity
     guid: a112b34b6b78d374ab77251c64ca09ca
-  - enabled: 0
+  - enabled: 1
     path: Assets/SCENES/Steam_Lab.unity
     guid: 96689035774de494da8127bae9a9efd0
   - enabled: 1
     path: Assets/SCENES/Forest.unity
     guid: 9d7549c994a455d4686417adba56a23e
-  - enabled: 0
+  - enabled: 1
     path: Assets/SCENES/Arena.unity
     guid: b11b040c0688b53438a6703931a20469
   - enabled: 1
