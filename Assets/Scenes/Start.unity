@@ -7580,7 +7580,8 @@ PrefabInstance:
       value: 4_Igrok (XR)  1 1 Variant (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 494854773309851155, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb9c387448456d64fa441b30f0ad0bfe, type: 3}
