@@ -1,4 +1,5 @@
 using System;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -88,7 +89,7 @@ public class PlayerImput : MonoBehaviour
         _animator.SetBool("Wep", false);
 
 
-        if (this.tag == "R" && controller_R.selectAction.action.ReadValue<float>() == 0 || this.tag == "L" && controller_L.selectAction.action.ReadValue<float>() == 0)
+        if (this.tag == "R" && other.gameObject.GetNamedChild("[Right Controller] Dynamic Attach") !=null|| this.tag == "L" && other.gameObject.GetNamedChild("[Left Controller] Dynamic Attach") != null)
         {
             
             if (0 <= tagg && tagg < 37)

@@ -75,7 +75,7 @@ public class Weap_Desc : MonoBehaviour
             {
                 if (weapons[i] != null && (weapons[i].GetNamedChild("[Right Controller] Dynamic Attach") || weapons[i].GetNamedChild("[Left Controller] Dynamic Attach")))
                 {
-                    Debug.Log("INHAND");
+                    //Debug.Log("INHAND");
                     weap = true;
                     int currUr = What(int.Parse(weapons[i].tag));
                     if (weapons[i].GetComponent<CurrentWeapon>()==null) curr = weapons[i].AddComponent<CurrentWeapon>();
